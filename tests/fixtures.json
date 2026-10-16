@@ -1,0 +1,2772 @@
+[
+ {
+  "name": "empty form",
+  "expected": {
+   "rows": {},
+   "text": "ULTRASOUND WHOLE ABDOMEN (MALE)\n\nDate: 15/10/2026\n\nFINDINGS:",
+   "impression": [],
+   "findings": [],
+   "counts": {
+    "tot": 44,
+    "done": 0,
+    "per": {
+     "liver": {
+      "t": 7,
+      "d": 0,
+      "a": false
+     },
+     "gb": {
+      "t": 4,
+      "d": 0,
+      "a": false
+     },
+     "cbd": {
+      "t": 1,
+      "d": 0,
+      "a": false
+     },
+     "panc": {
+      "t": 4,
+      "d": 0,
+      "a": false
+     },
+     "spl": {
+      "t": 3,
+      "d": 0,
+      "a": false
+     },
+     "kid": {
+      "t": 12,
+      "d": 0,
+      "a": false
+     },
+     "ub": {
+      "t": 4,
+      "d": 0,
+      "a": false
+     },
+     "pro": {
+      "t": 3,
+      "d": 0,
+      "a": false
+     },
+     "oth": {
+      "t": 6,
+      "d": 0,
+      "a": false
+     }
+    }
+   },
+   "docx": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><w:document xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" xmlns:r=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships\" xmlns:wp=\"http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing\"><w:body><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/><w:jc w:val=\"center\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/><w:sz w:val=\"26\"/><w:szCs w:val=\"26\"/></w:rPr><w:t xml:space=\"preserve\">अखिल भारतीय आयुर्विज्ञान संस्थान (एम्स), गुवाहाटी</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/><w:jc w:val=\"center\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/><w:sz w:val=\"26\"/><w:szCs w:val=\"26\"/></w:rPr><w:t xml:space=\"preserve\">All India Institute of Medical Sciences, Guwahati-781101</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/><w:jc w:val=\"center\"/></w:pPr><w:r><w:rPr><w:sz w:val=\"18\"/><w:szCs w:val=\"18\"/></w:rPr><w:t xml:space=\"preserve\">स्वास्थ्य और परिवार कल्याण मंत्रालय, भारत सरकार के तत्वावधान में एक वैधानिक निकाय</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/><w:jc w:val=\"center\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/><w:sz w:val=\"18\"/><w:szCs w:val=\"18\"/></w:rPr><w:t xml:space=\"preserve\">(A statutory body under the aegis of Ministry of Health and Family Welfare, GoI)</w:t></w:r></w:p><w:p><w:pPr><w:pBdr><w:bottom w:val=\"single\" w:sz=\"8\" w:space=\"4\" w:color=\"000000\"/></w:pBdr><w:spacing w:before=\"0\" w:after=\"120\"/><w:jc w:val=\"center\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/></w:rPr><w:t xml:space=\"preserve\">DEPARTMENT OF DIAGNOSTIC &amp; INTERVENTIONAL RADIOLOGY</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"60\" w:after=\"100\"/><w:jc w:val=\"center\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/><w:u w:val=\"single\"/></w:rPr><w:t xml:space=\"preserve\">Report Form</w:t></w:r></w:p><w:tbl><w:tblPr><w:tblW w:w=\"9746\" w:type=\"dxa\"/><w:tblBorders><w:top w:val=\"single\" w:sz=\"4\" w:space=\"0\" w:color=\"000000\"/><w:left w:val=\"single\" w:sz=\"4\" w:space=\"0\" w:color=\"000000\"/><w:bottom w:val=\"single\" w:sz=\"4\" w:space=\"0\" w:color=\"000000\"/><w:right w:val=\"single\" w:sz=\"4\" w:space=\"0\" w:color=\"000000\"/><w:insideH w:val=\"single\" w:sz=\"4\" w:space=\"0\" w:color=\"000000\"/><w:insideV w:val=\"single\" w:sz=\"4\" w:space=\"0\" w:color=\"000000\"/></w:tblBorders><w:tblLayout w:type=\"fixed\"/><w:tblCellMar><w:top w:w=\"50\" w:type=\"dxa\"/><w:left w:w=\"100\" w:type=\"dxa\"/><w:bottom w:w=\"50\" w:type=\"dxa\"/><w:right w:w=\"100\" w:type=\"dxa\"/></w:tblCellMar></w:tblPr><w:tblGrid><w:gridCol w:w=\"3600\"/><w:gridCol w:w=\"2050\"/><w:gridCol w:w=\"2048\"/><w:gridCol w:w=\"2048\"/></w:tblGrid><w:tr><w:tc><w:tcPr><w:tcW w:w=\"3600\" w:type=\"dxa\"/></w:tcPr><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Name: </w:t></w:r><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\"></w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW w:w=\"2050\" w:type=\"dxa\"/></w:tcPr><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">CR No: </w:t></w:r><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\"></w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW w:w=\"2048\" w:type=\"dxa\"/></w:tcPr><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Age/Sex: </w:t></w:r><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\">/M</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW w:w=\"2048\" w:type=\"dxa\"/></w:tcPr><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">USG No: </w:t></w:r><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\"></w:t></w:r></w:p></w:tc></w:tr><w:tr><w:tc><w:tcPr><w:tcW w:w=\"5650\" w:type=\"dxa\"/><w:gridSpan w:val=\"2\"/></w:tcPr><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Date: </w:t></w:r><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\">15/10/2026</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW w:w=\"4096\" w:type=\"dxa\"/><w:gridSpan w:val=\"2\"/></w:tcPr><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Bill No: </w:t></w:r><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\"></w:t></w:r></w:p></w:tc></w:tr></w:tbl><w:p><w:pPr><w:spacing w:before=\"120\" w:after=\"40\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Referred by: </w:t></w:r><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\"></w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"120\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Clinical Details/Remark: </w:t></w:r><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\"></w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"60\" w:after=\"120\"/><w:jc w:val=\"center\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:u w:val=\"single\"/></w:rPr><w:t xml:space=\"preserve\">ULTRASOUND WHOLE ABDOMEN (MALE)</w:t></w:r></w:p><w:p><w:pPr><w:keepNext/><w:spacing w:before=\"0\" w:after=\"60\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">FINDINGS:</w:t></w:r></w:p><w:p><w:pPr><w:keepNext/><w:spacing w:before=\"160\" w:after=\"60\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/><w:u w:val=\"single\"/></w:rPr><w:t xml:space=\"preserve\">IMPRESSION:</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"420\" w:after=\"0\"/></w:pPr></w:p><w:tbl><w:tblPr><w:tblW w:w=\"9746\" w:type=\"dxa\"/><w:tblLayout w:type=\"fixed\"/><w:tblCellMar><w:top w:w=\"50\" w:type=\"dxa\"/><w:left w:w=\"100\" w:type=\"dxa\"/><w:bottom w:w=\"50\" w:type=\"dxa\"/><w:right w:w=\"100\" w:type=\"dxa\"/></w:tblCellMar></w:tblPr><w:tblGrid><w:gridCol w:w=\"2437\"/><w:gridCol w:w=\"2437\"/><w:gridCol w:w=\"2436\"/><w:gridCol w:w=\"2436\"/></w:tblGrid><w:tr><w:tc><w:tcPr><w:tcW w:w=\"2437\" w:type=\"dxa\"/></w:tcPr><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Dr. Pranjal Phukan</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Professor</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW w:w=\"2437\" w:type=\"dxa\"/></w:tcPr><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Dr. Deb. Kr. Boruah</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Additional Professor</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW w:w=\"2436\" w:type=\"dxa\"/></w:tcPr><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Dr. Kalyan Sarma</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Associate Professor</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW w:w=\"2436\" w:type=\"dxa\"/></w:tcPr><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Dr. Prince Das</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Assistant Professor</w:t></w:r></w:p></w:tc></w:tr></w:tbl><w:p><w:pPr><w:spacing w:before=\"360\" w:after=\"20\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Resident Doctors</w:t></w:r></w:p><w:sectPr><w:pgSz w:w=\"11906\" w:h=\"16838\"/><w:pgMar w:top=\"850\" w:right=\"1080\" w:bottom=\"850\" w:left=\"1080\" w:header=\"567\" w:footer=\"567\" w:gutter=\"0\"/></w:sectPr></w:body></w:document>"
+  }
+ },
+ {
+  "name": "all normal, male, sizes and sign-off",
+  "expected": {
+   "rows": {
+    "liver.size": {
+     "s": [
+      "N"
+     ],
+     "f": {
+      "span": "14.2"
+     }
+    },
+    "liver.echo": {
+     "s": [
+      "N"
+     ],
+     "f": {}
+    },
+    "liver.surf": {
+     "s": [
+      "N"
+     ],
+     "f": {}
+    },
+    "liver.fl": {
+     "s": [
+      "No"
+     ],
+     "f": {}
+    },
+    "liver.ihbr": {
+     "s": [
+      "N"
+     ],
+     "f": {}
+    },
+    "liver.hv": {
+     "s": [
+      "N"
+     ],
+     "f": {}
+    },
+    "liver.pv": {
+     "s": [
+      "N"
+     ],
+     "f": {
+      "d": "11",
+      "flow": "Hepatopetal"
+     }
+    },
+    "gb.dist": {
+     "s": [
+      "N"
+     ],
+     "f": {}
+    },
+    "gb.wall": {
+     "s": [
+      "N"
+     ],
+     "f": {}
+    },
+    "gb.lumen": {
+     "s": [
+      "N"
+     ],
+     "f": {}
+    },
+    "gb.pcf": {
+     "s": [
+      "No"
+     ],
+     "f": {}
+    },
+    "cbd.cal": {
+     "s": [
+      "N"
+     ],
+     "f": {
+      "mm": "4"
+     }
+    },
+    "panc.seen": {
+     "s": [
+      "Head",
+      "Body",
+      "Tail"
+     ],
+     "f": {}
+    },
+    "panc.echo": {
+     "s": [
+      "N"
+     ],
+     "f": {}
+    },
+    "panc.mpd": {
+     "s": [
+      "N"
+     ],
+     "f": {}
+    },
+    "panc.les": {
+     "s": [
+      "No"
+     ],
+     "f": {}
+    },
+    "spl.size": {
+     "s": [
+      "N"
+     ],
+     "f": {}
+    },
+    "spl.echo": {
+     "s": [
+      "N"
+     ],
+     "f": {}
+    },
+    "spl.sv": {
+     "s": [
+      "N"
+     ],
+     "f": {}
+    },
+    "kid.size.R": {
+     "s": [
+      "Measured"
+     ],
+     "f": {
+      "L": "10.2",
+      "W": "4.5"
+     }
+    },
+    "kid.cmd.R": {
+     "s": [
+      "N"
+     ],
+     "f": {}
+    },
+    "kid.calc.R": {
+     "s": [
+      "No"
+     ],
+     "f": {}
+    },
+    "kid.hdn.R": {
+     "s": [
+      "No"
+     ],
+     "f": {}
+    },
+    "kid.ure.R": {
+     "s": [
+      "N"
+     ],
+     "f": {}
+    },
+    "kid.les.R": {
+     "s": [
+      "No"
+     ],
+     "f": {}
+    },
+    "kid.size.L": {
+     "s": [
+      "Measured"
+     ],
+     "f": {
+      "L": "10.4",
+      "W": "4.8"
+     }
+    },
+    "kid.cmd.L": {
+     "s": [
+      "N"
+     ],
+     "f": {}
+    },
+    "kid.calc.L": {
+     "s": [
+      "No"
+     ],
+     "f": {}
+    },
+    "kid.hdn.L": {
+     "s": [
+      "No"
+     ],
+     "f": {}
+    },
+    "kid.ure.L": {
+     "s": [
+      "N"
+     ],
+     "f": {}
+    },
+    "kid.les.L": {
+     "s": [
+      "No"
+     ],
+     "f": {}
+    },
+    "ub.dist": {
+     "s": [
+      "Adequate"
+     ],
+     "f": {}
+    },
+    "ub.wall": {
+     "s": [
+      "N"
+     ],
+     "f": {}
+    },
+    "ub.lumen": {
+     "s": [
+      "N"
+     ],
+     "f": {}
+    },
+    "ub.pvr": {
+     "s": [
+      "Not done"
+     ],
+     "f": {}
+    },
+    "pro.vol": {
+     "s": [
+      "N"
+     ],
+     "f": {
+      "cc": "18"
+     }
+    },
+    "pro.echo": {
+     "s": [
+      "N"
+     ],
+     "f": {}
+    },
+    "pro.sv": {
+     "s": [
+      "N"
+     ],
+     "f": {}
+    },
+    "oth.ff": {
+     "s": [
+      "No"
+     ],
+     "f": {}
+    },
+    "oth.ao": {
+     "s": [
+      "N"
+     ],
+     "f": {}
+    },
+    "oth.pe": {
+     "s": [
+      "No"
+     ],
+     "f": {}
+    },
+    "oth.ln": {
+     "s": [
+      "No"
+     ],
+     "f": {}
+    },
+    "oth.bowel": {
+     "s": [
+      "N"
+     ],
+     "f": {}
+    },
+    "oth.misc": {
+     "s": [
+      "Nil"
+     ],
+     "f": {}
+    }
+   },
+   "text": "ULTRASOUND WHOLE ABDOMEN (MALE)\n\nName: Ramesh Das    Age/Sex: 45/M\nCR No: 2610151234    USG No: U-77    Bill No: B-901\nDate: 15/10/2026\nReferred by: Dr. A. Sharma (Medicine)\nClinical details: Pain abdomen for 2 weeks\n\nFINDINGS:\nLiver is normal in size (span 14.2 cm). Echotexture is normal. Surface is smooth with regular margins. No focal lesion is seen. IHBR are not dilated. Hepatic veins and IVC are normal. Portal vein is normal in calibre (11 mm) with hepatopetal flow.\nGall bladder is well distended. Wall thickness is normal. Lumen is clear. No pericholecystic fluid.\nCBD is normal in calibre (4 mm) with a clear lumen.\nPancreas is visualised in entirety. Echotexture and bulk are normal. MPD is not dilated. No focal lesion or collection.\nSpleen is normal in size. Echotexture is normal with no focal lesion. Splenic vein is normal.\nRight kidney measures 10.2 × 4.5 cm. Cortical echogenicity and CMD are normal. No calculus. No hydronephrosis. Ureter is not dilated. No focal lesion or cyst.\nLeft kidney measures 10.4 × 4.8 cm. Cortical echogenicity and CMD are normal. No calculus. No hydronephrosis. Ureter is not dilated. No focal lesion or cyst.\nUrinary bladder is adequately distended. Wall is normal. Lumen is clear.\nProstate is normal in size (volume 18 cc). Echotexture is normal with no median lobe protrusion. Seminal vesicles are normal.\nNo free fluid. Aorta and IVC are normal. No pleural effusion. No significant lymphadenopathy. Bowel loops and RIF are normal.\n\nIMPRESSION:\n- No significant abnormality detected on ultrasound of the whole abdomen.\n\nDr. Kalyan Sarma, Associate Professor\nResident: Dr. Sujay Dev",
+   "impression": [],
+   "findings": [
+    {
+     "g": "liver",
+     "t": "Liver is normal in size (span 14.2 cm). Echotexture is normal. Surface is smooth with regular margins. No focal lesion is seen. IHBR are not dilated. Hepatic veins and IVC are normal. Portal vein is normal in calibre (11 mm) with hepatopetal flow."
+    },
+    {
+     "g": "gb",
+     "t": "Gall bladder is well distended. Wall thickness is normal. Lumen is clear. No pericholecystic fluid."
+    },
+    {
+     "g": "cbd",
+     "t": "CBD is normal in calibre (4 mm) with a clear lumen."
+    },
+    {
+     "g": "panc",
+     "t": "Pancreas is visualised in entirety. Echotexture and bulk are normal. MPD is not dilated. No focal lesion or collection."
+    },
+    {
+     "g": "spl",
+     "t": "Spleen is normal in size. Echotexture is normal with no focal lesion. Splenic vein is normal."
+    },
+    {
+     "g": "kid",
+     "t": "Right kidney measures 10.2 × 4.5 cm. Cortical echogenicity and CMD are normal. No calculus. No hydronephrosis. Ureter is not dilated. No focal lesion or cyst."
+    },
+    {
+     "g": "kid",
+     "t": "Left kidney measures 10.4 × 4.8 cm. Cortical echogenicity and CMD are normal. No calculus. No hydronephrosis. Ureter is not dilated. No focal lesion or cyst."
+    },
+    {
+     "g": "ub",
+     "t": "Urinary bladder is adequately distended. Wall is normal. Lumen is clear."
+    },
+    {
+     "g": "pro",
+     "t": "Prostate is normal in size (volume 18 cc). Echotexture is normal with no median lobe protrusion. Seminal vesicles are normal."
+    },
+    {
+     "g": "oth",
+     "t": "No free fluid. Aorta and IVC are normal. No pleural effusion. No significant lymphadenopathy. Bowel loops and RIF are normal."
+    }
+   ],
+   "counts": {
+    "tot": 44,
+    "done": 44,
+    "per": {
+     "liver": {
+      "t": 7,
+      "d": 7,
+      "a": false
+     },
+     "gb": {
+      "t": 4,
+      "d": 4,
+      "a": false
+     },
+     "cbd": {
+      "t": 1,
+      "d": 1,
+      "a": false
+     },
+     "panc": {
+      "t": 4,
+      "d": 4,
+      "a": false
+     },
+     "spl": {
+      "t": 3,
+      "d": 3,
+      "a": false
+     },
+     "kid": {
+      "t": 12,
+      "d": 12,
+      "a": false
+     },
+     "ub": {
+      "t": 4,
+      "d": 4,
+      "a": false
+     },
+     "pro": {
+      "t": 3,
+      "d": 3,
+      "a": false
+     },
+     "oth": {
+      "t": 6,
+      "d": 6,
+      "a": false
+     }
+    }
+   },
+   "docx": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><w:document xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" xmlns:r=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships\" xmlns:wp=\"http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing\"><w:body><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/><w:jc w:val=\"center\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/><w:sz w:val=\"26\"/><w:szCs w:val=\"26\"/></w:rPr><w:t xml:space=\"preserve\">अखिल भारतीय आयुर्विज्ञान संस्थान (एम्स), गुवाहाटी</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/><w:jc w:val=\"center\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/><w:sz w:val=\"26\"/><w:szCs w:val=\"26\"/></w:rPr><w:t xml:space=\"preserve\">All India Institute of Medical Sciences, Guwahati-781101</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/><w:jc w:val=\"center\"/></w:pPr><w:r><w:rPr><w:sz w:val=\"18\"/><w:szCs w:val=\"18\"/></w:rPr><w:t xml:space=\"preserve\">स्वास्थ्य और परिवार कल्याण मंत्रालय, भारत सरकार के तत्वावधान में एक वैधानिक निकाय</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/><w:jc w:val=\"center\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/><w:sz w:val=\"18\"/><w:szCs w:val=\"18\"/></w:rPr><w:t xml:space=\"preserve\">(A statutory body under the aegis of Ministry of Health and Family Welfare, GoI)</w:t></w:r></w:p><w:p><w:pPr><w:pBdr><w:bottom w:val=\"single\" w:sz=\"8\" w:space=\"4\" w:color=\"000000\"/></w:pBdr><w:spacing w:before=\"0\" w:after=\"120\"/><w:jc w:val=\"center\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/></w:rPr><w:t xml:space=\"preserve\">DEPARTMENT OF DIAGNOSTIC &amp; INTERVENTIONAL RADIOLOGY</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"60\" w:after=\"100\"/><w:jc w:val=\"center\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/><w:u w:val=\"single\"/></w:rPr><w:t xml:space=\"preserve\">Report Form</w:t></w:r></w:p><w:tbl><w:tblPr><w:tblW w:w=\"9746\" w:type=\"dxa\"/><w:tblBorders><w:top w:val=\"single\" w:sz=\"4\" w:space=\"0\" w:color=\"000000\"/><w:left w:val=\"single\" w:sz=\"4\" w:space=\"0\" w:color=\"000000\"/><w:bottom w:val=\"single\" w:sz=\"4\" w:space=\"0\" w:color=\"000000\"/><w:right w:val=\"single\" w:sz=\"4\" w:space=\"0\" w:color=\"000000\"/><w:insideH w:val=\"single\" w:sz=\"4\" w:space=\"0\" w:color=\"000000\"/><w:insideV w:val=\"single\" w:sz=\"4\" w:space=\"0\" w:color=\"000000\"/></w:tblBorders><w:tblLayout w:type=\"fixed\"/><w:tblCellMar><w:top w:w=\"50\" w:type=\"dxa\"/><w:left w:w=\"100\" w:type=\"dxa\"/><w:bottom w:w=\"50\" w:type=\"dxa\"/><w:right w:w=\"100\" w:type=\"dxa\"/></w:tblCellMar></w:tblPr><w:tblGrid><w:gridCol w:w=\"3600\"/><w:gridCol w:w=\"2050\"/><w:gridCol w:w=\"2048\"/><w:gridCol w:w=\"2048\"/></w:tblGrid><w:tr><w:tc><w:tcPr><w:tcW w:w=\"3600\" w:type=\"dxa\"/></w:tcPr><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Name: </w:t></w:r><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\">Ramesh Das</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW w:w=\"2050\" w:type=\"dxa\"/></w:tcPr><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">CR No: </w:t></w:r><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\">2610151234</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW w:w=\"2048\" w:type=\"dxa\"/></w:tcPr><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Age/Sex: </w:t></w:r><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\">45/M</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW w:w=\"2048\" w:type=\"dxa\"/></w:tcPr><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">USG No: </w:t></w:r><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\">U-77</w:t></w:r></w:p></w:tc></w:tr><w:tr><w:tc><w:tcPr><w:tcW w:w=\"5650\" w:type=\"dxa\"/><w:gridSpan w:val=\"2\"/></w:tcPr><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Date: </w:t></w:r><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\">15/10/2026</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW w:w=\"4096\" w:type=\"dxa\"/><w:gridSpan w:val=\"2\"/></w:tcPr><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Bill No: </w:t></w:r><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\">B-901</w:t></w:r></w:p></w:tc></w:tr></w:tbl><w:p><w:pPr><w:spacing w:before=\"120\" w:after=\"40\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Referred by: </w:t></w:r><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\">Dr. A. Sharma (Medicine)</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"120\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Clinical Details/Remark: </w:t></w:r><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\">Pain abdomen for 2 weeks</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"60\" w:after=\"120\"/><w:jc w:val=\"center\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:u w:val=\"single\"/></w:rPr><w:t xml:space=\"preserve\">ULTRASOUND WHOLE ABDOMEN (MALE)</w:t></w:r></w:p><w:p><w:pPr><w:keepNext/><w:spacing w:before=\"0\" w:after=\"60\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">FINDINGS:</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"80\"/></w:pPr><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\">Liver is normal in size (span 14.2 cm). Echotexture is normal. Surface is smooth with regular margins. No focal lesion is seen. IHBR are not dilated. Hepatic veins and IVC are normal. Portal vein is normal in calibre (11 mm) with hepatopetal flow.</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"80\"/></w:pPr><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\">Gall bladder is well distended. Wall thickness is normal. Lumen is clear. No pericholecystic fluid.</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"80\"/></w:pPr><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\">CBD is normal in calibre (4 mm) with a clear lumen.</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"80\"/></w:pPr><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\">Pancreas is visualised in entirety. Echotexture and bulk are normal. MPD is not dilated. No focal lesion or collection.</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"80\"/></w:pPr><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\">Spleen is normal in size. Echotexture is normal with no focal lesion. Splenic vein is normal.</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"80\"/></w:pPr><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\">Right kidney measures 10.2 × 4.5 cm. Cortical echogenicity and CMD are normal. No calculus. No hydronephrosis. Ureter is not dilated. No focal lesion or cyst.</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"80\"/></w:pPr><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\">Left kidney measures 10.4 × 4.8 cm. Cortical echogenicity and CMD are normal. No calculus. No hydronephrosis. Ureter is not dilated. No focal lesion or cyst.</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"80\"/></w:pPr><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\">Urinary bladder is adequately distended. Wall is normal. Lumen is clear.</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"80\"/></w:pPr><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\">Prostate is normal in size (volume 18 cc). Echotexture is normal with no median lobe protrusion. Seminal vesicles are normal.</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"80\"/></w:pPr><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\">No free fluid. Aorta and IVC are normal. No pleural effusion. No significant lymphadenopathy. Bowel loops and RIF are normal.</w:t></w:r></w:p><w:p><w:pPr><w:keepNext/><w:spacing w:before=\"160\" w:after=\"60\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/><w:u w:val=\"single\"/></w:rPr><w:t xml:space=\"preserve\">IMPRESSION:</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"40\"/><w:ind w:left=\"360\" w:hanging=\"360\"/></w:pPr><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\">•</w:t></w:r><w:r><w:tab/></w:r><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">No significant abnormality detected on ultrasound of the whole abdomen.</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"420\" w:after=\"0\"/></w:pPr></w:p><w:tbl><w:tblPr><w:tblW w:w=\"9746\" w:type=\"dxa\"/><w:tblLayout w:type=\"fixed\"/><w:tblCellMar><w:top w:w=\"50\" w:type=\"dxa\"/><w:left w:w=\"100\" w:type=\"dxa\"/><w:bottom w:w=\"50\" w:type=\"dxa\"/><w:right w:w=\"100\" w:type=\"dxa\"/></w:tblCellMar></w:tblPr><w:tblGrid><w:gridCol w:w=\"2437\"/><w:gridCol w:w=\"2437\"/><w:gridCol w:w=\"2436\"/><w:gridCol w:w=\"2436\"/></w:tblGrid><w:tr><w:tc><w:tcPr><w:tcW w:w=\"2437\" w:type=\"dxa\"/></w:tcPr><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\">Dr. Pranjal Phukan</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\">Professor</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW w:w=\"2437\" w:type=\"dxa\"/></w:tcPr><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\">Dr. Deb. Kr. Boruah</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\">Additional Professor</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW w:w=\"2436\" w:type=\"dxa\"/></w:tcPr><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Dr. Kalyan Sarma</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Associate Professor</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW w:w=\"2436\" w:type=\"dxa\"/></w:tcPr><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\">Dr. Prince Das</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\">Assistant Professor</w:t></w:r></w:p></w:tc></w:tr></w:tbl><w:p><w:pPr><w:spacing w:before=\"360\" w:after=\"20\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Resident Doctors</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"80\"/></w:pPr><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\">Dr. Sujay Dev</w:t></w:r></w:p><w:sectPr><w:pgSz w:w=\"11906\" w:h=\"16838\"/><w:pgMar w:top=\"850\" w:right=\"1080\" w:bottom=\"850\" w:left=\"1080\" w:header=\"567\" w:footer=\"567\" w:gutter=\"0\"/></w:sectPr></w:body></w:document>"
+  }
+ },
+ {
+  "name": "rest normal leaves kidneys needing values",
+  "expected": {
+   "rows": {
+    "liver.size": {
+     "s": [
+      "N"
+     ],
+     "f": {}
+    },
+    "liver.echo": {
+     "s": [
+      "N"
+     ],
+     "f": {}
+    },
+    "liver.surf": {
+     "s": [
+      "N"
+     ],
+     "f": {}
+    },
+    "liver.fl": {
+     "s": [
+      "No"
+     ],
+     "f": {}
+    },
+    "liver.ihbr": {
+     "s": [
+      "N"
+     ],
+     "f": {}
+    },
+    "liver.hv": {
+     "s": [
+      "N"
+     ],
+     "f": {}
+    },
+    "liver.pv": {
+     "s": [
+      "N"
+     ],
+     "f": {}
+    },
+    "gb.dist": {
+     "s": [
+      "N"
+     ],
+     "f": {}
+    },
+    "gb.wall": {
+     "s": [
+      "N"
+     ],
+     "f": {}
+    },
+    "gb.lumen": {
+     "s": [
+      "N"
+     ],
+     "f": {}
+    },
+    "gb.pcf": {
+     "s": [
+      "No"
+     ],
+     "f": {}
+    },
+    "cbd.cal": {
+     "s": [
+      "N"
+     ],
+     "f": {}
+    },
+    "panc.seen": {
+     "s": [
+      "Head",
+      "Body",
+      "Tail"
+     ],
+     "f": {}
+    },
+    "panc.echo": {
+     "s": [
+      "N"
+     ],
+     "f": {}
+    },
+    "panc.mpd": {
+     "s": [
+      "N"
+     ],
+     "f": {}
+    },
+    "panc.les": {
+     "s": [
+      "No"
+     ],
+     "f": {}
+    },
+    "spl.size": {
+     "s": [
+      "N"
+     ],
+     "f": {}
+    },
+    "spl.echo": {
+     "s": [
+      "N"
+     ],
+     "f": {}
+    },
+    "spl.sv": {
+     "s": [
+      "N"
+     ],
+     "f": {}
+    },
+    "kid.size.R": {
+     "s": [
+      "Measured"
+     ],
+     "f": {}
+    },
+    "kid.cmd.R": {
+     "s": [
+      "N"
+     ],
+     "f": {}
+    },
+    "kid.calc.R": {
+     "s": [
+      "No"
+     ],
+     "f": {}
+    },
+    "kid.hdn.R": {
+     "s": [
+      "No"
+     ],
+     "f": {}
+    },
+    "kid.ure.R": {
+     "s": [
+      "N"
+     ],
+     "f": {}
+    },
+    "kid.les.R": {
+     "s": [
+      "No"
+     ],
+     "f": {}
+    },
+    "kid.size.L": {
+     "s": [
+      "Measured"
+     ],
+     "f": {}
+    },
+    "kid.cmd.L": {
+     "s": [
+      "N"
+     ],
+     "f": {}
+    },
+    "kid.calc.L": {
+     "s": [
+      "No"
+     ],
+     "f": {}
+    },
+    "kid.hdn.L": {
+     "s": [
+      "No"
+     ],
+     "f": {}
+    },
+    "kid.ure.L": {
+     "s": [
+      "N"
+     ],
+     "f": {}
+    },
+    "kid.les.L": {
+     "s": [
+      "No"
+     ],
+     "f": {}
+    },
+    "ub.dist": {
+     "s": [
+      "Adequate"
+     ],
+     "f": {}
+    },
+    "ub.wall": {
+     "s": [
+      "N"
+     ],
+     "f": {}
+    },
+    "ub.lumen": {
+     "s": [
+      "N"
+     ],
+     "f": {}
+    },
+    "ub.pvr": {
+     "s": [
+      "Not done"
+     ],
+     "f": {}
+    },
+    "pro.vol": {
+     "s": [
+      "N"
+     ],
+     "f": {}
+    },
+    "pro.echo": {
+     "s": [
+      "N"
+     ],
+     "f": {}
+    },
+    "pro.sv": {
+     "s": [
+      "N"
+     ],
+     "f": {}
+    },
+    "oth.ff": {
+     "s": [
+      "No"
+     ],
+     "f": {}
+    },
+    "oth.ao": {
+     "s": [
+      "N"
+     ],
+     "f": {}
+    },
+    "oth.pe": {
+     "s": [
+      "No"
+     ],
+     "f": {}
+    },
+    "oth.ln": {
+     "s": [
+      "No"
+     ],
+     "f": {}
+    },
+    "oth.bowel": {
+     "s": [
+      "N"
+     ],
+     "f": {}
+    },
+    "oth.misc": {
+     "s": [
+      "Nil"
+     ],
+     "f": {}
+    }
+   },
+   "text": "ULTRASOUND WHOLE ABDOMEN (MALE)\n\nName: Anil\nDate: 15/10/2026\n\nFINDINGS:\nLiver is normal in size. Echotexture is normal. Surface is smooth with regular margins. No focal lesion is seen. IHBR are not dilated. Hepatic veins and IVC are normal. Portal vein is normal.\nGall bladder is well distended. Wall thickness is normal. Lumen is clear. No pericholecystic fluid.\nCBD is normal in calibre with a clear lumen.\nPancreas is visualised in entirety. Echotexture and bulk are normal. MPD is not dilated. No focal lesion or collection.\nSpleen is normal in size. Echotexture is normal with no focal lesion. Splenic vein is normal.\nRight kidney: Cortical echogenicity and CMD are normal. No calculus. No hydronephrosis. Ureter is not dilated. No focal lesion or cyst.\nLeft kidney: Cortical echogenicity and CMD are normal. No calculus. No hydronephrosis. Ureter is not dilated. No focal lesion or cyst.\nUrinary bladder is adequately distended. Wall is normal. Lumen is clear.\nProstate is normal in size. Echotexture is normal with no median lobe protrusion. Seminal vesicles are normal.\nNo free fluid. Aorta and IVC are normal. No pleural effusion. No significant lymphadenopathy. Bowel loops and RIF are normal.\n\nIMPRESSION:\n- No significant abnormality detected on ultrasound of the whole abdomen.",
+   "impression": [],
+   "findings": [
+    {
+     "g": "liver",
+     "t": "Liver is normal in size. Echotexture is normal. Surface is smooth with regular margins. No focal lesion is seen. IHBR are not dilated. Hepatic veins and IVC are normal. Portal vein is normal."
+    },
+    {
+     "g": "gb",
+     "t": "Gall bladder is well distended. Wall thickness is normal. Lumen is clear. No pericholecystic fluid."
+    },
+    {
+     "g": "cbd",
+     "t": "CBD is normal in calibre with a clear lumen."
+    },
+    {
+     "g": "panc",
+     "t": "Pancreas is visualised in entirety. Echotexture and bulk are normal. MPD is not dilated. No focal lesion or collection."
+    },
+    {
+     "g": "spl",
+     "t": "Spleen is normal in size. Echotexture is normal with no focal lesion. Splenic vein is normal."
+    },
+    {
+     "g": "kid",
+     "t": "Right kidney: Cortical echogenicity and CMD are normal. No calculus. No hydronephrosis. Ureter is not dilated. No focal lesion or cyst."
+    },
+    {
+     "g": "kid",
+     "t": "Left kidney: Cortical echogenicity and CMD are normal. No calculus. No hydronephrosis. Ureter is not dilated. No focal lesion or cyst."
+    },
+    {
+     "g": "ub",
+     "t": "Urinary bladder is adequately distended. Wall is normal. Lumen is clear."
+    },
+    {
+     "g": "pro",
+     "t": "Prostate is normal in size. Echotexture is normal with no median lobe protrusion. Seminal vesicles are normal."
+    },
+    {
+     "g": "oth",
+     "t": "No free fluid. Aorta and IVC are normal. No pleural effusion. No significant lymphadenopathy. Bowel loops and RIF are normal."
+    }
+   ],
+   "counts": {
+    "tot": 44,
+    "done": 42,
+    "per": {
+     "liver": {
+      "t": 7,
+      "d": 7,
+      "a": false
+     },
+     "gb": {
+      "t": 4,
+      "d": 4,
+      "a": false
+     },
+     "cbd": {
+      "t": 1,
+      "d": 1,
+      "a": false
+     },
+     "panc": {
+      "t": 4,
+      "d": 4,
+      "a": false
+     },
+     "spl": {
+      "t": 3,
+      "d": 3,
+      "a": false
+     },
+     "kid": {
+      "t": 12,
+      "d": 10,
+      "a": false
+     },
+     "ub": {
+      "t": 4,
+      "d": 4,
+      "a": false
+     },
+     "pro": {
+      "t": 3,
+      "d": 3,
+      "a": false
+     },
+     "oth": {
+      "t": 6,
+      "d": 6,
+      "a": false
+     }
+    }
+   },
+   "docx": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><w:document xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" xmlns:r=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships\" xmlns:wp=\"http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing\"><w:body><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/><w:jc w:val=\"center\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/><w:sz w:val=\"26\"/><w:szCs w:val=\"26\"/></w:rPr><w:t xml:space=\"preserve\">अखिल भारतीय आयुर्विज्ञान संस्थान (एम्स), गुवाहाटी</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/><w:jc w:val=\"center\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/><w:sz w:val=\"26\"/><w:szCs w:val=\"26\"/></w:rPr><w:t xml:space=\"preserve\">All India Institute of Medical Sciences, Guwahati-781101</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/><w:jc w:val=\"center\"/></w:pPr><w:r><w:rPr><w:sz w:val=\"18\"/><w:szCs w:val=\"18\"/></w:rPr><w:t xml:space=\"preserve\">स्वास्थ्य और परिवार कल्याण मंत्रालय, भारत सरकार के तत्वावधान में एक वैधानिक निकाय</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/><w:jc w:val=\"center\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/><w:sz w:val=\"18\"/><w:szCs w:val=\"18\"/></w:rPr><w:t xml:space=\"preserve\">(A statutory body under the aegis of Ministry of Health and Family Welfare, GoI)</w:t></w:r></w:p><w:p><w:pPr><w:pBdr><w:bottom w:val=\"single\" w:sz=\"8\" w:space=\"4\" w:color=\"000000\"/></w:pBdr><w:spacing w:before=\"0\" w:after=\"120\"/><w:jc w:val=\"center\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/></w:rPr><w:t xml:space=\"preserve\">DEPARTMENT OF DIAGNOSTIC &amp; INTERVENTIONAL RADIOLOGY</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"60\" w:after=\"100\"/><w:jc w:val=\"center\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/><w:u w:val=\"single\"/></w:rPr><w:t xml:space=\"preserve\">Report Form</w:t></w:r></w:p><w:tbl><w:tblPr><w:tblW w:w=\"9746\" w:type=\"dxa\"/><w:tblBorders><w:top w:val=\"single\" w:sz=\"4\" w:space=\"0\" w:color=\"000000\"/><w:left w:val=\"single\" w:sz=\"4\" w:space=\"0\" w:color=\"000000\"/><w:bottom w:val=\"single\" w:sz=\"4\" w:space=\"0\" w:color=\"000000\"/><w:right w:val=\"single\" w:sz=\"4\" w:space=\"0\" w:color=\"000000\"/><w:insideH w:val=\"single\" w:sz=\"4\" w:space=\"0\" w:color=\"000000\"/><w:insideV w:val=\"single\" w:sz=\"4\" w:space=\"0\" w:color=\"000000\"/></w:tblBorders><w:tblLayout w:type=\"fixed\"/><w:tblCellMar><w:top w:w=\"50\" w:type=\"dxa\"/><w:left w:w=\"100\" w:type=\"dxa\"/><w:bottom w:w=\"50\" w:type=\"dxa\"/><w:right w:w=\"100\" w:type=\"dxa\"/></w:tblCellMar></w:tblPr><w:tblGrid><w:gridCol w:w=\"3600\"/><w:gridCol w:w=\"2050\"/><w:gridCol w:w=\"2048\"/><w:gridCol w:w=\"2048\"/></w:tblGrid><w:tr><w:tc><w:tcPr><w:tcW w:w=\"3600\" w:type=\"dxa\"/></w:tcPr><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Name: </w:t></w:r><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\">Anil</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW w:w=\"2050\" w:type=\"dxa\"/></w:tcPr><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">CR No: </w:t></w:r><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\"></w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW w:w=\"2048\" w:type=\"dxa\"/></w:tcPr><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Age/Sex: </w:t></w:r><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\">/M</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW w:w=\"2048\" w:type=\"dxa\"/></w:tcPr><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">USG No: </w:t></w:r><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\"></w:t></w:r></w:p></w:tc></w:tr><w:tr><w:tc><w:tcPr><w:tcW w:w=\"5650\" w:type=\"dxa\"/><w:gridSpan w:val=\"2\"/></w:tcPr><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Date: </w:t></w:r><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\">15/10/2026</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW w:w=\"4096\" w:type=\"dxa\"/><w:gridSpan w:val=\"2\"/></w:tcPr><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Bill No: </w:t></w:r><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\"></w:t></w:r></w:p></w:tc></w:tr></w:tbl><w:p><w:pPr><w:spacing w:before=\"120\" w:after=\"40\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Referred by: </w:t></w:r><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\"></w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"120\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Clinical Details/Remark: </w:t></w:r><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\"></w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"60\" w:after=\"120\"/><w:jc w:val=\"center\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:u w:val=\"single\"/></w:rPr><w:t xml:space=\"preserve\">ULTRASOUND WHOLE ABDOMEN (MALE)</w:t></w:r></w:p><w:p><w:pPr><w:keepNext/><w:spacing w:before=\"0\" w:after=\"60\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">FINDINGS:</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"80\"/></w:pPr><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\">Liver is normal in size. Echotexture is normal. Surface is smooth with regular margins. No focal lesion is seen. IHBR are not dilated. Hepatic veins and IVC are normal. Portal vein is normal.</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"80\"/></w:pPr><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\">Gall bladder is well distended. Wall thickness is normal. Lumen is clear. No pericholecystic fluid.</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"80\"/></w:pPr><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\">CBD is normal in calibre with a clear lumen.</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"80\"/></w:pPr><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\">Pancreas is visualised in entirety. Echotexture and bulk are normal. MPD is not dilated. No focal lesion or collection.</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"80\"/></w:pPr><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\">Spleen is normal in size. Echotexture is normal with no focal lesion. Splenic vein is normal.</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"80\"/></w:pPr><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\">Right kidney: Cortical echogenicity and CMD are normal. No calculus. No hydronephrosis. Ureter is not dilated. No focal lesion or cyst.</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"80\"/></w:pPr><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\">Left kidney: Cortical echogenicity and CMD are normal. No calculus. No hydronephrosis. Ureter is not dilated. No focal lesion or cyst.</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"80\"/></w:pPr><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\">Urinary bladder is adequately distended. Wall is normal. Lumen is clear.</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"80\"/></w:pPr><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\">Prostate is normal in size. Echotexture is normal with no median lobe protrusion. Seminal vesicles are normal.</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"80\"/></w:pPr><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\">No free fluid. Aorta and IVC are normal. No pleural effusion. No significant lymphadenopathy. Bowel loops and RIF are normal.</w:t></w:r></w:p><w:p><w:pPr><w:keepNext/><w:spacing w:before=\"160\" w:after=\"60\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/><w:u w:val=\"single\"/></w:rPr><w:t xml:space=\"preserve\">IMPRESSION:</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"40\"/><w:ind w:left=\"360\" w:hanging=\"360\"/></w:pPr><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\">•</w:t></w:r><w:r><w:tab/></w:r><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">No significant abnormality detected on ultrasound of the whole abdomen.</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"420\" w:after=\"0\"/></w:pPr></w:p><w:tbl><w:tblPr><w:tblW w:w=\"9746\" w:type=\"dxa\"/><w:tblLayout w:type=\"fixed\"/><w:tblCellMar><w:top w:w=\"50\" w:type=\"dxa\"/><w:left w:w=\"100\" w:type=\"dxa\"/><w:bottom w:w=\"50\" w:type=\"dxa\"/><w:right w:w=\"100\" w:type=\"dxa\"/></w:tblCellMar></w:tblPr><w:tblGrid><w:gridCol w:w=\"2437\"/><w:gridCol w:w=\"2437\"/><w:gridCol w:w=\"2436\"/><w:gridCol w:w=\"2436\"/></w:tblGrid><w:tr><w:tc><w:tcPr><w:tcW w:w=\"2437\" w:type=\"dxa\"/></w:tcPr><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Dr. Pranjal Phukan</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Professor</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW w:w=\"2437\" w:type=\"dxa\"/></w:tcPr><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Dr. Deb. Kr. Boruah</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Additional Professor</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW w:w=\"2436\" w:type=\"dxa\"/></w:tcPr><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Dr. Kalyan Sarma</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Associate Professor</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW w:w=\"2436\" w:type=\"dxa\"/></w:tcPr><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Dr. Prince Das</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Assistant Professor</w:t></w:r></w:p></w:tc></w:tr></w:tbl><w:p><w:pPr><w:spacing w:before=\"360\" w:after=\"20\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Resident Doctors</w:t></w:r></w:p><w:sectPr><w:pgSz w:w=\"11906\" w:h=\"16838\"/><w:pgMar w:top=\"850\" w:right=\"1080\" w:bottom=\"850\" w:left=\"1080\" w:header=\"567\" w:footer=\"567\" w:gutter=\"0\"/></w:sectPr></w:body></w:document>"
+  }
+ },
+ {
+  "name": "chronic liver disease with portal hypertension",
+  "expected": {
+   "rows": {
+    "liver.size": {
+     "s": [
+      "Shrunken"
+     ],
+     "f": {
+      "span": "11"
+     }
+    },
+    "liver.echo": {
+     "s": [
+      "Coarse"
+     ],
+     "f": {}
+    },
+    "liver.surf": {
+     "s": [
+      "Nodular"
+     ],
+     "f": {}
+    },
+    "liver.fl": {
+     "s": [
+      "Yes"
+     ],
+     "f": {
+      "nat": "Echogenic",
+      "seg": "VI",
+      "size": "2.1 × 1.8 cm"
+     }
+    },
+    "liver.pv": {
+     "s": [
+      "Abnormal"
+     ],
+     "f": {
+      "t": "dilated",
+      "d": "14",
+      "flow": "Hepatofugal"
+     }
+    },
+    "spl.size": {
+     "s": [
+      "Enlarged"
+     ],
+     "f": {
+      "cm": "15.5"
+     }
+    },
+    "spl.sv": {
+     "s": [
+      "Abnormal"
+     ],
+     "f": {
+      "t": "dilated, 12 mm"
+     }
+    },
+    "oth.ff": {
+     "s": [
+      "Moderate"
+     ],
+     "f": {
+      "site": "perihepatic and pelvic"
+     }
+    },
+    "oth.pe": {
+     "s": [
+      "Right",
+      "Left"
+     ],
+     "f": {}
+    },
+    "gb.dist": {
+     "s": [
+      "Post-cholecystectomy"
+     ],
+     "f": {}
+    },
+    "liver.ihbr": {
+     "s": [
+      "N"
+     ],
+     "f": {}
+    },
+    "liver.hv": {
+     "s": [
+      "N"
+     ],
+     "f": {}
+    },
+    "cbd.cal": {
+     "s": [
+      "N"
+     ],
+     "f": {}
+    },
+    "panc.seen": {
+     "s": [
+      "Head",
+      "Body",
+      "Tail"
+     ],
+     "f": {}
+    },
+    "panc.echo": {
+     "s": [
+      "N"
+     ],
+     "f": {}
+    },
+    "panc.mpd": {
+     "s": [
+      "N"
+     ],
+     "f": {}
+    },
+    "panc.les": {
+     "s": [
+      "No"
+     ],
+     "f": {}
+    },
+    "spl.echo": {
+     "s": [
+      "N"
+     ],
+     "f": {}
+    },
+    "kid.size.R": {
+     "s": [
+      "Measured"
+     ],
+     "f": {
+      "L": "10",
+      "W": "4.6"
+     }
+    },
+    "kid.cmd.R": {
+     "s": [
+      "N"
+     ],
+     "f": {}
+    },
+    "kid.calc.R": {
+     "s": [
+      "No"
+     ],
+     "f": {}
+    },
+    "kid.hdn.R": {
+     "s": [
+      "No"
+     ],
+     "f": {}
+    },
+    "kid.ure.R": {
+     "s": [
+      "N"
+     ],
+     "f": {}
+    },
+    "kid.les.R": {
+     "s": [
+      "No"
+     ],
+     "f": {}
+    },
+    "kid.size.L": {
+     "s": [
+      "Measured"
+     ],
+     "f": {
+      "L": "10.1",
+      "W": "4.4"
+     }
+    },
+    "kid.cmd.L": {
+     "s": [
+      "N"
+     ],
+     "f": {}
+    },
+    "kid.calc.L": {
+     "s": [
+      "No"
+     ],
+     "f": {}
+    },
+    "kid.hdn.L": {
+     "s": [
+      "No"
+     ],
+     "f": {}
+    },
+    "kid.ure.L": {
+     "s": [
+      "N"
+     ],
+     "f": {}
+    },
+    "kid.les.L": {
+     "s": [
+      "No"
+     ],
+     "f": {}
+    },
+    "ub.dist": {
+     "s": [
+      "Adequate"
+     ],
+     "f": {}
+    },
+    "ub.wall": {
+     "s": [
+      "N"
+     ],
+     "f": {}
+    },
+    "ub.lumen": {
+     "s": [
+      "N"
+     ],
+     "f": {}
+    },
+    "ub.pvr": {
+     "s": [
+      "Not done"
+     ],
+     "f": {}
+    },
+    "pro.vol": {
+     "s": [
+      "N"
+     ],
+     "f": {}
+    },
+    "pro.echo": {
+     "s": [
+      "N"
+     ],
+     "f": {}
+    },
+    "pro.sv": {
+     "s": [
+      "N"
+     ],
+     "f": {}
+    },
+    "oth.ao": {
+     "s": [
+      "N"
+     ],
+     "f": {}
+    },
+    "oth.ln": {
+     "s": [
+      "No"
+     ],
+     "f": {}
+    },
+    "oth.bowel": {
+     "s": [
+      "N"
+     ],
+     "f": {}
+    },
+    "oth.misc": {
+     "s": [
+      "Nil"
+     ],
+     "f": {}
+    }
+   },
+   "text": "ULTRASOUND WHOLE ABDOMEN (MALE)\n\nName: Bipul Kalita    Age/Sex: 52/M\nDate: 15/10/2026\n\nFINDINGS:\nLiver is shrunken (span 11 cm). Echotexture is coarse. Surface is nodular. An echogenic focal lesion is seen in segment VI measuring 2.1 × 1.8 cm. IHBR are not dilated. Hepatic veins and IVC are normal. Portal vein: dilated, calibre 14 mm, hepatofugal flow.\nGall bladder is not visualised (post-cholecystectomy status).\nCBD is normal in calibre with a clear lumen.\nPancreas is visualised in entirety. Echotexture and bulk are normal. MPD is not dilated. No focal lesion or collection.\nSpleen is enlarged (15.5 cm). Echotexture is normal with no focal lesion. Splenic vein: dilated, 12 mm.\nRight kidney measures 10 × 4.6 cm. Cortical echogenicity and CMD are normal. No calculus. No hydronephrosis. Ureter is not dilated. No focal lesion or cyst.\nLeft kidney measures 10.1 × 4.4 cm. Cortical echogenicity and CMD are normal. No calculus. No hydronephrosis. Ureter is not dilated. No focal lesion or cyst.\nUrinary bladder is adequately distended. Wall is normal. Lumen is clear.\nProstate is normal in size. Echotexture is normal with no median lobe protrusion. Seminal vesicles are normal.\nModerate free fluid in the perihepatic and pelvic. Aorta and IVC are normal. Bilateral pleural effusion. No significant lymphadenopathy. Bowel loops and RIF are normal.\n\nIMPRESSION:\n- Shrunken liver with coarse echotexture, nodular surface, echogenic focal hepatic lesion in segment VI and portal vein dilated.\n- Post-cholecystectomy status.\n- Splenomegaly with splenic vein dilated, 12 mm.\n- Moderate free fluid in the perihepatic and pelvic.\n- Bilateral pleural effusion.\n\nAdvice: Correlate with LFT.\n\nDr. Pranjal Phukan, Professor",
+   "impression": [
+    "Shrunken liver with coarse echotexture, nodular surface, echogenic focal hepatic lesion in segment VI and portal vein dilated.",
+    "Post-cholecystectomy status.",
+    "Splenomegaly with splenic vein dilated, 12 mm.",
+    "Moderate free fluid in the perihepatic and pelvic.",
+    "Bilateral pleural effusion."
+   ],
+   "findings": [
+    {
+     "g": "liver",
+     "t": "Liver is shrunken (span 11 cm). Echotexture is coarse. Surface is nodular. An echogenic focal lesion is seen in segment VI measuring 2.1 × 1.8 cm. IHBR are not dilated. Hepatic veins and IVC are normal. Portal vein: dilated, calibre 14 mm, hepatofugal flow."
+    },
+    {
+     "g": "gb",
+     "t": "Gall bladder is not visualised (post-cholecystectomy status)."
+    },
+    {
+     "g": "cbd",
+     "t": "CBD is normal in calibre with a clear lumen."
+    },
+    {
+     "g": "panc",
+     "t": "Pancreas is visualised in entirety. Echotexture and bulk are normal. MPD is not dilated. No focal lesion or collection."
+    },
+    {
+     "g": "spl",
+     "t": "Spleen is enlarged (15.5 cm). Echotexture is normal with no focal lesion. Splenic vein: dilated, 12 mm."
+    },
+    {
+     "g": "kid",
+     "t": "Right kidney measures 10 × 4.6 cm. Cortical echogenicity and CMD are normal. No calculus. No hydronephrosis. Ureter is not dilated. No focal lesion or cyst."
+    },
+    {
+     "g": "kid",
+     "t": "Left kidney measures 10.1 × 4.4 cm. Cortical echogenicity and CMD are normal. No calculus. No hydronephrosis. Ureter is not dilated. No focal lesion or cyst."
+    },
+    {
+     "g": "ub",
+     "t": "Urinary bladder is adequately distended. Wall is normal. Lumen is clear."
+    },
+    {
+     "g": "pro",
+     "t": "Prostate is normal in size. Echotexture is normal with no median lobe protrusion. Seminal vesicles are normal."
+    },
+    {
+     "g": "oth",
+     "t": "Moderate free fluid in the perihepatic and pelvic. Aorta and IVC are normal. Bilateral pleural effusion. No significant lymphadenopathy. Bowel loops and RIF are normal."
+    }
+   ],
+   "counts": {
+    "tot": 41,
+    "done": 41,
+    "per": {
+     "liver": {
+      "t": 7,
+      "d": 7,
+      "a": true
+     },
+     "gb": {
+      "t": 1,
+      "d": 1,
+      "a": true
+     },
+     "cbd": {
+      "t": 1,
+      "d": 1,
+      "a": false
+     },
+     "panc": {
+      "t": 4,
+      "d": 4,
+      "a": false
+     },
+     "spl": {
+      "t": 3,
+      "d": 3,
+      "a": true
+     },
+     "kid": {
+      "t": 12,
+      "d": 12,
+      "a": false
+     },
+     "ub": {
+      "t": 4,
+      "d": 4,
+      "a": false
+     },
+     "pro": {
+      "t": 3,
+      "d": 3,
+      "a": false
+     },
+     "oth": {
+      "t": 6,
+      "d": 6,
+      "a": true
+     }
+    }
+   },
+   "docx": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><w:document xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" xmlns:r=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships\" xmlns:wp=\"http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing\"><w:body><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/><w:jc w:val=\"center\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/><w:sz w:val=\"26\"/><w:szCs w:val=\"26\"/></w:rPr><w:t xml:space=\"preserve\">अखिल भारतीय आयुर्विज्ञान संस्थान (एम्स), गुवाहाटी</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/><w:jc w:val=\"center\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/><w:sz w:val=\"26\"/><w:szCs w:val=\"26\"/></w:rPr><w:t xml:space=\"preserve\">All India Institute of Medical Sciences, Guwahati-781101</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/><w:jc w:val=\"center\"/></w:pPr><w:r><w:rPr><w:sz w:val=\"18\"/><w:szCs w:val=\"18\"/></w:rPr><w:t xml:space=\"preserve\">स्वास्थ्य और परिवार कल्याण मंत्रालय, भारत सरकार के तत्वावधान में एक वैधानिक निकाय</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/><w:jc w:val=\"center\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/><w:sz w:val=\"18\"/><w:szCs w:val=\"18\"/></w:rPr><w:t xml:space=\"preserve\">(A statutory body under the aegis of Ministry of Health and Family Welfare, GoI)</w:t></w:r></w:p><w:p><w:pPr><w:pBdr><w:bottom w:val=\"single\" w:sz=\"8\" w:space=\"4\" w:color=\"000000\"/></w:pBdr><w:spacing w:before=\"0\" w:after=\"120\"/><w:jc w:val=\"center\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/></w:rPr><w:t xml:space=\"preserve\">DEPARTMENT OF DIAGNOSTIC &amp; INTERVENTIONAL RADIOLOGY</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"60\" w:after=\"100\"/><w:jc w:val=\"center\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/><w:u w:val=\"single\"/></w:rPr><w:t xml:space=\"preserve\">Report Form</w:t></w:r></w:p><w:tbl><w:tblPr><w:tblW w:w=\"9746\" w:type=\"dxa\"/><w:tblBorders><w:top w:val=\"single\" w:sz=\"4\" w:space=\"0\" w:color=\"000000\"/><w:left w:val=\"single\" w:sz=\"4\" w:space=\"0\" w:color=\"000000\"/><w:bottom w:val=\"single\" w:sz=\"4\" w:space=\"0\" w:color=\"000000\"/><w:right w:val=\"single\" w:sz=\"4\" w:space=\"0\" w:color=\"000000\"/><w:insideH w:val=\"single\" w:sz=\"4\" w:space=\"0\" w:color=\"000000\"/><w:insideV w:val=\"single\" w:sz=\"4\" w:space=\"0\" w:color=\"000000\"/></w:tblBorders><w:tblLayout w:type=\"fixed\"/><w:tblCellMar><w:top w:w=\"50\" w:type=\"dxa\"/><w:left w:w=\"100\" w:type=\"dxa\"/><w:bottom w:w=\"50\" w:type=\"dxa\"/><w:right w:w=\"100\" w:type=\"dxa\"/></w:tblCellMar></w:tblPr><w:tblGrid><w:gridCol w:w=\"3600\"/><w:gridCol w:w=\"2050\"/><w:gridCol w:w=\"2048\"/><w:gridCol w:w=\"2048\"/></w:tblGrid><w:tr><w:tc><w:tcPr><w:tcW w:w=\"3600\" w:type=\"dxa\"/></w:tcPr><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Name: </w:t></w:r><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\">Bipul Kalita</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW w:w=\"2050\" w:type=\"dxa\"/></w:tcPr><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">CR No: </w:t></w:r><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\"></w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW w:w=\"2048\" w:type=\"dxa\"/></w:tcPr><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Age/Sex: </w:t></w:r><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\">52/M</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW w:w=\"2048\" w:type=\"dxa\"/></w:tcPr><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">USG No: </w:t></w:r><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\"></w:t></w:r></w:p></w:tc></w:tr><w:tr><w:tc><w:tcPr><w:tcW w:w=\"5650\" w:type=\"dxa\"/><w:gridSpan w:val=\"2\"/></w:tcPr><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Date: </w:t></w:r><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\">15/10/2026</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW w:w=\"4096\" w:type=\"dxa\"/><w:gridSpan w:val=\"2\"/></w:tcPr><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Bill No: </w:t></w:r><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\"></w:t></w:r></w:p></w:tc></w:tr></w:tbl><w:p><w:pPr><w:spacing w:before=\"120\" w:after=\"40\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Referred by: </w:t></w:r><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\"></w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"120\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Clinical Details/Remark: </w:t></w:r><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\"></w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"60\" w:after=\"120\"/><w:jc w:val=\"center\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:u w:val=\"single\"/></w:rPr><w:t xml:space=\"preserve\">ULTRASOUND WHOLE ABDOMEN (MALE)</w:t></w:r></w:p><w:p><w:pPr><w:keepNext/><w:spacing w:before=\"0\" w:after=\"60\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">FINDINGS:</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"80\"/></w:pPr><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\">Liver is shrunken (span 11 cm). Echotexture is coarse. Surface is nodular. An echogenic focal lesion is seen in segment VI measuring 2.1 × 1.8 cm. IHBR are not dilated. Hepatic veins and IVC are normal. Portal vein: dilated, calibre 14 mm, hepatofugal flow.</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"80\"/></w:pPr><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\">Gall bladder is not visualised (post-cholecystectomy status).</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"80\"/></w:pPr><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\">CBD is normal in calibre with a clear lumen.</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"80\"/></w:pPr><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\">Pancreas is visualised in entirety. Echotexture and bulk are normal. MPD is not dilated. No focal lesion or collection.</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"80\"/></w:pPr><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\">Spleen is enlarged (15.5 cm). Echotexture is normal with no focal lesion. Splenic vein: dilated, 12 mm.</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"80\"/></w:pPr><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\">Right kidney measures 10 × 4.6 cm. Cortical echogenicity and CMD are normal. No calculus. No hydronephrosis. Ureter is not dilated. No focal lesion or cyst.</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"80\"/></w:pPr><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\">Left kidney measures 10.1 × 4.4 cm. Cortical echogenicity and CMD are normal. No calculus. No hydronephrosis. Ureter is not dilated. No focal lesion or cyst.</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"80\"/></w:pPr><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\">Urinary bladder is adequately distended. Wall is normal. Lumen is clear.</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"80\"/></w:pPr><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\">Prostate is normal in size. Echotexture is normal with no median lobe protrusion. Seminal vesicles are normal.</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"80\"/></w:pPr><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\">Moderate free fluid in the perihepatic and pelvic. Aorta and IVC are normal. Bilateral pleural effusion. No significant lymphadenopathy. Bowel loops and RIF are normal.</w:t></w:r></w:p><w:p><w:pPr><w:keepNext/><w:spacing w:before=\"160\" w:after=\"60\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/><w:u w:val=\"single\"/></w:rPr><w:t xml:space=\"preserve\">IMPRESSION:</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"40\"/><w:ind w:left=\"360\" w:hanging=\"360\"/></w:pPr><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\">•</w:t></w:r><w:r><w:tab/></w:r><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Shrunken liver with coarse echotexture, nodular surface, echogenic focal hepatic lesion in segment VI and portal vein dilated.</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"40\"/><w:ind w:left=\"360\" w:hanging=\"360\"/></w:pPr><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\">•</w:t></w:r><w:r><w:tab/></w:r><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Post-cholecystectomy status.</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"40\"/><w:ind w:left=\"360\" w:hanging=\"360\"/></w:pPr><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\">•</w:t></w:r><w:r><w:tab/></w:r><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Splenomegaly with splenic vein dilated, 12 mm.</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"40\"/><w:ind w:left=\"360\" w:hanging=\"360\"/></w:pPr><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\">•</w:t></w:r><w:r><w:tab/></w:r><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Moderate free fluid in the perihepatic and pelvic.</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"40\"/><w:ind w:left=\"360\" w:hanging=\"360\"/></w:pPr><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\">•</w:t></w:r><w:r><w:tab/></w:r><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Bilateral pleural effusion.</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"160\" w:after=\"80\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Advice: </w:t></w:r><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\">Correlate with LFT.</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"420\" w:after=\"0\"/></w:pPr></w:p><w:tbl><w:tblPr><w:tblW w:w=\"9746\" w:type=\"dxa\"/><w:tblLayout w:type=\"fixed\"/><w:tblCellMar><w:top w:w=\"50\" w:type=\"dxa\"/><w:left w:w=\"100\" w:type=\"dxa\"/><w:bottom w:w=\"50\" w:type=\"dxa\"/><w:right w:w=\"100\" w:type=\"dxa\"/></w:tblCellMar></w:tblPr><w:tblGrid><w:gridCol w:w=\"2437\"/><w:gridCol w:w=\"2437\"/><w:gridCol w:w=\"2436\"/><w:gridCol w:w=\"2436\"/></w:tblGrid><w:tr><w:tc><w:tcPr><w:tcW w:w=\"2437\" w:type=\"dxa\"/></w:tcPr><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Dr. Pranjal Phukan</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Professor</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW w:w=\"2437\" w:type=\"dxa\"/></w:tcPr><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\">Dr. Deb. Kr. Boruah</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\">Additional Professor</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW w:w=\"2436\" w:type=\"dxa\"/></w:tcPr><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\">Dr. Kalyan Sarma</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\">Associate Professor</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW w:w=\"2436\" w:type=\"dxa\"/></w:tcPr><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\">Dr. Prince Das</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\">Assistant Professor</w:t></w:r></w:p></w:tc></w:tr></w:tbl><w:p><w:pPr><w:spacing w:before=\"360\" w:after=\"20\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Resident Doctors</w:t></w:r></w:p><w:sectPr><w:pgSz w:w=\"11906\" w:h=\"16838\"/><w:pgMar w:top=\"850\" w:right=\"1080\" w:bottom=\"850\" w:left=\"1080\" w:header=\"567\" w:footer=\"567\" w:gutter=\"0\"/></w:sectPr></w:body></w:document>"
+  }
+ },
+ {
+  "name": "fatty liver grade, gallstones, sludge, exclusive lumen chip",
+  "expected": {
+   "rows": {
+    "liver.echo": {
+     "s": [
+      "Fatty"
+     ],
+     "f": {
+      "g": "II"
+     }
+    },
+    "gb.lumen": {
+     "s": [
+      "Calculus",
+      "Sludge"
+     ],
+     "f": {
+      "num": "Multiple",
+      "mm": "8"
+     }
+    },
+    "gb.wall": {
+     "s": [
+      "Thick"
+     ],
+     "f": {
+      "mm": "4.5"
+     }
+    },
+    "cbd.cal": {
+     "s": [
+      "Dilated",
+      "Calculus"
+     ],
+     "f": {
+      "mm": "8"
+     }
+    },
+    "liver.size": {
+     "s": [
+      "N"
+     ],
+     "f": {}
+    },
+    "liver.surf": {
+     "s": [
+      "N"
+     ],
+     "f": {}
+    },
+    "liver.fl": {
+     "s": [
+      "No"
+     ],
+     "f": {}
+    },
+    "liver.ihbr": {
+     "s": [
+      "N"
+     ],
+     "f": {}
+    },
+    "liver.hv": {
+     "s": [
+      "N"
+     ],
+     "f": {}
+    },
+    "liver.pv": {
+     "s": [
+      "N"
+     ],
+     "f": {}
+    },
+    "gb.dist": {
+     "s": [
+      "N"
+     ],
+     "f": {}
+    },
+    "gb.pcf": {
+     "s": [
+      "No"
+     ],
+     "f": {}
+    },
+    "panc.seen": {
+     "s": [
+      "Head",
+      "Body",
+      "Tail"
+     ],
+     "f": {}
+    },
+    "panc.echo": {
+     "s": [
+      "N"
+     ],
+     "f": {}
+    },
+    "panc.mpd": {
+     "s": [
+      "N"
+     ],
+     "f": {}
+    },
+    "panc.les": {
+     "s": [
+      "No"
+     ],
+     "f": {}
+    },
+    "spl.size": {
+     "s": [
+      "N"
+     ],
+     "f": {}
+    },
+    "spl.echo": {
+     "s": [
+      "N"
+     ],
+     "f": {}
+    },
+    "spl.sv": {
+     "s": [
+      "N"
+     ],
+     "f": {}
+    },
+    "kid.size.R": {
+     "s": [
+      "Measured"
+     ],
+     "f": {
+      "L": "9.8",
+      "W": "4.2"
+     }
+    },
+    "kid.cmd.R": {
+     "s": [
+      "N"
+     ],
+     "f": {}
+    },
+    "kid.calc.R": {
+     "s": [
+      "No"
+     ],
+     "f": {}
+    },
+    "kid.hdn.R": {
+     "s": [
+      "No"
+     ],
+     "f": {}
+    },
+    "kid.ure.R": {
+     "s": [
+      "N"
+     ],
+     "f": {}
+    },
+    "kid.les.R": {
+     "s": [
+      "No"
+     ],
+     "f": {}
+    },
+    "kid.size.L": {
+     "s": [
+      "Measured"
+     ],
+     "f": {
+      "L": "9.9",
+      "W": "4.3"
+     }
+    },
+    "kid.cmd.L": {
+     "s": [
+      "N"
+     ],
+     "f": {}
+    },
+    "kid.calc.L": {
+     "s": [
+      "No"
+     ],
+     "f": {}
+    },
+    "kid.hdn.L": {
+     "s": [
+      "No"
+     ],
+     "f": {}
+    },
+    "kid.ure.L": {
+     "s": [
+      "N"
+     ],
+     "f": {}
+    },
+    "kid.les.L": {
+     "s": [
+      "No"
+     ],
+     "f": {}
+    },
+    "ub.dist": {
+     "s": [
+      "Adequate"
+     ],
+     "f": {}
+    },
+    "ub.wall": {
+     "s": [
+      "N"
+     ],
+     "f": {}
+    },
+    "ub.lumen": {
+     "s": [
+      "N"
+     ],
+     "f": {}
+    },
+    "ub.pvr": {
+     "s": [
+      "Not done"
+     ],
+     "f": {}
+    },
+    "oth.ff": {
+     "s": [
+      "No"
+     ],
+     "f": {}
+    },
+    "oth.ao": {
+     "s": [
+      "N"
+     ],
+     "f": {}
+    },
+    "oth.pe": {
+     "s": [
+      "No"
+     ],
+     "f": {}
+    },
+    "oth.ln": {
+     "s": [
+      "No"
+     ],
+     "f": {}
+    },
+    "oth.bowel": {
+     "s": [
+      "N"
+     ],
+     "f": {}
+    },
+    "oth.misc": {
+     "s": [
+      "Nil"
+     ],
+     "f": {}
+    }
+   },
+   "text": "ULTRASOUND WHOLE ABDOMEN (FEMALE)\n\nName: Mousumi Bora    Age/Sex: 38/F\nDate: 15/10/2026\n\nFINDINGS:\nLiver is normal in size. Echotexture shows grade II fatty infiltration. Surface is smooth with regular margins. No focal lesion is seen. IHBR are not dilated. Hepatic veins and IVC are normal. Portal vein is normal.\nGall bladder is well distended. Wall is thickened (4.5 mm). Calculus is seen in the lumen (multiple), measuring 8 mm. Sludge is seen. No pericholecystic fluid.\nCBD is dilated (8 mm). Calculus is seen in the CBD.\nPancreas is visualised in entirety. Echotexture and bulk are normal. MPD is not dilated. No focal lesion or collection.\nSpleen is normal in size. Echotexture is normal with no focal lesion. Splenic vein is normal.\nRight kidney measures 9.8 × 4.2 cm. Cortical echogenicity and CMD are normal. No calculus. No hydronephrosis. Ureter is not dilated. No focal lesion or cyst.\nLeft kidney measures 9.9 × 4.3 cm. Cortical echogenicity and CMD are normal. No calculus. No hydronephrosis. Ureter is not dilated. No focal lesion or cyst.\nUrinary bladder is adequately distended. Wall is normal. Lumen is clear.\nNo free fluid. Aorta and IVC are normal. No pleural effusion. No significant lymphadenopathy. Bowel loops and RIF are normal.\n\nIMPRESSION:\n- Grade II fatty liver.\n- Gall bladder wall thickening with cholelithiasis and sludge.\n- Dilated CBD with choledocholithiasis.",
+   "impression": [
+    "Grade II fatty liver.",
+    "Gall bladder wall thickening with cholelithiasis and sludge.",
+    "Dilated CBD with choledocholithiasis."
+   ],
+   "findings": [
+    {
+     "g": "liver",
+     "t": "Liver is normal in size. Echotexture shows grade II fatty infiltration. Surface is smooth with regular margins. No focal lesion is seen. IHBR are not dilated. Hepatic veins and IVC are normal. Portal vein is normal."
+    },
+    {
+     "g": "gb",
+     "t": "Gall bladder is well distended. Wall is thickened (4.5 mm). Calculus is seen in the lumen (multiple), measuring 8 mm. Sludge is seen. No pericholecystic fluid."
+    },
+    {
+     "g": "cbd",
+     "t": "CBD is dilated (8 mm). Calculus is seen in the CBD."
+    },
+    {
+     "g": "panc",
+     "t": "Pancreas is visualised in entirety. Echotexture and bulk are normal. MPD is not dilated. No focal lesion or collection."
+    },
+    {
+     "g": "spl",
+     "t": "Spleen is normal in size. Echotexture is normal with no focal lesion. Splenic vein is normal."
+    },
+    {
+     "g": "kid",
+     "t": "Right kidney measures 9.8 × 4.2 cm. Cortical echogenicity and CMD are normal. No calculus. No hydronephrosis. Ureter is not dilated. No focal lesion or cyst."
+    },
+    {
+     "g": "kid",
+     "t": "Left kidney measures 9.9 × 4.3 cm. Cortical echogenicity and CMD are normal. No calculus. No hydronephrosis. Ureter is not dilated. No focal lesion or cyst."
+    },
+    {
+     "g": "ub",
+     "t": "Urinary bladder is adequately distended. Wall is normal. Lumen is clear."
+    },
+    {
+     "g": "oth",
+     "t": "No free fluid. Aorta and IVC are normal. No pleural effusion. No significant lymphadenopathy. Bowel loops and RIF are normal."
+    }
+   ],
+   "counts": {
+    "tot": 41,
+    "done": 41,
+    "per": {
+     "liver": {
+      "t": 7,
+      "d": 7,
+      "a": true
+     },
+     "gb": {
+      "t": 4,
+      "d": 4,
+      "a": true
+     },
+     "cbd": {
+      "t": 1,
+      "d": 1,
+      "a": true
+     },
+     "panc": {
+      "t": 4,
+      "d": 4,
+      "a": false
+     },
+     "spl": {
+      "t": 3,
+      "d": 3,
+      "a": false
+     },
+     "kid": {
+      "t": 12,
+      "d": 12,
+      "a": false
+     },
+     "ub": {
+      "t": 4,
+      "d": 4,
+      "a": false
+     },
+     "oth": {
+      "t": 6,
+      "d": 6,
+      "a": false
+     }
+    }
+   },
+   "docx": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><w:document xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" xmlns:r=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships\" xmlns:wp=\"http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing\"><w:body><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/><w:jc w:val=\"center\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/><w:sz w:val=\"26\"/><w:szCs w:val=\"26\"/></w:rPr><w:t xml:space=\"preserve\">अखिल भारतीय आयुर्विज्ञान संस्थान (एम्स), गुवाहाटी</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/><w:jc w:val=\"center\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/><w:sz w:val=\"26\"/><w:szCs w:val=\"26\"/></w:rPr><w:t xml:space=\"preserve\">All India Institute of Medical Sciences, Guwahati-781101</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/><w:jc w:val=\"center\"/></w:pPr><w:r><w:rPr><w:sz w:val=\"18\"/><w:szCs w:val=\"18\"/></w:rPr><w:t xml:space=\"preserve\">स्वास्थ्य और परिवार कल्याण मंत्रालय, भारत सरकार के तत्वावधान में एक वैधानिक निकाय</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/><w:jc w:val=\"center\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/><w:sz w:val=\"18\"/><w:szCs w:val=\"18\"/></w:rPr><w:t xml:space=\"preserve\">(A statutory body under the aegis of Ministry of Health and Family Welfare, GoI)</w:t></w:r></w:p><w:p><w:pPr><w:pBdr><w:bottom w:val=\"single\" w:sz=\"8\" w:space=\"4\" w:color=\"000000\"/></w:pBdr><w:spacing w:before=\"0\" w:after=\"120\"/><w:jc w:val=\"center\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/></w:rPr><w:t xml:space=\"preserve\">DEPARTMENT OF DIAGNOSTIC &amp; INTERVENTIONAL RADIOLOGY</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"60\" w:after=\"100\"/><w:jc w:val=\"center\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/><w:u w:val=\"single\"/></w:rPr><w:t xml:space=\"preserve\">Report Form</w:t></w:r></w:p><w:tbl><w:tblPr><w:tblW w:w=\"9746\" w:type=\"dxa\"/><w:tblBorders><w:top w:val=\"single\" w:sz=\"4\" w:space=\"0\" w:color=\"000000\"/><w:left w:val=\"single\" w:sz=\"4\" w:space=\"0\" w:color=\"000000\"/><w:bottom w:val=\"single\" w:sz=\"4\" w:space=\"0\" w:color=\"000000\"/><w:right w:val=\"single\" w:sz=\"4\" w:space=\"0\" w:color=\"000000\"/><w:insideH w:val=\"single\" w:sz=\"4\" w:space=\"0\" w:color=\"000000\"/><w:insideV w:val=\"single\" w:sz=\"4\" w:space=\"0\" w:color=\"000000\"/></w:tblBorders><w:tblLayout w:type=\"fixed\"/><w:tblCellMar><w:top w:w=\"50\" w:type=\"dxa\"/><w:left w:w=\"100\" w:type=\"dxa\"/><w:bottom w:w=\"50\" w:type=\"dxa\"/><w:right w:w=\"100\" w:type=\"dxa\"/></w:tblCellMar></w:tblPr><w:tblGrid><w:gridCol w:w=\"3600\"/><w:gridCol w:w=\"2050\"/><w:gridCol w:w=\"2048\"/><w:gridCol w:w=\"2048\"/></w:tblGrid><w:tr><w:tc><w:tcPr><w:tcW w:w=\"3600\" w:type=\"dxa\"/></w:tcPr><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Name: </w:t></w:r><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\">Mousumi Bora</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW w:w=\"2050\" w:type=\"dxa\"/></w:tcPr><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">CR No: </w:t></w:r><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\"></w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW w:w=\"2048\" w:type=\"dxa\"/></w:tcPr><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Age/Sex: </w:t></w:r><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\">38/F</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW w:w=\"2048\" w:type=\"dxa\"/></w:tcPr><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">USG No: </w:t></w:r><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\"></w:t></w:r></w:p></w:tc></w:tr><w:tr><w:tc><w:tcPr><w:tcW w:w=\"5650\" w:type=\"dxa\"/><w:gridSpan w:val=\"2\"/></w:tcPr><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Date: </w:t></w:r><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\">15/10/2026</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW w:w=\"4096\" w:type=\"dxa\"/><w:gridSpan w:val=\"2\"/></w:tcPr><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Bill No: </w:t></w:r><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\"></w:t></w:r></w:p></w:tc></w:tr></w:tbl><w:p><w:pPr><w:spacing w:before=\"120\" w:after=\"40\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Referred by: </w:t></w:r><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\"></w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"120\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Clinical Details/Remark: </w:t></w:r><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\"></w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"60\" w:after=\"120\"/><w:jc w:val=\"center\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:u w:val=\"single\"/></w:rPr><w:t xml:space=\"preserve\">ULTRASOUND WHOLE ABDOMEN (FEMALE)</w:t></w:r></w:p><w:p><w:pPr><w:keepNext/><w:spacing w:before=\"0\" w:after=\"60\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">FINDINGS:</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"80\"/></w:pPr><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\">Liver is normal in size. Echotexture shows grade II fatty infiltration. Surface is smooth with regular margins. No focal lesion is seen. IHBR are not dilated. Hepatic veins and IVC are normal. Portal vein is normal.</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"80\"/></w:pPr><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\">Gall bladder is well distended. Wall is thickened (4.5 mm). Calculus is seen in the lumen (multiple), measuring 8 mm. Sludge is seen. No pericholecystic fluid.</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"80\"/></w:pPr><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\">CBD is dilated (8 mm). Calculus is seen in the CBD.</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"80\"/></w:pPr><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\">Pancreas is visualised in entirety. Echotexture and bulk are normal. MPD is not dilated. No focal lesion or collection.</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"80\"/></w:pPr><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\">Spleen is normal in size. Echotexture is normal with no focal lesion. Splenic vein is normal.</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"80\"/></w:pPr><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\">Right kidney measures 9.8 × 4.2 cm. Cortical echogenicity and CMD are normal. No calculus. No hydronephrosis. Ureter is not dilated. No focal lesion or cyst.</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"80\"/></w:pPr><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\">Left kidney measures 9.9 × 4.3 cm. Cortical echogenicity and CMD are normal. No calculus. No hydronephrosis. Ureter is not dilated. No focal lesion or cyst.</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"80\"/></w:pPr><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\">Urinary bladder is adequately distended. Wall is normal. Lumen is clear.</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"80\"/></w:pPr><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\">No free fluid. Aorta and IVC are normal. No pleural effusion. No significant lymphadenopathy. Bowel loops and RIF are normal.</w:t></w:r></w:p><w:p><w:pPr><w:keepNext/><w:spacing w:before=\"160\" w:after=\"60\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/><w:u w:val=\"single\"/></w:rPr><w:t xml:space=\"preserve\">IMPRESSION:</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"40\"/><w:ind w:left=\"360\" w:hanging=\"360\"/></w:pPr><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\">•</w:t></w:r><w:r><w:tab/></w:r><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Grade II fatty liver.</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"40\"/><w:ind w:left=\"360\" w:hanging=\"360\"/></w:pPr><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\">•</w:t></w:r><w:r><w:tab/></w:r><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Gall bladder wall thickening with cholelithiasis and sludge.</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"40\"/><w:ind w:left=\"360\" w:hanging=\"360\"/></w:pPr><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\">•</w:t></w:r><w:r><w:tab/></w:r><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Dilated CBD with choledocholithiasis.</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"420\" w:after=\"0\"/></w:pPr></w:p><w:tbl><w:tblPr><w:tblW w:w=\"9746\" w:type=\"dxa\"/><w:tblLayout w:type=\"fixed\"/><w:tblCellMar><w:top w:w=\"50\" w:type=\"dxa\"/><w:left w:w=\"100\" w:type=\"dxa\"/><w:bottom w:w=\"50\" w:type=\"dxa\"/><w:right w:w=\"100\" w:type=\"dxa\"/></w:tblCellMar></w:tblPr><w:tblGrid><w:gridCol w:w=\"2437\"/><w:gridCol w:w=\"2437\"/><w:gridCol w:w=\"2436\"/><w:gridCol w:w=\"2436\"/></w:tblGrid><w:tr><w:tc><w:tcPr><w:tcW w:w=\"2437\" w:type=\"dxa\"/></w:tcPr><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Dr. Pranjal Phukan</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Professor</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW w:w=\"2437\" w:type=\"dxa\"/></w:tcPr><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Dr. Deb. Kr. Boruah</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Additional Professor</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW w:w=\"2436\" w:type=\"dxa\"/></w:tcPr><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Dr. Kalyan Sarma</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Associate Professor</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW w:w=\"2436\" w:type=\"dxa\"/></w:tcPr><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Dr. Prince Das</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Assistant Professor</w:t></w:r></w:p></w:tc></w:tr></w:tbl><w:p><w:pPr><w:spacing w:before=\"360\" w:after=\"20\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Resident Doctors</w:t></w:r></w:p><w:sectPr><w:pgSz w:w=\"11906\" w:h=\"16838\"/><w:pgMar w:top=\"850\" w:right=\"1080\" w:bottom=\"850\" w:left=\"1080\" w:header=\"567\" w:footer=\"567\" w:gutter=\"0\"/></w:sectPr></w:body></w:document>"
+  }
+ },
+ {
+  "name": "right hydroureteronephrosis with calculus, left normal",
+  "expected": {
+   "rows": {
+    "kid.size.R": {
+     "s": [
+      "Measured"
+     ],
+     "f": {
+      "L": "11.2",
+      "W": "5.1"
+     }
+    },
+    "kid.calc.R": {
+     "s": [
+      "Yes"
+     ],
+     "f": {
+      "mm": "6",
+      "site": "lower pole"
+     }
+    },
+    "kid.hdn.R": {
+     "s": [
+      "Moderate"
+     ],
+     "f": {}
+    },
+    "kid.ure.R": {
+     "s": [
+      "Dilated"
+     ],
+     "f": {
+      "t": "up to VUJ calculus"
+     }
+    },
+    "kid.size.L": {
+     "s": [
+      "Measured"
+     ],
+     "f": {
+      "L": "10.5",
+      "W": "4.9"
+     }
+    },
+    "kid.cmd.R": {
+     "s": [
+      "N"
+     ],
+     "f": {}
+    },
+    "kid.les.R": {
+     "s": [
+      "No"
+     ],
+     "f": {}
+    },
+    "kid.cmd.L": {
+     "s": [
+      "N"
+     ],
+     "f": {}
+    },
+    "kid.calc.L": {
+     "s": [
+      "No"
+     ],
+     "f": {}
+    },
+    "kid.hdn.L": {
+     "s": [
+      "No"
+     ],
+     "f": {}
+    },
+    "kid.ure.L": {
+     "s": [
+      "N"
+     ],
+     "f": {}
+    },
+    "kid.les.L": {
+     "s": [
+      "No"
+     ],
+     "f": {}
+    },
+    "ub.lumen": {
+     "s": [
+      "Calculus"
+     ],
+     "f": {
+      "mm": "9"
+     }
+    }
+   },
+   "text": "ULTRASOUND WHOLE ABDOMEN (MALE)\n\nName: Hemanta    Age/Sex: 30/M\nDate: 15/10/2026\n\nFINDINGS:\nRight kidney measures 11.2 × 5.1 cm. Cortical echogenicity and CMD are normal. Calculus of 6 mm is seen in the lower pole. Moderate hydronephrosis. Ureter is dilated (up to VUJ calculus). No focal lesion or cyst.\nLeft kidney measures 10.5 × 4.9 cm. Cortical echogenicity and CMD are normal. No calculus. No hydronephrosis. Ureter is not dilated. No focal lesion or cyst.\nCalculus is seen in the lumen (9 mm).\n\nIMPRESSION:\n- Right renal calculus with moderate hydroureteronephrosis.\n- Vesical calculus.\n\nAdvice: Urology consultation.",
+   "impression": [
+    "Right renal calculus with moderate hydroureteronephrosis.",
+    "Vesical calculus."
+   ],
+   "findings": [
+    {
+     "g": "kid",
+     "t": "Right kidney measures 11.2 × 5.1 cm. Cortical echogenicity and CMD are normal. Calculus of 6 mm is seen in the lower pole. Moderate hydronephrosis. Ureter is dilated (up to VUJ calculus). No focal lesion or cyst."
+    },
+    {
+     "g": "kid",
+     "t": "Left kidney measures 10.5 × 4.9 cm. Cortical echogenicity and CMD are normal. No calculus. No hydronephrosis. Ureter is not dilated. No focal lesion or cyst."
+    },
+    {
+     "g": "ub",
+     "t": "Calculus is seen in the lumen (9 mm)."
+    }
+   ],
+   "counts": {
+    "tot": 44,
+    "done": 13,
+    "per": {
+     "liver": {
+      "t": 7,
+      "d": 0,
+      "a": false
+     },
+     "gb": {
+      "t": 4,
+      "d": 0,
+      "a": false
+     },
+     "cbd": {
+      "t": 1,
+      "d": 0,
+      "a": false
+     },
+     "panc": {
+      "t": 4,
+      "d": 0,
+      "a": false
+     },
+     "spl": {
+      "t": 3,
+      "d": 0,
+      "a": false
+     },
+     "kid": {
+      "t": 12,
+      "d": 12,
+      "a": true
+     },
+     "ub": {
+      "t": 4,
+      "d": 1,
+      "a": true
+     },
+     "pro": {
+      "t": 3,
+      "d": 0,
+      "a": false
+     },
+     "oth": {
+      "t": 6,
+      "d": 0,
+      "a": false
+     }
+    }
+   },
+   "docx": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><w:document xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" xmlns:r=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships\" xmlns:wp=\"http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing\"><w:body><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/><w:jc w:val=\"center\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/><w:sz w:val=\"26\"/><w:szCs w:val=\"26\"/></w:rPr><w:t xml:space=\"preserve\">अखिल भारतीय आयुर्विज्ञान संस्थान (एम्स), गुवाहाटी</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/><w:jc w:val=\"center\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/><w:sz w:val=\"26\"/><w:szCs w:val=\"26\"/></w:rPr><w:t xml:space=\"preserve\">All India Institute of Medical Sciences, Guwahati-781101</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/><w:jc w:val=\"center\"/></w:pPr><w:r><w:rPr><w:sz w:val=\"18\"/><w:szCs w:val=\"18\"/></w:rPr><w:t xml:space=\"preserve\">स्वास्थ्य और परिवार कल्याण मंत्रालय, भारत सरकार के तत्वावधान में एक वैधानिक निकाय</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/><w:jc w:val=\"center\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/><w:sz w:val=\"18\"/><w:szCs w:val=\"18\"/></w:rPr><w:t xml:space=\"preserve\">(A statutory body under the aegis of Ministry of Health and Family Welfare, GoI)</w:t></w:r></w:p><w:p><w:pPr><w:pBdr><w:bottom w:val=\"single\" w:sz=\"8\" w:space=\"4\" w:color=\"000000\"/></w:pBdr><w:spacing w:before=\"0\" w:after=\"120\"/><w:jc w:val=\"center\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/></w:rPr><w:t xml:space=\"preserve\">DEPARTMENT OF DIAGNOSTIC &amp; INTERVENTIONAL RADIOLOGY</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"60\" w:after=\"100\"/><w:jc w:val=\"center\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/><w:u w:val=\"single\"/></w:rPr><w:t xml:space=\"preserve\">Report Form</w:t></w:r></w:p><w:tbl><w:tblPr><w:tblW w:w=\"9746\" w:type=\"dxa\"/><w:tblBorders><w:top w:val=\"single\" w:sz=\"4\" w:space=\"0\" w:color=\"000000\"/><w:left w:val=\"single\" w:sz=\"4\" w:space=\"0\" w:color=\"000000\"/><w:bottom w:val=\"single\" w:sz=\"4\" w:space=\"0\" w:color=\"000000\"/><w:right w:val=\"single\" w:sz=\"4\" w:space=\"0\" w:color=\"000000\"/><w:insideH w:val=\"single\" w:sz=\"4\" w:space=\"0\" w:color=\"000000\"/><w:insideV w:val=\"single\" w:sz=\"4\" w:space=\"0\" w:color=\"000000\"/></w:tblBorders><w:tblLayout w:type=\"fixed\"/><w:tblCellMar><w:top w:w=\"50\" w:type=\"dxa\"/><w:left w:w=\"100\" w:type=\"dxa\"/><w:bottom w:w=\"50\" w:type=\"dxa\"/><w:right w:w=\"100\" w:type=\"dxa\"/></w:tblCellMar></w:tblPr><w:tblGrid><w:gridCol w:w=\"3600\"/><w:gridCol w:w=\"2050\"/><w:gridCol w:w=\"2048\"/><w:gridCol w:w=\"2048\"/></w:tblGrid><w:tr><w:tc><w:tcPr><w:tcW w:w=\"3600\" w:type=\"dxa\"/></w:tcPr><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Name: </w:t></w:r><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\">Hemanta</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW w:w=\"2050\" w:type=\"dxa\"/></w:tcPr><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">CR No: </w:t></w:r><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\"></w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW w:w=\"2048\" w:type=\"dxa\"/></w:tcPr><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Age/Sex: </w:t></w:r><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\">30/M</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW w:w=\"2048\" w:type=\"dxa\"/></w:tcPr><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">USG No: </w:t></w:r><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\"></w:t></w:r></w:p></w:tc></w:tr><w:tr><w:tc><w:tcPr><w:tcW w:w=\"5650\" w:type=\"dxa\"/><w:gridSpan w:val=\"2\"/></w:tcPr><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Date: </w:t></w:r><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\">15/10/2026</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW w:w=\"4096\" w:type=\"dxa\"/><w:gridSpan w:val=\"2\"/></w:tcPr><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Bill No: </w:t></w:r><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\"></w:t></w:r></w:p></w:tc></w:tr></w:tbl><w:p><w:pPr><w:spacing w:before=\"120\" w:after=\"40\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Referred by: </w:t></w:r><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\"></w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"120\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Clinical Details/Remark: </w:t></w:r><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\"></w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"60\" w:after=\"120\"/><w:jc w:val=\"center\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:u w:val=\"single\"/></w:rPr><w:t xml:space=\"preserve\">ULTRASOUND WHOLE ABDOMEN (MALE)</w:t></w:r></w:p><w:p><w:pPr><w:keepNext/><w:spacing w:before=\"0\" w:after=\"60\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">FINDINGS:</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"80\"/></w:pPr><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\">Right kidney measures 11.2 × 5.1 cm. Cortical echogenicity and CMD are normal. Calculus of 6 mm is seen in the lower pole. Moderate hydronephrosis. Ureter is dilated (up to VUJ calculus). No focal lesion or cyst.</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"80\"/></w:pPr><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\">Left kidney measures 10.5 × 4.9 cm. Cortical echogenicity and CMD are normal. No calculus. No hydronephrosis. Ureter is not dilated. No focal lesion or cyst.</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"80\"/></w:pPr><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\">Calculus is seen in the lumen (9 mm).</w:t></w:r></w:p><w:p><w:pPr><w:keepNext/><w:spacing w:before=\"160\" w:after=\"60\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/><w:u w:val=\"single\"/></w:rPr><w:t xml:space=\"preserve\">IMPRESSION:</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"40\"/><w:ind w:left=\"360\" w:hanging=\"360\"/></w:pPr><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\">•</w:t></w:r><w:r><w:tab/></w:r><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Right renal calculus with moderate hydroureteronephrosis.</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"40\"/><w:ind w:left=\"360\" w:hanging=\"360\"/></w:pPr><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\">•</w:t></w:r><w:r><w:tab/></w:r><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Vesical calculus.</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"160\" w:after=\"80\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Advice: </w:t></w:r><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\">Urology consultation.</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"420\" w:after=\"0\"/></w:pPr></w:p><w:tbl><w:tblPr><w:tblW w:w=\"9746\" w:type=\"dxa\"/><w:tblLayout w:type=\"fixed\"/><w:tblCellMar><w:top w:w=\"50\" w:type=\"dxa\"/><w:left w:w=\"100\" w:type=\"dxa\"/><w:bottom w:w=\"50\" w:type=\"dxa\"/><w:right w:w=\"100\" w:type=\"dxa\"/></w:tblCellMar></w:tblPr><w:tblGrid><w:gridCol w:w=\"2437\"/><w:gridCol w:w=\"2437\"/><w:gridCol w:w=\"2436\"/><w:gridCol w:w=\"2436\"/></w:tblGrid><w:tr><w:tc><w:tcPr><w:tcW w:w=\"2437\" w:type=\"dxa\"/></w:tcPr><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Dr. Pranjal Phukan</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Professor</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW w:w=\"2437\" w:type=\"dxa\"/></w:tcPr><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Dr. Deb. Kr. Boruah</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Additional Professor</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW w:w=\"2436\" w:type=\"dxa\"/></w:tcPr><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Dr. Kalyan Sarma</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Associate Professor</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW w:w=\"2436\" w:type=\"dxa\"/></w:tcPr><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Dr. Prince Das</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Assistant Professor</w:t></w:r></w:p></w:tc></w:tr></w:tbl><w:p><w:pPr><w:spacing w:before=\"360\" w:after=\"20\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Resident Doctors</w:t></w:r></w:p><w:sectPr><w:pgSz w:w=\"11906\" w:h=\"16838\"/><w:pgMar w:top=\"850\" w:right=\"1080\" w:bottom=\"850\" w:left=\"1080\" w:header=\"567\" w:footer=\"567\" w:gutter=\"0\"/></w:sectPr></w:body></w:document>"
+  }
+ },
+ {
+  "name": "bilateral identical renal findings",
+  "expected": {
+   "rows": {
+    "kid.size.R": {
+     "s": [
+      "Measured"
+     ],
+     "f": {
+      "L": "8.1",
+      "W": "3.9"
+     }
+    },
+    "kid.size.L": {
+     "s": [
+      "Measured"
+     ],
+     "f": {
+      "L": "8.0",
+      "W": "3.8"
+     }
+    },
+    "kid.cmd.R": {
+     "s": [
+      "↑ Echo",
+      "CMD lost"
+     ],
+     "f": {}
+    },
+    "kid.cmd.L": {
+     "s": [
+      "↑ Echo",
+      "CMD lost"
+     ],
+     "f": {}
+    },
+    "kid.calc.R": {
+     "s": [
+      "Yes"
+     ],
+     "f": {}
+    },
+    "kid.calc.L": {
+     "s": [
+      "Yes"
+     ],
+     "f": {}
+    },
+    "kid.hdn.R": {
+     "s": [
+      "No"
+     ],
+     "f": {}
+    },
+    "kid.ure.R": {
+     "s": [
+      "N"
+     ],
+     "f": {}
+    },
+    "kid.les.R": {
+     "s": [
+      "No"
+     ],
+     "f": {}
+    },
+    "kid.hdn.L": {
+     "s": [
+      "No"
+     ],
+     "f": {}
+    },
+    "kid.ure.L": {
+     "s": [
+      "N"
+     ],
+     "f": {}
+    },
+    "kid.les.L": {
+     "s": [
+      "No"
+     ],
+     "f": {}
+    }
+   },
+   "text": "ULTRASOUND WHOLE ABDOMEN (MALE)\n\nName: Kamal    Age/Sex: 61/M\nDate: 15/10/2026\n\nFINDINGS:\nRight kidney measures 8.1 × 3.9 cm. Cortical echogenicity is raised. Corticomedullary differentiation is lost. Calculus is seen. No hydronephrosis. Ureter is not dilated. No focal lesion or cyst.\nLeft kidney measures 8.0 × 3.8 cm. Cortical echogenicity is raised. Corticomedullary differentiation is lost. Calculus is seen. No hydronephrosis. Ureter is not dilated. No focal lesion or cyst.\n\nIMPRESSION:\n- Bilateral renal calculi with raised cortical echogenicity and loss of CMD.",
+   "impression": [
+    "Bilateral renal calculi with raised cortical echogenicity and loss of CMD."
+   ],
+   "findings": [
+    {
+     "g": "kid",
+     "t": "Right kidney measures 8.1 × 3.9 cm. Cortical echogenicity is raised. Corticomedullary differentiation is lost. Calculus is seen. No hydronephrosis. Ureter is not dilated. No focal lesion or cyst."
+    },
+    {
+     "g": "kid",
+     "t": "Left kidney measures 8.0 × 3.8 cm. Cortical echogenicity is raised. Corticomedullary differentiation is lost. Calculus is seen. No hydronephrosis. Ureter is not dilated. No focal lesion or cyst."
+    }
+   ],
+   "counts": {
+    "tot": 44,
+    "done": 12,
+    "per": {
+     "liver": {
+      "t": 7,
+      "d": 0,
+      "a": false
+     },
+     "gb": {
+      "t": 4,
+      "d": 0,
+      "a": false
+     },
+     "cbd": {
+      "t": 1,
+      "d": 0,
+      "a": false
+     },
+     "panc": {
+      "t": 4,
+      "d": 0,
+      "a": false
+     },
+     "spl": {
+      "t": 3,
+      "d": 0,
+      "a": false
+     },
+     "kid": {
+      "t": 12,
+      "d": 12,
+      "a": true
+     },
+     "ub": {
+      "t": 4,
+      "d": 0,
+      "a": false
+     },
+     "pro": {
+      "t": 3,
+      "d": 0,
+      "a": false
+     },
+     "oth": {
+      "t": 6,
+      "d": 0,
+      "a": false
+     }
+    }
+   },
+   "docx": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><w:document xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" xmlns:r=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships\" xmlns:wp=\"http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing\"><w:body><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/><w:jc w:val=\"center\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/><w:sz w:val=\"26\"/><w:szCs w:val=\"26\"/></w:rPr><w:t xml:space=\"preserve\">अखिल भारतीय आयुर्विज्ञान संस्थान (एम्स), गुवाहाटी</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/><w:jc w:val=\"center\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/><w:sz w:val=\"26\"/><w:szCs w:val=\"26\"/></w:rPr><w:t xml:space=\"preserve\">All India Institute of Medical Sciences, Guwahati-781101</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/><w:jc w:val=\"center\"/></w:pPr><w:r><w:rPr><w:sz w:val=\"18\"/><w:szCs w:val=\"18\"/></w:rPr><w:t xml:space=\"preserve\">स्वास्थ्य और परिवार कल्याण मंत्रालय, भारत सरकार के तत्वावधान में एक वैधानिक निकाय</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/><w:jc w:val=\"center\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/><w:sz w:val=\"18\"/><w:szCs w:val=\"18\"/></w:rPr><w:t xml:space=\"preserve\">(A statutory body under the aegis of Ministry of Health and Family Welfare, GoI)</w:t></w:r></w:p><w:p><w:pPr><w:pBdr><w:bottom w:val=\"single\" w:sz=\"8\" w:space=\"4\" w:color=\"000000\"/></w:pBdr><w:spacing w:before=\"0\" w:after=\"120\"/><w:jc w:val=\"center\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/></w:rPr><w:t xml:space=\"preserve\">DEPARTMENT OF DIAGNOSTIC &amp; INTERVENTIONAL RADIOLOGY</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"60\" w:after=\"100\"/><w:jc w:val=\"center\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/><w:u w:val=\"single\"/></w:rPr><w:t xml:space=\"preserve\">Report Form</w:t></w:r></w:p><w:tbl><w:tblPr><w:tblW w:w=\"9746\" w:type=\"dxa\"/><w:tblBorders><w:top w:val=\"single\" w:sz=\"4\" w:space=\"0\" w:color=\"000000\"/><w:left w:val=\"single\" w:sz=\"4\" w:space=\"0\" w:color=\"000000\"/><w:bottom w:val=\"single\" w:sz=\"4\" w:space=\"0\" w:color=\"000000\"/><w:right w:val=\"single\" w:sz=\"4\" w:space=\"0\" w:color=\"000000\"/><w:insideH w:val=\"single\" w:sz=\"4\" w:space=\"0\" w:color=\"000000\"/><w:insideV w:val=\"single\" w:sz=\"4\" w:space=\"0\" w:color=\"000000\"/></w:tblBorders><w:tblLayout w:type=\"fixed\"/><w:tblCellMar><w:top w:w=\"50\" w:type=\"dxa\"/><w:left w:w=\"100\" w:type=\"dxa\"/><w:bottom w:w=\"50\" w:type=\"dxa\"/><w:right w:w=\"100\" w:type=\"dxa\"/></w:tblCellMar></w:tblPr><w:tblGrid><w:gridCol w:w=\"3600\"/><w:gridCol w:w=\"2050\"/><w:gridCol w:w=\"2048\"/><w:gridCol w:w=\"2048\"/></w:tblGrid><w:tr><w:tc><w:tcPr><w:tcW w:w=\"3600\" w:type=\"dxa\"/></w:tcPr><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Name: </w:t></w:r><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\">Kamal</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW w:w=\"2050\" w:type=\"dxa\"/></w:tcPr><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">CR No: </w:t></w:r><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\"></w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW w:w=\"2048\" w:type=\"dxa\"/></w:tcPr><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Age/Sex: </w:t></w:r><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\">61/M</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW w:w=\"2048\" w:type=\"dxa\"/></w:tcPr><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">USG No: </w:t></w:r><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\"></w:t></w:r></w:p></w:tc></w:tr><w:tr><w:tc><w:tcPr><w:tcW w:w=\"5650\" w:type=\"dxa\"/><w:gridSpan w:val=\"2\"/></w:tcPr><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Date: </w:t></w:r><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\">15/10/2026</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW w:w=\"4096\" w:type=\"dxa\"/><w:gridSpan w:val=\"2\"/></w:tcPr><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Bill No: </w:t></w:r><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\"></w:t></w:r></w:p></w:tc></w:tr></w:tbl><w:p><w:pPr><w:spacing w:before=\"120\" w:after=\"40\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Referred by: </w:t></w:r><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\"></w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"120\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Clinical Details/Remark: </w:t></w:r><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\"></w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"60\" w:after=\"120\"/><w:jc w:val=\"center\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:u w:val=\"single\"/></w:rPr><w:t xml:space=\"preserve\">ULTRASOUND WHOLE ABDOMEN (MALE)</w:t></w:r></w:p><w:p><w:pPr><w:keepNext/><w:spacing w:before=\"0\" w:after=\"60\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">FINDINGS:</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"80\"/></w:pPr><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\">Right kidney measures 8.1 × 3.9 cm. Cortical echogenicity is raised. Corticomedullary differentiation is lost. Calculus is seen. No hydronephrosis. Ureter is not dilated. No focal lesion or cyst.</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"80\"/></w:pPr><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\">Left kidney measures 8.0 × 3.8 cm. Cortical echogenicity is raised. Corticomedullary differentiation is lost. Calculus is seen. No hydronephrosis. Ureter is not dilated. No focal lesion or cyst.</w:t></w:r></w:p><w:p><w:pPr><w:keepNext/><w:spacing w:before=\"160\" w:after=\"60\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/><w:u w:val=\"single\"/></w:rPr><w:t xml:space=\"preserve\">IMPRESSION:</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"40\"/><w:ind w:left=\"360\" w:hanging=\"360\"/></w:pPr><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\">•</w:t></w:r><w:r><w:tab/></w:r><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Bilateral renal calculi with raised cortical echogenicity and loss of CMD.</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"420\" w:after=\"0\"/></w:pPr></w:p><w:tbl><w:tblPr><w:tblW w:w=\"9746\" w:type=\"dxa\"/><w:tblLayout w:type=\"fixed\"/><w:tblCellMar><w:top w:w=\"50\" w:type=\"dxa\"/><w:left w:w=\"100\" w:type=\"dxa\"/><w:bottom w:w=\"50\" w:type=\"dxa\"/><w:right w:w=\"100\" w:type=\"dxa\"/></w:tblCellMar></w:tblPr><w:tblGrid><w:gridCol w:w=\"2437\"/><w:gridCol w:w=\"2437\"/><w:gridCol w:w=\"2436\"/><w:gridCol w:w=\"2436\"/></w:tblGrid><w:tr><w:tc><w:tcPr><w:tcW w:w=\"2437\" w:type=\"dxa\"/></w:tcPr><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Dr. Pranjal Phukan</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Professor</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW w:w=\"2437\" w:type=\"dxa\"/></w:tcPr><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Dr. Deb. Kr. Boruah</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Additional Professor</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW w:w=\"2436\" w:type=\"dxa\"/></w:tcPr><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Dr. Kalyan Sarma</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Associate Professor</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW w:w=\"2436\" w:type=\"dxa\"/></w:tcPr><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Dr. Prince Das</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Assistant Professor</w:t></w:r></w:p></w:tc></w:tr></w:tbl><w:p><w:pPr><w:spacing w:before=\"360\" w:after=\"20\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Resident Doctors</w:t></w:r></w:p><w:sectPr><w:pgSz w:w=\"11906\" w:h=\"16838\"/><w:pgMar w:top=\"850\" w:right=\"1080\" w:bottom=\"850\" w:left=\"1080\" w:header=\"567\" w:footer=\"567\" w:gutter=\"0\"/></w:sectPr></w:body></w:document>"
+  }
+ },
+ {
+  "name": "left kidney not visualised, right size missing",
+  "expected": {
+   "rows": {
+    "kid.size.L": {
+     "s": [
+      "Not seen"
+     ],
+     "f": {}
+    },
+    "kid.hdn.R": {
+     "s": [
+      "Mild"
+     ],
+     "f": {}
+    },
+    "kid.les.R": {
+     "s": [
+      "Yes"
+     ],
+     "f": {
+      "t": "simple cortical cyst, upper pole"
+     }
+    },
+    "ub.dist": {
+     "s": [
+      "Partial"
+     ],
+     "f": {}
+    },
+    "ub.pvr": {
+     "s": [
+      "Measured"
+     ],
+     "f": {
+      "ml": "120"
+     }
+    },
+    "ub.wall": {
+     "s": [
+      "Trabeculated"
+     ],
+     "f": {}
+    },
+    "ub.lumen": {
+     "s": [
+      "Mass"
+     ],
+     "f": {
+      "t": "2 cm, left lateral wall"
+     }
+    }
+   },
+   "text": "ULTRASOUND WHOLE ABDOMEN (FEMALE)\n\nName: Pinky    Age/Sex: 27/F\nDate: 15/10/2026\n\nFINDINGS:\nRight kidney: Mild hydronephrosis. Simple cortical cyst, upper pole.\nLeft kidney is not visualised.\nUrinary bladder is partially distended. Wall is trabeculated. An intraluminal mass is seen (2 cm, left lateral wall). Post-void residual volume is 120 ml.\n\nIMPRESSION:\n- Right kidney: mild hydronephrosis with simple cortical cyst, upper pole.\n- Left kidney: not visualised.\n- Trabeculation with intravesical mass.",
+   "impression": [
+    "Right kidney: mild hydronephrosis with simple cortical cyst, upper pole.",
+    "Left kidney: not visualised.",
+    "Trabeculation with intravesical mass."
+   ],
+   "findings": [
+    {
+     "g": "kid",
+     "t": "Right kidney: Mild hydronephrosis. Simple cortical cyst, upper pole."
+    },
+    {
+     "g": "kid",
+     "t": "Left kidney is not visualised."
+    },
+    {
+     "g": "ub",
+     "t": "Urinary bladder is partially distended. Wall is trabeculated. An intraluminal mass is seen (2 cm, left lateral wall). Post-void residual volume is 120 ml."
+    }
+   ],
+   "counts": {
+    "tot": 36,
+    "done": 7,
+    "per": {
+     "liver": {
+      "t": 7,
+      "d": 0,
+      "a": false
+     },
+     "gb": {
+      "t": 4,
+      "d": 0,
+      "a": false
+     },
+     "cbd": {
+      "t": 1,
+      "d": 0,
+      "a": false
+     },
+     "panc": {
+      "t": 4,
+      "d": 0,
+      "a": false
+     },
+     "spl": {
+      "t": 3,
+      "d": 0,
+      "a": false
+     },
+     "kid": {
+      "t": 7,
+      "d": 3,
+      "a": true
+     },
+     "ub": {
+      "t": 4,
+      "d": 4,
+      "a": true
+     },
+     "oth": {
+      "t": 6,
+      "d": 0,
+      "a": false
+     }
+    }
+   },
+   "docx": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><w:document xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" xmlns:r=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships\" xmlns:wp=\"http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing\"><w:body><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/><w:jc w:val=\"center\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/><w:sz w:val=\"26\"/><w:szCs w:val=\"26\"/></w:rPr><w:t xml:space=\"preserve\">अखिल भारतीय आयुर्विज्ञान संस्थान (एम्स), गुवाहाटी</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/><w:jc w:val=\"center\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/><w:sz w:val=\"26\"/><w:szCs w:val=\"26\"/></w:rPr><w:t xml:space=\"preserve\">All India Institute of Medical Sciences, Guwahati-781101</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/><w:jc w:val=\"center\"/></w:pPr><w:r><w:rPr><w:sz w:val=\"18\"/><w:szCs w:val=\"18\"/></w:rPr><w:t xml:space=\"preserve\">स्वास्थ्य और परिवार कल्याण मंत्रालय, भारत सरकार के तत्वावधान में एक वैधानिक निकाय</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/><w:jc w:val=\"center\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/><w:sz w:val=\"18\"/><w:szCs w:val=\"18\"/></w:rPr><w:t xml:space=\"preserve\">(A statutory body under the aegis of Ministry of Health and Family Welfare, GoI)</w:t></w:r></w:p><w:p><w:pPr><w:pBdr><w:bottom w:val=\"single\" w:sz=\"8\" w:space=\"4\" w:color=\"000000\"/></w:pBdr><w:spacing w:before=\"0\" w:after=\"120\"/><w:jc w:val=\"center\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/></w:rPr><w:t xml:space=\"preserve\">DEPARTMENT OF DIAGNOSTIC &amp; INTERVENTIONAL RADIOLOGY</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"60\" w:after=\"100\"/><w:jc w:val=\"center\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/><w:u w:val=\"single\"/></w:rPr><w:t xml:space=\"preserve\">Report Form</w:t></w:r></w:p><w:tbl><w:tblPr><w:tblW w:w=\"9746\" w:type=\"dxa\"/><w:tblBorders><w:top w:val=\"single\" w:sz=\"4\" w:space=\"0\" w:color=\"000000\"/><w:left w:val=\"single\" w:sz=\"4\" w:space=\"0\" w:color=\"000000\"/><w:bottom w:val=\"single\" w:sz=\"4\" w:space=\"0\" w:color=\"000000\"/><w:right w:val=\"single\" w:sz=\"4\" w:space=\"0\" w:color=\"000000\"/><w:insideH w:val=\"single\" w:sz=\"4\" w:space=\"0\" w:color=\"000000\"/><w:insideV w:val=\"single\" w:sz=\"4\" w:space=\"0\" w:color=\"000000\"/></w:tblBorders><w:tblLayout w:type=\"fixed\"/><w:tblCellMar><w:top w:w=\"50\" w:type=\"dxa\"/><w:left w:w=\"100\" w:type=\"dxa\"/><w:bottom w:w=\"50\" w:type=\"dxa\"/><w:right w:w=\"100\" w:type=\"dxa\"/></w:tblCellMar></w:tblPr><w:tblGrid><w:gridCol w:w=\"3600\"/><w:gridCol w:w=\"2050\"/><w:gridCol w:w=\"2048\"/><w:gridCol w:w=\"2048\"/></w:tblGrid><w:tr><w:tc><w:tcPr><w:tcW w:w=\"3600\" w:type=\"dxa\"/></w:tcPr><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Name: </w:t></w:r><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\">Pinky</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW w:w=\"2050\" w:type=\"dxa\"/></w:tcPr><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">CR No: </w:t></w:r><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\"></w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW w:w=\"2048\" w:type=\"dxa\"/></w:tcPr><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Age/Sex: </w:t></w:r><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\">27/F</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW w:w=\"2048\" w:type=\"dxa\"/></w:tcPr><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">USG No: </w:t></w:r><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\"></w:t></w:r></w:p></w:tc></w:tr><w:tr><w:tc><w:tcPr><w:tcW w:w=\"5650\" w:type=\"dxa\"/><w:gridSpan w:val=\"2\"/></w:tcPr><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Date: </w:t></w:r><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\">15/10/2026</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW w:w=\"4096\" w:type=\"dxa\"/><w:gridSpan w:val=\"2\"/></w:tcPr><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Bill No: </w:t></w:r><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\"></w:t></w:r></w:p></w:tc></w:tr></w:tbl><w:p><w:pPr><w:spacing w:before=\"120\" w:after=\"40\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Referred by: </w:t></w:r><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\"></w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"120\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Clinical Details/Remark: </w:t></w:r><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\"></w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"60\" w:after=\"120\"/><w:jc w:val=\"center\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:u w:val=\"single\"/></w:rPr><w:t xml:space=\"preserve\">ULTRASOUND WHOLE ABDOMEN (FEMALE)</w:t></w:r></w:p><w:p><w:pPr><w:keepNext/><w:spacing w:before=\"0\" w:after=\"60\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">FINDINGS:</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"80\"/></w:pPr><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\">Right kidney: Mild hydronephrosis. Simple cortical cyst, upper pole.</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"80\"/></w:pPr><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\">Left kidney is not visualised.</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"80\"/></w:pPr><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\">Urinary bladder is partially distended. Wall is trabeculated. An intraluminal mass is seen (2 cm, left lateral wall). Post-void residual volume is 120 ml.</w:t></w:r></w:p><w:p><w:pPr><w:keepNext/><w:spacing w:before=\"160\" w:after=\"60\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/><w:u w:val=\"single\"/></w:rPr><w:t xml:space=\"preserve\">IMPRESSION:</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"40\"/><w:ind w:left=\"360\" w:hanging=\"360\"/></w:pPr><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\">•</w:t></w:r><w:r><w:tab/></w:r><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Right kidney: mild hydronephrosis with simple cortical cyst, upper pole.</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"40\"/><w:ind w:left=\"360\" w:hanging=\"360\"/></w:pPr><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\">•</w:t></w:r><w:r><w:tab/></w:r><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Left kidney: not visualised.</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"40\"/><w:ind w:left=\"360\" w:hanging=\"360\"/></w:pPr><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\">•</w:t></w:r><w:r><w:tab/></w:r><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Trabeculation with intravesical mass.</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"420\" w:after=\"0\"/></w:pPr></w:p><w:tbl><w:tblPr><w:tblW w:w=\"9746\" w:type=\"dxa\"/><w:tblLayout w:type=\"fixed\"/><w:tblCellMar><w:top w:w=\"50\" w:type=\"dxa\"/><w:left w:w=\"100\" w:type=\"dxa\"/><w:bottom w:w=\"50\" w:type=\"dxa\"/><w:right w:w=\"100\" w:type=\"dxa\"/></w:tblCellMar></w:tblPr><w:tblGrid><w:gridCol w:w=\"2437\"/><w:gridCol w:w=\"2437\"/><w:gridCol w:w=\"2436\"/><w:gridCol w:w=\"2436\"/></w:tblGrid><w:tr><w:tc><w:tcPr><w:tcW w:w=\"2437\" w:type=\"dxa\"/></w:tcPr><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Dr. Pranjal Phukan</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Professor</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW w:w=\"2437\" w:type=\"dxa\"/></w:tcPr><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Dr. Deb. Kr. Boruah</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Additional Professor</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW w:w=\"2436\" w:type=\"dxa\"/></w:tcPr><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Dr. Kalyan Sarma</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Associate Professor</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW w:w=\"2436\" w:type=\"dxa\"/></w:tcPr><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Dr. Prince Das</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Assistant Professor</w:t></w:r></w:p></w:tc></w:tr></w:tbl><w:p><w:pPr><w:spacing w:before=\"360\" w:after=\"20\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Resident Doctors</w:t></w:r></w:p><w:sectPr><w:pgSz w:w=\"11906\" w:h=\"16838\"/><w:pgMar w:top=\"850\" w:right=\"1080\" w:bottom=\"850\" w:left=\"1080\" w:header=\"567\" w:footer=\"567\" w:gutter=\"0\"/></w:sectPr></w:body></w:document>"
+  }
+ },
+ {
+  "name": "pancreas partly seen, enlarged prostate, nodes, others",
+  "expected": {
+   "rows": {
+    "panc.seen": {
+     "s": [
+      "Head",
+      "Body"
+     ],
+     "f": {}
+    },
+    "panc.echo": {
+     "s": [
+      "N"
+     ],
+     "f": {}
+    },
+    "panc.mpd": {
+     "s": [
+      "Dilated"
+     ],
+     "f": {
+      "mm": "5"
+     }
+    },
+    "panc.les": {
+     "s": [
+      "No"
+     ],
+     "f": {}
+    },
+    "pro.vol": {
+     "s": [
+      "Enlarged"
+     ],
+     "f": {
+      "cc": "45",
+      "g": "II"
+     }
+    },
+    "pro.echo": {
+     "s": [
+      "Abnormal"
+     ],
+     "f": {
+      "t": "median lobe indenting bladder base"
+     }
+    },
+    "oth.ln": {
+     "s": [
+      "Yes"
+     ],
+     "f": {
+      "t": "paraaortic, largest 12 mm SAD"
+     }
+    },
+    "oth.misc": {
+     "s": [
+      "Yes"
+     ],
+     "f": {
+      "t": "Small umbilical hernia with omental content"
+     }
+    },
+    "oth.ao": {
+     "s": [
+      "Abnormal"
+     ],
+     "f": {
+      "t": "infrarenal aortic aneurysm, 3.4 cm"
+     }
+    }
+   },
+   "text": "ULTRASOUND WHOLE ABDOMEN (MALE)\n\nName: Dhruba    Age/Sex: 68/M\nDate: 15/10/2026\n\nFINDINGS:\nPancreatic head and body are visualised; the rest is obscured by bowel gas. Echotexture and bulk are normal. MPD is dilated (5 mm). No focal lesion or collection.\nProstate is enlarged (volume 45 cc). Median lobe indenting bladder base.\nInfrarenal aortic aneurysm, 3.4 cm. Lymphadenopathy: paraaortic, largest 12 mm SAD. Small umbilical hernia with omental content.\n\nAdditional findings: Bowel gas limits evaluation of the retroperitoneum.\n\nIMPRESSION:\n- Dilated MPD.\n- Grade II prostatomegaly with median lobe indenting bladder base.\n- Infrarenal aortic aneurysm, 3.4 cm.\n- Lymphadenopathy.\n- Small umbilical hernia with omental content.",
+   "impression": [
+    "Dilated MPD.",
+    "Grade II prostatomegaly with median lobe indenting bladder base.",
+    "Infrarenal aortic aneurysm, 3.4 cm.",
+    "Lymphadenopathy.",
+    "Small umbilical hernia with omental content."
+   ],
+   "findings": [
+    {
+     "g": "panc",
+     "t": "Pancreatic head and body are visualised; the rest is obscured by bowel gas. Echotexture and bulk are normal. MPD is dilated (5 mm). No focal lesion or collection."
+    },
+    {
+     "g": "pro",
+     "t": "Prostate is enlarged (volume 45 cc). Median lobe indenting bladder base."
+    },
+    {
+     "g": "oth",
+     "t": "Infrarenal aortic aneurysm, 3.4 cm. Lymphadenopathy: paraaortic, largest 12 mm SAD. Small umbilical hernia with omental content."
+    }
+   ],
+   "counts": {
+    "tot": 44,
+    "done": 9,
+    "per": {
+     "liver": {
+      "t": 7,
+      "d": 0,
+      "a": false
+     },
+     "gb": {
+      "t": 4,
+      "d": 0,
+      "a": false
+     },
+     "cbd": {
+      "t": 1,
+      "d": 0,
+      "a": false
+     },
+     "panc": {
+      "t": 4,
+      "d": 4,
+      "a": true
+     },
+     "spl": {
+      "t": 3,
+      "d": 0,
+      "a": false
+     },
+     "kid": {
+      "t": 12,
+      "d": 0,
+      "a": false
+     },
+     "ub": {
+      "t": 4,
+      "d": 0,
+      "a": false
+     },
+     "pro": {
+      "t": 3,
+      "d": 2,
+      "a": true
+     },
+     "oth": {
+      "t": 6,
+      "d": 3,
+      "a": true
+     }
+    }
+   },
+   "docx": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><w:document xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" xmlns:r=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships\" xmlns:wp=\"http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing\"><w:body><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/><w:jc w:val=\"center\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/><w:sz w:val=\"26\"/><w:szCs w:val=\"26\"/></w:rPr><w:t xml:space=\"preserve\">अखिल भारतीय आयुर्विज्ञान संस्थान (एम्स), गुवाहाटी</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/><w:jc w:val=\"center\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/><w:sz w:val=\"26\"/><w:szCs w:val=\"26\"/></w:rPr><w:t xml:space=\"preserve\">All India Institute of Medical Sciences, Guwahati-781101</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/><w:jc w:val=\"center\"/></w:pPr><w:r><w:rPr><w:sz w:val=\"18\"/><w:szCs w:val=\"18\"/></w:rPr><w:t xml:space=\"preserve\">स्वास्थ्य और परिवार कल्याण मंत्रालय, भारत सरकार के तत्वावधान में एक वैधानिक निकाय</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/><w:jc w:val=\"center\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/><w:sz w:val=\"18\"/><w:szCs w:val=\"18\"/></w:rPr><w:t xml:space=\"preserve\">(A statutory body under the aegis of Ministry of Health and Family Welfare, GoI)</w:t></w:r></w:p><w:p><w:pPr><w:pBdr><w:bottom w:val=\"single\" w:sz=\"8\" w:space=\"4\" w:color=\"000000\"/></w:pBdr><w:spacing w:before=\"0\" w:after=\"120\"/><w:jc w:val=\"center\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/></w:rPr><w:t xml:space=\"preserve\">DEPARTMENT OF DIAGNOSTIC &amp; INTERVENTIONAL RADIOLOGY</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"60\" w:after=\"100\"/><w:jc w:val=\"center\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/><w:u w:val=\"single\"/></w:rPr><w:t xml:space=\"preserve\">Report Form</w:t></w:r></w:p><w:tbl><w:tblPr><w:tblW w:w=\"9746\" w:type=\"dxa\"/><w:tblBorders><w:top w:val=\"single\" w:sz=\"4\" w:space=\"0\" w:color=\"000000\"/><w:left w:val=\"single\" w:sz=\"4\" w:space=\"0\" w:color=\"000000\"/><w:bottom w:val=\"single\" w:sz=\"4\" w:space=\"0\" w:color=\"000000\"/><w:right w:val=\"single\" w:sz=\"4\" w:space=\"0\" w:color=\"000000\"/><w:insideH w:val=\"single\" w:sz=\"4\" w:space=\"0\" w:color=\"000000\"/><w:insideV w:val=\"single\" w:sz=\"4\" w:space=\"0\" w:color=\"000000\"/></w:tblBorders><w:tblLayout w:type=\"fixed\"/><w:tblCellMar><w:top w:w=\"50\" w:type=\"dxa\"/><w:left w:w=\"100\" w:type=\"dxa\"/><w:bottom w:w=\"50\" w:type=\"dxa\"/><w:right w:w=\"100\" w:type=\"dxa\"/></w:tblCellMar></w:tblPr><w:tblGrid><w:gridCol w:w=\"3600\"/><w:gridCol w:w=\"2050\"/><w:gridCol w:w=\"2048\"/><w:gridCol w:w=\"2048\"/></w:tblGrid><w:tr><w:tc><w:tcPr><w:tcW w:w=\"3600\" w:type=\"dxa\"/></w:tcPr><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Name: </w:t></w:r><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\">Dhruba</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW w:w=\"2050\" w:type=\"dxa\"/></w:tcPr><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">CR No: </w:t></w:r><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\"></w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW w:w=\"2048\" w:type=\"dxa\"/></w:tcPr><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Age/Sex: </w:t></w:r><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\">68/M</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW w:w=\"2048\" w:type=\"dxa\"/></w:tcPr><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">USG No: </w:t></w:r><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\"></w:t></w:r></w:p></w:tc></w:tr><w:tr><w:tc><w:tcPr><w:tcW w:w=\"5650\" w:type=\"dxa\"/><w:gridSpan w:val=\"2\"/></w:tcPr><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Date: </w:t></w:r><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\">15/10/2026</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW w:w=\"4096\" w:type=\"dxa\"/><w:gridSpan w:val=\"2\"/></w:tcPr><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Bill No: </w:t></w:r><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\"></w:t></w:r></w:p></w:tc></w:tr></w:tbl><w:p><w:pPr><w:spacing w:before=\"120\" w:after=\"40\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Referred by: </w:t></w:r><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\"></w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"120\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Clinical Details/Remark: </w:t></w:r><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\"></w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"60\" w:after=\"120\"/><w:jc w:val=\"center\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:u w:val=\"single\"/></w:rPr><w:t xml:space=\"preserve\">ULTRASOUND WHOLE ABDOMEN (MALE)</w:t></w:r></w:p><w:p><w:pPr><w:keepNext/><w:spacing w:before=\"0\" w:after=\"60\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">FINDINGS:</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"80\"/></w:pPr><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\">Pancreatic head and body are visualised; the rest is obscured by bowel gas. Echotexture and bulk are normal. MPD is dilated (5 mm). No focal lesion or collection.</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"80\"/></w:pPr><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\">Prostate is enlarged (volume 45 cc). Median lobe indenting bladder base.</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"80\"/></w:pPr><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\">Infrarenal aortic aneurysm, 3.4 cm. Lymphadenopathy: paraaortic, largest 12 mm SAD. Small umbilical hernia with omental content.</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"80\" w:after=\"80\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Additional findings: </w:t></w:r><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\">Bowel gas limits evaluation of the retroperitoneum.</w:t></w:r></w:p><w:p><w:pPr><w:keepNext/><w:spacing w:before=\"160\" w:after=\"60\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/><w:u w:val=\"single\"/></w:rPr><w:t xml:space=\"preserve\">IMPRESSION:</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"40\"/><w:ind w:left=\"360\" w:hanging=\"360\"/></w:pPr><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\">•</w:t></w:r><w:r><w:tab/></w:r><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Dilated MPD.</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"40\"/><w:ind w:left=\"360\" w:hanging=\"360\"/></w:pPr><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\">•</w:t></w:r><w:r><w:tab/></w:r><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Grade II prostatomegaly with median lobe indenting bladder base.</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"40\"/><w:ind w:left=\"360\" w:hanging=\"360\"/></w:pPr><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\">•</w:t></w:r><w:r><w:tab/></w:r><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Infrarenal aortic aneurysm, 3.4 cm.</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"40\"/><w:ind w:left=\"360\" w:hanging=\"360\"/></w:pPr><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\">•</w:t></w:r><w:r><w:tab/></w:r><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Lymphadenopathy.</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"40\"/><w:ind w:left=\"360\" w:hanging=\"360\"/></w:pPr><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\">•</w:t></w:r><w:r><w:tab/></w:r><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Small umbilical hernia with omental content.</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"420\" w:after=\"0\"/></w:pPr></w:p><w:tbl><w:tblPr><w:tblW w:w=\"9746\" w:type=\"dxa\"/><w:tblLayout w:type=\"fixed\"/><w:tblCellMar><w:top w:w=\"50\" w:type=\"dxa\"/><w:left w:w=\"100\" w:type=\"dxa\"/><w:bottom w:w=\"50\" w:type=\"dxa\"/><w:right w:w=\"100\" w:type=\"dxa\"/></w:tblCellMar></w:tblPr><w:tblGrid><w:gridCol w:w=\"2437\"/><w:gridCol w:w=\"2437\"/><w:gridCol w:w=\"2436\"/><w:gridCol w:w=\"2436\"/></w:tblGrid><w:tr><w:tc><w:tcPr><w:tcW w:w=\"2437\" w:type=\"dxa\"/></w:tcPr><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Dr. Pranjal Phukan</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Professor</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW w:w=\"2437\" w:type=\"dxa\"/></w:tcPr><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Dr. Deb. Kr. Boruah</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Additional Professor</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW w:w=\"2436\" w:type=\"dxa\"/></w:tcPr><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Dr. Kalyan Sarma</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Associate Professor</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW w:w=\"2436\" w:type=\"dxa\"/></w:tcPr><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Dr. Prince Das</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Assistant Professor</w:t></w:r></w:p></w:tc></w:tr></w:tbl><w:p><w:pPr><w:spacing w:before=\"360\" w:after=\"20\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Resident Doctors</w:t></w:r></w:p><w:sectPr><w:pgSz w:w=\"11906\" w:h=\"16838\"/><w:pgMar w:top=\"850\" w:right=\"1080\" w:bottom=\"850\" w:left=\"1080\" w:header=\"567\" w:footer=\"567\" w:gutter=\"0\"/></w:sectPr></w:body></w:document>"
+  }
+ },
+ {
+  "name": "pancreas not visualised",
+  "expected": {
+   "rows": {
+    "panc.seen": {
+     "s": [
+      "NV (bowel gas)"
+     ],
+     "f": {}
+    }
+   },
+   "text": "ULTRASOUND WHOLE ABDOMEN (MALE)\n\nName: X\nDate: 15/10/2026\n\nFINDINGS:\nPancreas is not visualised due to overlying bowel gas.\n\nIMPRESSION:\n- No significant abnormality detected on ultrasound of the whole abdomen.",
+   "impression": [],
+   "findings": [
+    {
+     "g": "panc",
+     "t": "Pancreas is not visualised due to overlying bowel gas."
+    }
+   ],
+   "counts": {
+    "tot": 41,
+    "done": 1,
+    "per": {
+     "liver": {
+      "t": 7,
+      "d": 0,
+      "a": false
+     },
+     "gb": {
+      "t": 4,
+      "d": 0,
+      "a": false
+     },
+     "cbd": {
+      "t": 1,
+      "d": 0,
+      "a": false
+     },
+     "panc": {
+      "t": 1,
+      "d": 1,
+      "a": false
+     },
+     "spl": {
+      "t": 3,
+      "d": 0,
+      "a": false
+     },
+     "kid": {
+      "t": 12,
+      "d": 0,
+      "a": false
+     },
+     "ub": {
+      "t": 4,
+      "d": 0,
+      "a": false
+     },
+     "pro": {
+      "t": 3,
+      "d": 0,
+      "a": false
+     },
+     "oth": {
+      "t": 6,
+      "d": 0,
+      "a": false
+     }
+    }
+   },
+   "docx": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><w:document xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" xmlns:r=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships\" xmlns:wp=\"http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing\"><w:body><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/><w:jc w:val=\"center\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/><w:sz w:val=\"26\"/><w:szCs w:val=\"26\"/></w:rPr><w:t xml:space=\"preserve\">अखिल भारतीय आयुर्विज्ञान संस्थान (एम्स), गुवाहाटी</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/><w:jc w:val=\"center\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/><w:sz w:val=\"26\"/><w:szCs w:val=\"26\"/></w:rPr><w:t xml:space=\"preserve\">All India Institute of Medical Sciences, Guwahati-781101</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/><w:jc w:val=\"center\"/></w:pPr><w:r><w:rPr><w:sz w:val=\"18\"/><w:szCs w:val=\"18\"/></w:rPr><w:t xml:space=\"preserve\">स्वास्थ्य और परिवार कल्याण मंत्रालय, भारत सरकार के तत्वावधान में एक वैधानिक निकाय</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/><w:jc w:val=\"center\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/><w:sz w:val=\"18\"/><w:szCs w:val=\"18\"/></w:rPr><w:t xml:space=\"preserve\">(A statutory body under the aegis of Ministry of Health and Family Welfare, GoI)</w:t></w:r></w:p><w:p><w:pPr><w:pBdr><w:bottom w:val=\"single\" w:sz=\"8\" w:space=\"4\" w:color=\"000000\"/></w:pBdr><w:spacing w:before=\"0\" w:after=\"120\"/><w:jc w:val=\"center\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/></w:rPr><w:t xml:space=\"preserve\">DEPARTMENT OF DIAGNOSTIC &amp; INTERVENTIONAL RADIOLOGY</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"60\" w:after=\"100\"/><w:jc w:val=\"center\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/><w:u w:val=\"single\"/></w:rPr><w:t xml:space=\"preserve\">Report Form</w:t></w:r></w:p><w:tbl><w:tblPr><w:tblW w:w=\"9746\" w:type=\"dxa\"/><w:tblBorders><w:top w:val=\"single\" w:sz=\"4\" w:space=\"0\" w:color=\"000000\"/><w:left w:val=\"single\" w:sz=\"4\" w:space=\"0\" w:color=\"000000\"/><w:bottom w:val=\"single\" w:sz=\"4\" w:space=\"0\" w:color=\"000000\"/><w:right w:val=\"single\" w:sz=\"4\" w:space=\"0\" w:color=\"000000\"/><w:insideH w:val=\"single\" w:sz=\"4\" w:space=\"0\" w:color=\"000000\"/><w:insideV w:val=\"single\" w:sz=\"4\" w:space=\"0\" w:color=\"000000\"/></w:tblBorders><w:tblLayout w:type=\"fixed\"/><w:tblCellMar><w:top w:w=\"50\" w:type=\"dxa\"/><w:left w:w=\"100\" w:type=\"dxa\"/><w:bottom w:w=\"50\" w:type=\"dxa\"/><w:right w:w=\"100\" w:type=\"dxa\"/></w:tblCellMar></w:tblPr><w:tblGrid><w:gridCol w:w=\"3600\"/><w:gridCol w:w=\"2050\"/><w:gridCol w:w=\"2048\"/><w:gridCol w:w=\"2048\"/></w:tblGrid><w:tr><w:tc><w:tcPr><w:tcW w:w=\"3600\" w:type=\"dxa\"/></w:tcPr><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Name: </w:t></w:r><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\">X</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW w:w=\"2050\" w:type=\"dxa\"/></w:tcPr><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">CR No: </w:t></w:r><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\"></w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW w:w=\"2048\" w:type=\"dxa\"/></w:tcPr><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Age/Sex: </w:t></w:r><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\">/M</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW w:w=\"2048\" w:type=\"dxa\"/></w:tcPr><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">USG No: </w:t></w:r><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\"></w:t></w:r></w:p></w:tc></w:tr><w:tr><w:tc><w:tcPr><w:tcW w:w=\"5650\" w:type=\"dxa\"/><w:gridSpan w:val=\"2\"/></w:tcPr><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Date: </w:t></w:r><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\">15/10/2026</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW w:w=\"4096\" w:type=\"dxa\"/><w:gridSpan w:val=\"2\"/></w:tcPr><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Bill No: </w:t></w:r><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\"></w:t></w:r></w:p></w:tc></w:tr></w:tbl><w:p><w:pPr><w:spacing w:before=\"120\" w:after=\"40\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Referred by: </w:t></w:r><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\"></w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"120\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Clinical Details/Remark: </w:t></w:r><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\"></w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"60\" w:after=\"120\"/><w:jc w:val=\"center\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:u w:val=\"single\"/></w:rPr><w:t xml:space=\"preserve\">ULTRASOUND WHOLE ABDOMEN (MALE)</w:t></w:r></w:p><w:p><w:pPr><w:keepNext/><w:spacing w:before=\"0\" w:after=\"60\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">FINDINGS:</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"80\"/></w:pPr><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\">Pancreas is not visualised due to overlying bowel gas.</w:t></w:r></w:p><w:p><w:pPr><w:keepNext/><w:spacing w:before=\"160\" w:after=\"60\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/><w:u w:val=\"single\"/></w:rPr><w:t xml:space=\"preserve\">IMPRESSION:</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"40\"/><w:ind w:left=\"360\" w:hanging=\"360\"/></w:pPr><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\">•</w:t></w:r><w:r><w:tab/></w:r><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">No significant abnormality detected on ultrasound of the whole abdomen.</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"420\" w:after=\"0\"/></w:pPr></w:p><w:tbl><w:tblPr><w:tblW w:w=\"9746\" w:type=\"dxa\"/><w:tblLayout w:type=\"fixed\"/><w:tblCellMar><w:top w:w=\"50\" w:type=\"dxa\"/><w:left w:w=\"100\" w:type=\"dxa\"/><w:bottom w:w=\"50\" w:type=\"dxa\"/><w:right w:w=\"100\" w:type=\"dxa\"/></w:tblCellMar></w:tblPr><w:tblGrid><w:gridCol w:w=\"2437\"/><w:gridCol w:w=\"2437\"/><w:gridCol w:w=\"2436\"/><w:gridCol w:w=\"2436\"/></w:tblGrid><w:tr><w:tc><w:tcPr><w:tcW w:w=\"2437\" w:type=\"dxa\"/></w:tcPr><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Dr. Pranjal Phukan</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Professor</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW w:w=\"2437\" w:type=\"dxa\"/></w:tcPr><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Dr. Deb. Kr. Boruah</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Additional Professor</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW w:w=\"2436\" w:type=\"dxa\"/></w:tcPr><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Dr. Kalyan Sarma</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Associate Professor</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW w:w=\"2436\" w:type=\"dxa\"/></w:tcPr><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Dr. Prince Das</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Assistant Professor</w:t></w:r></w:p></w:tc></w:tr></w:tbl><w:p><w:pPr><w:spacing w:before=\"360\" w:after=\"20\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Resident Doctors</w:t></w:r></w:p><w:sectPr><w:pgSz w:w=\"11906\" w:h=\"16838\"/><w:pgMar w:top=\"850\" w:right=\"1080\" w:bottom=\"850\" w:left=\"1080\" w:header=\"567\" w:footer=\"567\" w:gutter=\"0\"/></w:sectPr></w:body></w:document>"
+  }
+ },
+ {
+  "name": "own impression with bullets overrides suggestion",
+  "expected": {
+   "rows": {
+    "liver.size": {
+     "s": [
+      "Enlarged"
+     ],
+     "f": {}
+    },
+    "liver.echo": {
+     "s": [
+      "N"
+     ],
+     "f": {}
+    },
+    "liver.surf": {
+     "s": [
+      "N"
+     ],
+     "f": {}
+    },
+    "liver.fl": {
+     "s": [
+      "No"
+     ],
+     "f": {}
+    },
+    "liver.ihbr": {
+     "s": [
+      "N"
+     ],
+     "f": {}
+    },
+    "liver.hv": {
+     "s": [
+      "N"
+     ],
+     "f": {}
+    },
+    "liver.pv": {
+     "s": [
+      "N"
+     ],
+     "f": {}
+    },
+    "gb.dist": {
+     "s": [
+      "N"
+     ],
+     "f": {}
+    },
+    "gb.wall": {
+     "s": [
+      "N"
+     ],
+     "f": {}
+    },
+    "gb.lumen": {
+     "s": [
+      "N"
+     ],
+     "f": {}
+    },
+    "gb.pcf": {
+     "s": [
+      "No"
+     ],
+     "f": {}
+    },
+    "cbd.cal": {
+     "s": [
+      "N"
+     ],
+     "f": {}
+    },
+    "panc.seen": {
+     "s": [
+      "Head",
+      "Body",
+      "Tail"
+     ],
+     "f": {}
+    },
+    "panc.echo": {
+     "s": [
+      "N"
+     ],
+     "f": {}
+    },
+    "panc.mpd": {
+     "s": [
+      "N"
+     ],
+     "f": {}
+    },
+    "panc.les": {
+     "s": [
+      "No"
+     ],
+     "f": {}
+    },
+    "spl.size": {
+     "s": [
+      "N"
+     ],
+     "f": {}
+    },
+    "spl.echo": {
+     "s": [
+      "N"
+     ],
+     "f": {}
+    },
+    "spl.sv": {
+     "s": [
+      "N"
+     ],
+     "f": {}
+    },
+    "kid.size.R": {
+     "s": [
+      "Measured"
+     ],
+     "f": {}
+    },
+    "kid.cmd.R": {
+     "s": [
+      "N"
+     ],
+     "f": {}
+    },
+    "kid.calc.R": {
+     "s": [
+      "No"
+     ],
+     "f": {}
+    },
+    "kid.hdn.R": {
+     "s": [
+      "No"
+     ],
+     "f": {}
+    },
+    "kid.ure.R": {
+     "s": [
+      "N"
+     ],
+     "f": {}
+    },
+    "kid.les.R": {
+     "s": [
+      "No"
+     ],
+     "f": {}
+    },
+    "kid.size.L": {
+     "s": [
+      "Measured"
+     ],
+     "f": {}
+    },
+    "kid.cmd.L": {
+     "s": [
+      "N"
+     ],
+     "f": {}
+    },
+    "kid.calc.L": {
+     "s": [
+      "No"
+     ],
+     "f": {}
+    },
+    "kid.hdn.L": {
+     "s": [
+      "No"
+     ],
+     "f": {}
+    },
+    "kid.ure.L": {
+     "s": [
+      "N"
+     ],
+     "f": {}
+    },
+    "kid.les.L": {
+     "s": [
+      "No"
+     ],
+     "f": {}
+    },
+    "ub.dist": {
+     "s": [
+      "Adequate"
+     ],
+     "f": {}
+    },
+    "ub.wall": {
+     "s": [
+      "N"
+     ],
+     "f": {}
+    },
+    "ub.lumen": {
+     "s": [
+      "N"
+     ],
+     "f": {}
+    },
+    "ub.pvr": {
+     "s": [
+      "Not done"
+     ],
+     "f": {}
+    },
+    "oth.ff": {
+     "s": [
+      "No"
+     ],
+     "f": {}
+    },
+    "oth.ao": {
+     "s": [
+      "N"
+     ],
+     "f": {}
+    },
+    "oth.pe": {
+     "s": [
+      "No"
+     ],
+     "f": {}
+    },
+    "oth.ln": {
+     "s": [
+      "No"
+     ],
+     "f": {}
+    },
+    "oth.bowel": {
+     "s": [
+      "N"
+     ],
+     "f": {}
+    },
+    "oth.misc": {
+     "s": [
+      "Nil"
+     ],
+     "f": {}
+    }
+   },
+   "text": "ULTRASOUND WHOLE ABDOMEN (FEMALE)\n\nName: Rupa Devi    Age/Sex: 44/F\nDate: 15/10/2026\n\nFINDINGS:\nLiver is enlarged. Echotexture is normal. Surface is smooth with regular margins. No focal lesion is seen. IHBR are not dilated. Hepatic veins and IVC are normal. Portal vein is normal.\nGall bladder is well distended. Wall thickness is normal. Lumen is clear. No pericholecystic fluid.\nCBD is normal in calibre with a clear lumen.\nPancreas is visualised in entirety. Echotexture and bulk are normal. MPD is not dilated. No focal lesion or collection.\nSpleen is normal in size. Echotexture is normal with no focal lesion. Splenic vein is normal.\nRight kidney: Cortical echogenicity and CMD are normal. No calculus. No hydronephrosis. Ureter is not dilated. No focal lesion or cyst.\nLeft kidney: Cortical echogenicity and CMD are normal. No calculus. No hydronephrosis. Ureter is not dilated. No focal lesion or cyst.\nUrinary bladder is adequately distended. Wall is normal. Lumen is clear.\nNo free fluid. Aorta and IVC are normal. No pleural effusion. No significant lymphadenopathy. Bowel loops and RIF are normal.\n\nIMPRESSION:\n- Hepatomegaly.\n- Likely fatty liver.\n- Correlate clinically.\n\nAdvice: Clinical correlation. Follow-up ultrasound.\n\nResident: Dr. R. Nath",
+   "impression": [
+    "Hepatomegaly."
+   ],
+   "findings": [
+    {
+     "g": "liver",
+     "t": "Liver is enlarged. Echotexture is normal. Surface is smooth with regular margins. No focal lesion is seen. IHBR are not dilated. Hepatic veins and IVC are normal. Portal vein is normal."
+    },
+    {
+     "g": "gb",
+     "t": "Gall bladder is well distended. Wall thickness is normal. Lumen is clear. No pericholecystic fluid."
+    },
+    {
+     "g": "cbd",
+     "t": "CBD is normal in calibre with a clear lumen."
+    },
+    {
+     "g": "panc",
+     "t": "Pancreas is visualised in entirety. Echotexture and bulk are normal. MPD is not dilated. No focal lesion or collection."
+    },
+    {
+     "g": "spl",
+     "t": "Spleen is normal in size. Echotexture is normal with no focal lesion. Splenic vein is normal."
+    },
+    {
+     "g": "kid",
+     "t": "Right kidney: Cortical echogenicity and CMD are normal. No calculus. No hydronephrosis. Ureter is not dilated. No focal lesion or cyst."
+    },
+    {
+     "g": "kid",
+     "t": "Left kidney: Cortical echogenicity and CMD are normal. No calculus. No hydronephrosis. Ureter is not dilated. No focal lesion or cyst."
+    },
+    {
+     "g": "ub",
+     "t": "Urinary bladder is adequately distended. Wall is normal. Lumen is clear."
+    },
+    {
+     "g": "oth",
+     "t": "No free fluid. Aorta and IVC are normal. No pleural effusion. No significant lymphadenopathy. Bowel loops and RIF are normal."
+    }
+   ],
+   "counts": {
+    "tot": 41,
+    "done": 39,
+    "per": {
+     "liver": {
+      "t": 7,
+      "d": 7,
+      "a": true
+     },
+     "gb": {
+      "t": 4,
+      "d": 4,
+      "a": false
+     },
+     "cbd": {
+      "t": 1,
+      "d": 1,
+      "a": false
+     },
+     "panc": {
+      "t": 4,
+      "d": 4,
+      "a": false
+     },
+     "spl": {
+      "t": 3,
+      "d": 3,
+      "a": false
+     },
+     "kid": {
+      "t": 12,
+      "d": 10,
+      "a": false
+     },
+     "ub": {
+      "t": 4,
+      "d": 4,
+      "a": false
+     },
+     "oth": {
+      "t": 6,
+      "d": 6,
+      "a": false
+     }
+    }
+   },
+   "docx": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><w:document xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" xmlns:r=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships\" xmlns:wp=\"http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing\"><w:body><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/><w:jc w:val=\"center\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/><w:sz w:val=\"26\"/><w:szCs w:val=\"26\"/></w:rPr><w:t xml:space=\"preserve\">अखिल भारतीय आयुर्विज्ञान संस्थान (एम्स), गुवाहाटी</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/><w:jc w:val=\"center\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/><w:sz w:val=\"26\"/><w:szCs w:val=\"26\"/></w:rPr><w:t xml:space=\"preserve\">All India Institute of Medical Sciences, Guwahati-781101</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/><w:jc w:val=\"center\"/></w:pPr><w:r><w:rPr><w:sz w:val=\"18\"/><w:szCs w:val=\"18\"/></w:rPr><w:t xml:space=\"preserve\">स्वास्थ्य और परिवार कल्याण मंत्रालय, भारत सरकार के तत्वावधान में एक वैधानिक निकाय</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/><w:jc w:val=\"center\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/><w:sz w:val=\"18\"/><w:szCs w:val=\"18\"/></w:rPr><w:t xml:space=\"preserve\">(A statutory body under the aegis of Ministry of Health and Family Welfare, GoI)</w:t></w:r></w:p><w:p><w:pPr><w:pBdr><w:bottom w:val=\"single\" w:sz=\"8\" w:space=\"4\" w:color=\"000000\"/></w:pBdr><w:spacing w:before=\"0\" w:after=\"120\"/><w:jc w:val=\"center\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/></w:rPr><w:t xml:space=\"preserve\">DEPARTMENT OF DIAGNOSTIC &amp; INTERVENTIONAL RADIOLOGY</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"60\" w:after=\"100\"/><w:jc w:val=\"center\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/><w:u w:val=\"single\"/></w:rPr><w:t xml:space=\"preserve\">Report Form</w:t></w:r></w:p><w:tbl><w:tblPr><w:tblW w:w=\"9746\" w:type=\"dxa\"/><w:tblBorders><w:top w:val=\"single\" w:sz=\"4\" w:space=\"0\" w:color=\"000000\"/><w:left w:val=\"single\" w:sz=\"4\" w:space=\"0\" w:color=\"000000\"/><w:bottom w:val=\"single\" w:sz=\"4\" w:space=\"0\" w:color=\"000000\"/><w:right w:val=\"single\" w:sz=\"4\" w:space=\"0\" w:color=\"000000\"/><w:insideH w:val=\"single\" w:sz=\"4\" w:space=\"0\" w:color=\"000000\"/><w:insideV w:val=\"single\" w:sz=\"4\" w:space=\"0\" w:color=\"000000\"/></w:tblBorders><w:tblLayout w:type=\"fixed\"/><w:tblCellMar><w:top w:w=\"50\" w:type=\"dxa\"/><w:left w:w=\"100\" w:type=\"dxa\"/><w:bottom w:w=\"50\" w:type=\"dxa\"/><w:right w:w=\"100\" w:type=\"dxa\"/></w:tblCellMar></w:tblPr><w:tblGrid><w:gridCol w:w=\"3600\"/><w:gridCol w:w=\"2050\"/><w:gridCol w:w=\"2048\"/><w:gridCol w:w=\"2048\"/></w:tblGrid><w:tr><w:tc><w:tcPr><w:tcW w:w=\"3600\" w:type=\"dxa\"/></w:tcPr><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Name: </w:t></w:r><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\">Rupa Devi</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW w:w=\"2050\" w:type=\"dxa\"/></w:tcPr><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">CR No: </w:t></w:r><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\"></w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW w:w=\"2048\" w:type=\"dxa\"/></w:tcPr><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Age/Sex: </w:t></w:r><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\">44/F</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW w:w=\"2048\" w:type=\"dxa\"/></w:tcPr><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">USG No: </w:t></w:r><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\"></w:t></w:r></w:p></w:tc></w:tr><w:tr><w:tc><w:tcPr><w:tcW w:w=\"5650\" w:type=\"dxa\"/><w:gridSpan w:val=\"2\"/></w:tcPr><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Date: </w:t></w:r><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\">15/10/2026</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW w:w=\"4096\" w:type=\"dxa\"/><w:gridSpan w:val=\"2\"/></w:tcPr><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Bill No: </w:t></w:r><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\"></w:t></w:r></w:p></w:tc></w:tr></w:tbl><w:p><w:pPr><w:spacing w:before=\"120\" w:after=\"40\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Referred by: </w:t></w:r><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\"></w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"120\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Clinical Details/Remark: </w:t></w:r><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\"></w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"60\" w:after=\"120\"/><w:jc w:val=\"center\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:u w:val=\"single\"/></w:rPr><w:t xml:space=\"preserve\">ULTRASOUND WHOLE ABDOMEN (FEMALE)</w:t></w:r></w:p><w:p><w:pPr><w:keepNext/><w:spacing w:before=\"0\" w:after=\"60\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">FINDINGS:</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"80\"/></w:pPr><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\">Liver is enlarged. Echotexture is normal. Surface is smooth with regular margins. No focal lesion is seen. IHBR are not dilated. Hepatic veins and IVC are normal. Portal vein is normal.</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"80\"/></w:pPr><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\">Gall bladder is well distended. Wall thickness is normal. Lumen is clear. No pericholecystic fluid.</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"80\"/></w:pPr><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\">CBD is normal in calibre with a clear lumen.</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"80\"/></w:pPr><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\">Pancreas is visualised in entirety. Echotexture and bulk are normal. MPD is not dilated. No focal lesion or collection.</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"80\"/></w:pPr><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\">Spleen is normal in size. Echotexture is normal with no focal lesion. Splenic vein is normal.</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"80\"/></w:pPr><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\">Right kidney: Cortical echogenicity and CMD are normal. No calculus. No hydronephrosis. Ureter is not dilated. No focal lesion or cyst.</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"80\"/></w:pPr><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\">Left kidney: Cortical echogenicity and CMD are normal. No calculus. No hydronephrosis. Ureter is not dilated. No focal lesion or cyst.</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"80\"/></w:pPr><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\">Urinary bladder is adequately distended. Wall is normal. Lumen is clear.</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"80\"/></w:pPr><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\">No free fluid. Aorta and IVC are normal. No pleural effusion. No significant lymphadenopathy. Bowel loops and RIF are normal.</w:t></w:r></w:p><w:p><w:pPr><w:keepNext/><w:spacing w:before=\"160\" w:after=\"60\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/><w:u w:val=\"single\"/></w:rPr><w:t xml:space=\"preserve\">IMPRESSION:</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"40\"/><w:ind w:left=\"360\" w:hanging=\"360\"/></w:pPr><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\">•</w:t></w:r><w:r><w:tab/></w:r><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Hepatomegaly.</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"40\"/><w:ind w:left=\"360\" w:hanging=\"360\"/></w:pPr><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\">•</w:t></w:r><w:r><w:tab/></w:r><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Likely fatty liver.</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"40\"/><w:ind w:left=\"360\" w:hanging=\"360\"/></w:pPr><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\">•</w:t></w:r><w:r><w:tab/></w:r><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Correlate clinically.</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"160\" w:after=\"80\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Advice: </w:t></w:r><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\">Clinical correlation. Follow-up ultrasound.</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"420\" w:after=\"0\"/></w:pPr></w:p><w:tbl><w:tblPr><w:tblW w:w=\"9746\" w:type=\"dxa\"/><w:tblLayout w:type=\"fixed\"/><w:tblCellMar><w:top w:w=\"50\" w:type=\"dxa\"/><w:left w:w=\"100\" w:type=\"dxa\"/><w:bottom w:w=\"50\" w:type=\"dxa\"/><w:right w:w=\"100\" w:type=\"dxa\"/></w:tblCellMar></w:tblPr><w:tblGrid><w:gridCol w:w=\"2437\"/><w:gridCol w:w=\"2437\"/><w:gridCol w:w=\"2436\"/><w:gridCol w:w=\"2436\"/></w:tblGrid><w:tr><w:tc><w:tcPr><w:tcW w:w=\"2437\" w:type=\"dxa\"/></w:tcPr><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Dr. Pranjal Phukan</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Professor</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW w:w=\"2437\" w:type=\"dxa\"/></w:tcPr><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Dr. Deb. Kr. Boruah</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Additional Professor</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW w:w=\"2436\" w:type=\"dxa\"/></w:tcPr><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Dr. Kalyan Sarma</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Associate Professor</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW w:w=\"2436\" w:type=\"dxa\"/></w:tcPr><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Dr. Prince Das</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Assistant Professor</w:t></w:r></w:p></w:tc></w:tr></w:tbl><w:p><w:pPr><w:spacing w:before=\"360\" w:after=\"20\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Resident Doctors</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"80\"/></w:pPr><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\">Dr. R. Nath</w:t></w:r></w:p><w:sectPr><w:pgSz w:w=\"11906\" w:h=\"16838\"/><w:pgMar w:top=\"850\" w:right=\"1080\" w:bottom=\"850\" w:left=\"1080\" w:header=\"567\" w:footer=\"567\" w:gutter=\"0\"/></w:sectPr></w:body></w:document>"
+  }
+ },
+ {
+  "name": "sex switch hides prostate",
+  "expected": {
+   "rows": {
+    "pro.vol": {
+     "s": [
+      "Enlarged"
+     ],
+     "f": {}
+    },
+    "liver.size": {
+     "s": [
+      "N"
+     ],
+     "f": {}
+    },
+    "liver.echo": {
+     "s": [
+      "N"
+     ],
+     "f": {}
+    },
+    "liver.surf": {
+     "s": [
+      "N"
+     ],
+     "f": {}
+    },
+    "liver.fl": {
+     "s": [
+      "No"
+     ],
+     "f": {}
+    },
+    "liver.ihbr": {
+     "s": [
+      "N"
+     ],
+     "f": {}
+    },
+    "liver.hv": {
+     "s": [
+      "N"
+     ],
+     "f": {}
+    },
+    "liver.pv": {
+     "s": [
+      "N"
+     ],
+     "f": {}
+    }
+   },
+   "text": "ULTRASOUND WHOLE ABDOMEN (FEMALE)\n\nDate: 15/10/2026\n\nFINDINGS:\nLiver is normal in size. Echotexture is normal. Surface is smooth with regular margins. No focal lesion is seen. IHBR are not dilated. Hepatic veins and IVC are normal. Portal vein is normal.\n\nIMPRESSION:\n- No significant abnormality detected on ultrasound of the whole abdomen.",
+   "impression": [],
+   "findings": [
+    {
+     "g": "liver",
+     "t": "Liver is normal in size. Echotexture is normal. Surface is smooth with regular margins. No focal lesion is seen. IHBR are not dilated. Hepatic veins and IVC are normal. Portal vein is normal."
+    }
+   ],
+   "counts": {
+    "tot": 41,
+    "done": 7,
+    "per": {
+     "liver": {
+      "t": 7,
+      "d": 7,
+      "a": false
+     },
+     "gb": {
+      "t": 4,
+      "d": 0,
+      "a": false
+     },
+     "cbd": {
+      "t": 1,
+      "d": 0,
+      "a": false
+     },
+     "panc": {
+      "t": 4,
+      "d": 0,
+      "a": false
+     },
+     "spl": {
+      "t": 3,
+      "d": 0,
+      "a": false
+     },
+     "kid": {
+      "t": 12,
+      "d": 0,
+      "a": false
+     },
+     "ub": {
+      "t": 4,
+      "d": 0,
+      "a": false
+     },
+     "oth": {
+      "t": 6,
+      "d": 0,
+      "a": false
+     }
+    }
+   },
+   "docx": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><w:document xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" xmlns:r=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships\" xmlns:wp=\"http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing\"><w:body><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/><w:jc w:val=\"center\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/><w:sz w:val=\"26\"/><w:szCs w:val=\"26\"/></w:rPr><w:t xml:space=\"preserve\">अखिल भारतीय आयुर्विज्ञान संस्थान (एम्स), गुवाहाटी</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/><w:jc w:val=\"center\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/><w:sz w:val=\"26\"/><w:szCs w:val=\"26\"/></w:rPr><w:t xml:space=\"preserve\">All India Institute of Medical Sciences, Guwahati-781101</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/><w:jc w:val=\"center\"/></w:pPr><w:r><w:rPr><w:sz w:val=\"18\"/><w:szCs w:val=\"18\"/></w:rPr><w:t xml:space=\"preserve\">स्वास्थ्य और परिवार कल्याण मंत्रालय, भारत सरकार के तत्वावधान में एक वैधानिक निकाय</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/><w:jc w:val=\"center\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/><w:sz w:val=\"18\"/><w:szCs w:val=\"18\"/></w:rPr><w:t xml:space=\"preserve\">(A statutory body under the aegis of Ministry of Health and Family Welfare, GoI)</w:t></w:r></w:p><w:p><w:pPr><w:pBdr><w:bottom w:val=\"single\" w:sz=\"8\" w:space=\"4\" w:color=\"000000\"/></w:pBdr><w:spacing w:before=\"0\" w:after=\"120\"/><w:jc w:val=\"center\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/></w:rPr><w:t xml:space=\"preserve\">DEPARTMENT OF DIAGNOSTIC &amp; INTERVENTIONAL RADIOLOGY</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"60\" w:after=\"100\"/><w:jc w:val=\"center\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/><w:u w:val=\"single\"/></w:rPr><w:t xml:space=\"preserve\">Report Form</w:t></w:r></w:p><w:tbl><w:tblPr><w:tblW w:w=\"9746\" w:type=\"dxa\"/><w:tblBorders><w:top w:val=\"single\" w:sz=\"4\" w:space=\"0\" w:color=\"000000\"/><w:left w:val=\"single\" w:sz=\"4\" w:space=\"0\" w:color=\"000000\"/><w:bottom w:val=\"single\" w:sz=\"4\" w:space=\"0\" w:color=\"000000\"/><w:right w:val=\"single\" w:sz=\"4\" w:space=\"0\" w:color=\"000000\"/><w:insideH w:val=\"single\" w:sz=\"4\" w:space=\"0\" w:color=\"000000\"/><w:insideV w:val=\"single\" w:sz=\"4\" w:space=\"0\" w:color=\"000000\"/></w:tblBorders><w:tblLayout w:type=\"fixed\"/><w:tblCellMar><w:top w:w=\"50\" w:type=\"dxa\"/><w:left w:w=\"100\" w:type=\"dxa\"/><w:bottom w:w=\"50\" w:type=\"dxa\"/><w:right w:w=\"100\" w:type=\"dxa\"/></w:tblCellMar></w:tblPr><w:tblGrid><w:gridCol w:w=\"3600\"/><w:gridCol w:w=\"2050\"/><w:gridCol w:w=\"2048\"/><w:gridCol w:w=\"2048\"/></w:tblGrid><w:tr><w:tc><w:tcPr><w:tcW w:w=\"3600\" w:type=\"dxa\"/></w:tcPr><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Name: </w:t></w:r><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\"></w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW w:w=\"2050\" w:type=\"dxa\"/></w:tcPr><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">CR No: </w:t></w:r><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\"></w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW w:w=\"2048\" w:type=\"dxa\"/></w:tcPr><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Age/Sex: </w:t></w:r><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\">/F</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW w:w=\"2048\" w:type=\"dxa\"/></w:tcPr><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">USG No: </w:t></w:r><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\"></w:t></w:r></w:p></w:tc></w:tr><w:tr><w:tc><w:tcPr><w:tcW w:w=\"5650\" w:type=\"dxa\"/><w:gridSpan w:val=\"2\"/></w:tcPr><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Date: </w:t></w:r><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\">15/10/2026</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW w:w=\"4096\" w:type=\"dxa\"/><w:gridSpan w:val=\"2\"/></w:tcPr><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Bill No: </w:t></w:r><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\"></w:t></w:r></w:p></w:tc></w:tr></w:tbl><w:p><w:pPr><w:spacing w:before=\"120\" w:after=\"40\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Referred by: </w:t></w:r><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\"></w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"120\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Clinical Details/Remark: </w:t></w:r><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\"></w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"60\" w:after=\"120\"/><w:jc w:val=\"center\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:u w:val=\"single\"/></w:rPr><w:t xml:space=\"preserve\">ULTRASOUND WHOLE ABDOMEN (FEMALE)</w:t></w:r></w:p><w:p><w:pPr><w:keepNext/><w:spacing w:before=\"0\" w:after=\"60\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">FINDINGS:</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"80\"/></w:pPr><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\">Liver is normal in size. Echotexture is normal. Surface is smooth with regular margins. No focal lesion is seen. IHBR are not dilated. Hepatic veins and IVC are normal. Portal vein is normal.</w:t></w:r></w:p><w:p><w:pPr><w:keepNext/><w:spacing w:before=\"160\" w:after=\"60\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/><w:u w:val=\"single\"/></w:rPr><w:t xml:space=\"preserve\">IMPRESSION:</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"40\"/><w:ind w:left=\"360\" w:hanging=\"360\"/></w:pPr><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\">•</w:t></w:r><w:r><w:tab/></w:r><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">No significant abnormality detected on ultrasound of the whole abdomen.</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"420\" w:after=\"0\"/></w:pPr></w:p><w:tbl><w:tblPr><w:tblW w:w=\"9746\" w:type=\"dxa\"/><w:tblLayout w:type=\"fixed\"/><w:tblCellMar><w:top w:w=\"50\" w:type=\"dxa\"/><w:left w:w=\"100\" w:type=\"dxa\"/><w:bottom w:w=\"50\" w:type=\"dxa\"/><w:right w:w=\"100\" w:type=\"dxa\"/></w:tblCellMar></w:tblPr><w:tblGrid><w:gridCol w:w=\"2437\"/><w:gridCol w:w=\"2437\"/><w:gridCol w:w=\"2436\"/><w:gridCol w:w=\"2436\"/></w:tblGrid><w:tr><w:tc><w:tcPr><w:tcW w:w=\"2437\" w:type=\"dxa\"/></w:tcPr><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Dr. Pranjal Phukan</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Professor</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW w:w=\"2437\" w:type=\"dxa\"/></w:tcPr><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Dr. Deb. Kr. Boruah</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Additional Professor</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW w:w=\"2436\" w:type=\"dxa\"/></w:tcPr><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Dr. Kalyan Sarma</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Associate Professor</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW w:w=\"2436\" w:type=\"dxa\"/></w:tcPr><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Dr. Prince Das</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Assistant Professor</w:t></w:r></w:p></w:tc></w:tr></w:tbl><w:p><w:pPr><w:spacing w:before=\"360\" w:after=\"20\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Resident Doctors</w:t></w:r></w:p><w:sectPr><w:pgSz w:w=\"11906\" w:h=\"16838\"/><w:pgMar w:top=\"850\" w:right=\"1080\" w:bottom=\"850\" w:left=\"1080\" w:header=\"567\" w:footer=\"567\" w:gutter=\"0\"/></w:sectPr></w:body></w:document>"
+  }
+ },
+ {
+  "name": "toggle off a chip and required field blank",
+  "expected": {
+   "rows": {
+    "liver.size": {
+     "s": [],
+     "f": {}
+    },
+    "ub.pvr": {
+     "s": [
+      "Measured"
+     ],
+     "f": {}
+    },
+    "gb.wall": {
+     "s": [
+      "N"
+     ],
+     "f": {}
+    },
+    "oth.pe": {
+     "s": [
+      "No"
+     ],
+     "f": {}
+    }
+   },
+   "text": "ULTRASOUND WHOLE ABDOMEN (MALE)\n\nName: Toggle\nDate: 15/10/2026\n\nFINDINGS:\nWall thickness is normal.\nNo pleural effusion.\n\nIMPRESSION:\n- No significant abnormality detected on ultrasound of the whole abdomen.",
+   "impression": [],
+   "findings": [
+    {
+     "g": "gb",
+     "t": "Wall thickness is normal."
+    },
+    {
+     "g": "oth",
+     "t": "No pleural effusion."
+    }
+   ],
+   "counts": {
+    "tot": 44,
+    "done": 2,
+    "per": {
+     "liver": {
+      "t": 7,
+      "d": 0,
+      "a": false
+     },
+     "gb": {
+      "t": 4,
+      "d": 1,
+      "a": false
+     },
+     "cbd": {
+      "t": 1,
+      "d": 0,
+      "a": false
+     },
+     "panc": {
+      "t": 4,
+      "d": 0,
+      "a": false
+     },
+     "spl": {
+      "t": 3,
+      "d": 0,
+      "a": false
+     },
+     "kid": {
+      "t": 12,
+      "d": 0,
+      "a": false
+     },
+     "ub": {
+      "t": 4,
+      "d": 0,
+      "a": false
+     },
+     "pro": {
+      "t": 3,
+      "d": 0,
+      "a": false
+     },
+     "oth": {
+      "t": 6,
+      "d": 1,
+      "a": false
+     }
+    }
+   },
+   "docx": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><w:document xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" xmlns:r=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships\" xmlns:wp=\"http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing\"><w:body><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/><w:jc w:val=\"center\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/><w:sz w:val=\"26\"/><w:szCs w:val=\"26\"/></w:rPr><w:t xml:space=\"preserve\">अखिल भारतीय आयुर्विज्ञान संस्थान (एम्स), गुवाहाटी</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/><w:jc w:val=\"center\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/><w:sz w:val=\"26\"/><w:szCs w:val=\"26\"/></w:rPr><w:t xml:space=\"preserve\">All India Institute of Medical Sciences, Guwahati-781101</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/><w:jc w:val=\"center\"/></w:pPr><w:r><w:rPr><w:sz w:val=\"18\"/><w:szCs w:val=\"18\"/></w:rPr><w:t xml:space=\"preserve\">स्वास्थ्य और परिवार कल्याण मंत्रालय, भारत सरकार के तत्वावधान में एक वैधानिक निकाय</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/><w:jc w:val=\"center\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/><w:sz w:val=\"18\"/><w:szCs w:val=\"18\"/></w:rPr><w:t xml:space=\"preserve\">(A statutory body under the aegis of Ministry of Health and Family Welfare, GoI)</w:t></w:r></w:p><w:p><w:pPr><w:pBdr><w:bottom w:val=\"single\" w:sz=\"8\" w:space=\"4\" w:color=\"000000\"/></w:pBdr><w:spacing w:before=\"0\" w:after=\"120\"/><w:jc w:val=\"center\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/></w:rPr><w:t xml:space=\"preserve\">DEPARTMENT OF DIAGNOSTIC &amp; INTERVENTIONAL RADIOLOGY</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"60\" w:after=\"100\"/><w:jc w:val=\"center\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/><w:u w:val=\"single\"/></w:rPr><w:t xml:space=\"preserve\">Report Form</w:t></w:r></w:p><w:tbl><w:tblPr><w:tblW w:w=\"9746\" w:type=\"dxa\"/><w:tblBorders><w:top w:val=\"single\" w:sz=\"4\" w:space=\"0\" w:color=\"000000\"/><w:left w:val=\"single\" w:sz=\"4\" w:space=\"0\" w:color=\"000000\"/><w:bottom w:val=\"single\" w:sz=\"4\" w:space=\"0\" w:color=\"000000\"/><w:right w:val=\"single\" w:sz=\"4\" w:space=\"0\" w:color=\"000000\"/><w:insideH w:val=\"single\" w:sz=\"4\" w:space=\"0\" w:color=\"000000\"/><w:insideV w:val=\"single\" w:sz=\"4\" w:space=\"0\" w:color=\"000000\"/></w:tblBorders><w:tblLayout w:type=\"fixed\"/><w:tblCellMar><w:top w:w=\"50\" w:type=\"dxa\"/><w:left w:w=\"100\" w:type=\"dxa\"/><w:bottom w:w=\"50\" w:type=\"dxa\"/><w:right w:w=\"100\" w:type=\"dxa\"/></w:tblCellMar></w:tblPr><w:tblGrid><w:gridCol w:w=\"3600\"/><w:gridCol w:w=\"2050\"/><w:gridCol w:w=\"2048\"/><w:gridCol w:w=\"2048\"/></w:tblGrid><w:tr><w:tc><w:tcPr><w:tcW w:w=\"3600\" w:type=\"dxa\"/></w:tcPr><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Name: </w:t></w:r><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\">Toggle</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW w:w=\"2050\" w:type=\"dxa\"/></w:tcPr><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">CR No: </w:t></w:r><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\"></w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW w:w=\"2048\" w:type=\"dxa\"/></w:tcPr><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Age/Sex: </w:t></w:r><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\">/M</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW w:w=\"2048\" w:type=\"dxa\"/></w:tcPr><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">USG No: </w:t></w:r><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\"></w:t></w:r></w:p></w:tc></w:tr><w:tr><w:tc><w:tcPr><w:tcW w:w=\"5650\" w:type=\"dxa\"/><w:gridSpan w:val=\"2\"/></w:tcPr><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Date: </w:t></w:r><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\">15/10/2026</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW w:w=\"4096\" w:type=\"dxa\"/><w:gridSpan w:val=\"2\"/></w:tcPr><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Bill No: </w:t></w:r><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\"></w:t></w:r></w:p></w:tc></w:tr></w:tbl><w:p><w:pPr><w:spacing w:before=\"120\" w:after=\"40\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Referred by: </w:t></w:r><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\"></w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"120\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Clinical Details/Remark: </w:t></w:r><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\"></w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"60\" w:after=\"120\"/><w:jc w:val=\"center\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:u w:val=\"single\"/></w:rPr><w:t xml:space=\"preserve\">ULTRASOUND WHOLE ABDOMEN (MALE)</w:t></w:r></w:p><w:p><w:pPr><w:keepNext/><w:spacing w:before=\"0\" w:after=\"60\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">FINDINGS:</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"80\"/></w:pPr><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\">Wall thickness is normal.</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"80\"/></w:pPr><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\">No pleural effusion.</w:t></w:r></w:p><w:p><w:pPr><w:keepNext/><w:spacing w:before=\"160\" w:after=\"60\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/><w:u w:val=\"single\"/></w:rPr><w:t xml:space=\"preserve\">IMPRESSION:</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"40\"/><w:ind w:left=\"360\" w:hanging=\"360\"/></w:pPr><w:r><w:rPr></w:rPr><w:t xml:space=\"preserve\">•</w:t></w:r><w:r><w:tab/></w:r><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">No significant abnormality detected on ultrasound of the whole abdomen.</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"420\" w:after=\"0\"/></w:pPr></w:p><w:tbl><w:tblPr><w:tblW w:w=\"9746\" w:type=\"dxa\"/><w:tblLayout w:type=\"fixed\"/><w:tblCellMar><w:top w:w=\"50\" w:type=\"dxa\"/><w:left w:w=\"100\" w:type=\"dxa\"/><w:bottom w:w=\"50\" w:type=\"dxa\"/><w:right w:w=\"100\" w:type=\"dxa\"/></w:tblCellMar></w:tblPr><w:tblGrid><w:gridCol w:w=\"2437\"/><w:gridCol w:w=\"2437\"/><w:gridCol w:w=\"2436\"/><w:gridCol w:w=\"2436\"/></w:tblGrid><w:tr><w:tc><w:tcPr><w:tcW w:w=\"2437\" w:type=\"dxa\"/></w:tcPr><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Dr. Pranjal Phukan</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Professor</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW w:w=\"2437\" w:type=\"dxa\"/></w:tcPr><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Dr. Deb. Kr. Boruah</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Additional Professor</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW w:w=\"2436\" w:type=\"dxa\"/></w:tcPr><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Dr. Kalyan Sarma</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Associate Professor</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW w:w=\"2436\" w:type=\"dxa\"/></w:tcPr><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Dr. Prince Das</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before=\"0\" w:after=\"0\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Assistant Professor</w:t></w:r></w:p></w:tc></w:tr></w:tbl><w:p><w:pPr><w:spacing w:before=\"360\" w:after=\"20\"/></w:pPr><w:r><w:rPr><w:b/><w:bCs/></w:rPr><w:t xml:space=\"preserve\">Resident Doctors</w:t></w:r></w:p><w:sectPr><w:pgSz w:w=\"11906\" w:h=\"16838\"/><w:pgMar w:top=\"850\" w:right=\"1080\" w:bottom=\"850\" w:left=\"1080\" w:header=\"567\" w:footer=\"567\" w:gutter=\"0\"/></w:sectPr></w:body></w:document>"
+  }
+ }
+]
