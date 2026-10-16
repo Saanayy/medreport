@@ -1,8 +1,8 @@
 {
-  "name": "usg-reporter",
+  "name": "sonoform",
   "version": "1.0.0",
   "private": true,
-  "description": "USG whole-abdomen report generator — installable offline web app for Mac and iPad",
+  "description": "Sonoform: tap-to-fill ultrasound report generator — installable offline web app for iPhone, iPad and Mac",
   "type": "module",
   "scripts": {
     "test": "node --test tests/*.test.mjs",

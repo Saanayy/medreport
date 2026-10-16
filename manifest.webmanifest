@@ -1,13 +1,13 @@
 {
-  "name": "USG Whole Abdomen",
-  "short_name": "USG Report",
-  "description": "Structured ultrasound whole-abdomen reporting: mark findings, get the report and a Word file.",
+  "name": "Sonoform",
+  "short_name": "Sonoform",
+  "description": "Tap-to-fill ultrasound reports: mark findings, get the report, copy it or save it as Word.",
   "id": "./",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
-  "background_color": "#FAF9F5",
-  "theme_color": "#FAF9F5",
+  "background_color": "#F4F2EC",
+  "theme_color": "#F4F2EC",
   "categories": ["medical", "productivity"],
   "icons": [
     {"src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png"},

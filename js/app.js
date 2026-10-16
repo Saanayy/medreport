@@ -1,481 +1,440 @@
-/* UI: rendering, input, handwriting, autosave, copy/print/Word. Report wording lives in engine.js. */
-import {SECS,DOCS,ADV} from './schema.js';
+/* UI: screens, rendering, input, drafts, settings, copy/print/Word. Report wording lives in schema.js. */
+import {ORG,SIDES,STUDIES,DEFAULT_SETTINGS} from './schema.js';
 import {esc} from './util.js';
 import * as E from './engine.js';
-import {buildDocx,docName as docNameOf} from './docx.js';
+import {buildDocx} from './docx.js';
+import * as Ink from './ink.js';
 
 const $=(s,r=document)=>r.querySelector(s), $$=(s,r=document)=>[...r.querySelectorAll(s)];
-const {SEXW,sidesOf,key,IDX,opt,isAbn,fmtDate,blank}=E;
+const mq=q=>matchMedia(q).matches;
+const isWide=()=>mq('(min-width:1280px)');
+const reduce=()=>mq('(prefers-reduced-motion: reduce)');
 
-/* ---------- State (drafts autosave on this device) ---------- */
-const KEY='usg-abd-male-v1', TKEY='usg-abd-theme';
-let S=(()=>{try{const j=localStorage.getItem(KEY);if(j){const o=JSON.parse(j);if(o&&o.r)return Object.assign(blank(),o)}}catch(e){}return blank()})();
-const sex=()=>E.sex(S), act=()=>E.act(S), titleTxt=()=>E.titleTxt(S);
-const st=k=>E.st(S,k), peek=k=>E.peek(S,k);
-const naSet=(sec,sd)=>E.naSet(S,sec,sd), marked=(sec,row,sd)=>E.marked(S,sec,row,sd);
-const counts=()=>E.counts(S), impression=()=>E.impression(S), report=()=>E.report(S), reportText=()=>E.reportText(S);
+/* ---------- Storage: everything stays on this device ---------- */
+const K={drafts:'sonoform-drafts',set:'sonoform-settings',theme:'sonoform-theme',pos:'sonoform-positive'};
+const load=(k,d)=>{try{const j=localStorage.getItem(k);return j?JSON.parse(j):d}catch(e){return d}};
+const store=(k,v)=>{try{localStorage.setItem(k,typeof v==='string'?v:JSON.stringify(v))}catch(e){}};
+let set={...DEFAULT_SETTINGS,...load(K.set,{})};
+let drafts=load(K.drafts,[]).filter(d=>d&&d.id&&d.sel);
+let D=null;
+let svT=0;
+const saveSet=()=>store(K.set,set);
+function saveDrafts(){drafts.sort((a,b)=>b.updated-a.updated);if(drafts.length>100)drafts.length=100;store(K.drafts,drafts)}
+function touch(){if(!D)return;D.updated=Date.now();clearTimeout(svT);svT=setTimeout(saveDrafts,250)}
+const untouched=d=>!d.pt.name.trim()&&!Object.keys(d.sel).length&&!Ink.anyInk()&&!(d.other||'').trim();
 
-function reportHTML(){
-  const R=report(),p=R.p,left=R.c.tot-R.c.done;
-  const row=(k,v)=>v?`<dt>${k}</dt><dd>${esc(v)}</dd>`:'';
-  let h='<div class="doc">';
-  if(left>0) h+=`<div class="warn-l">${left} row${left>1?'s':''} still unmarked</div>`;
-  h+='<div class="inst"><b>All India Institute of Medical Sciences, Guwahati</b>Department of Diagnostic &amp; Interventional Radiology</div>';
-  h+=`<div class="ttl">${titleTxt()}</div>`;
-  const pt=row('Name',p.name)+row('Age/Sex',p.age?p.age+'/'+sex():'')+row('CR No',p.cr)+row('USG No',p.usg)+row('Bill No',p.bill)+row('Date',fmtDate(p.date))+row('Referred by',p.ref)+row('Clinical',(p.clin||'').trim());
-  if(pt) h+=`<dl class="pt">${pt}</dl>`;
-  h+=notesHTML('pt');
-  h+='<h3>Findings</h3>';
-  const fb=act().map(sec=>R.paras.filter(x=>x.g===sec.id).map(x=>`<p>${esc(x.t)}</p>`).join('')+notesHTML(sec.id)).join('');
-  h+=fb||'<p class="ph">Findings appear here as you mark rows.</p>';
-  if(R.add) h+=`<h3>Additional findings</h3><p>${esc(R.add)}</p>`;
-  h+=`<h3>Impression${R.impAuto&&R.imp.length?'<span class="auto">suggested</span>':''}</h3>`;
-  h+=R.imp.length?'<ul>'+R.imp.map(t=>`<li>${esc(t)}</li>`).join('')+'</ul>':'<p class="ph">Built from your positive findings.</p>';
-  if(R.adv) h+=`<h3>Advice</h3><p>${esc(R.adv)}</p>`;
-  h+=notesHTML('sum');
-  if(R.con||R.res) h+=`<div class="sig">${R.con?`<b>${esc(R.con[0])}</b><br>${esc(R.con[1])}`:''}${R.res?`${R.con?'<br><br>':''}Resident: ${esc(R.res)}`:''}</div>`;
-  return h+'</div>';
+/* The earlier single-draft app (USG Whole Abdomen): carry its patient over once. */
+(function migrate(){
+  if(load('sonoform-migrated',0))return;store('sonoform-migrated','1');
+  const o=load('usg-abd-male-v1',null);
+  if(o&&o.p&&(o.p.name||'').trim()){const d=E.blank('abd',o.p.sex==='F'?'Female':'Male');Object.keys(d.pt).forEach(k=>{if(o.p[k])d.pt[k]=o.p[k]});drafts.push(d);saveDrafts()}
+  const t=load('usg-abd-theme',null);if(t&&!localStorage.getItem(K.theme))store(K.theme,t);
+})();
+
+/* ---------- Routing: #home · #settings · #r/<draft id> ---------- */
+function route(){
+  const h=location.hash.slice(1);
+  if(D&&!h.startsWith('r/'))leaveFill();
+  if(h==='settings')return show('settings');
+  if(h.startsWith('r/')){const d=drafts.find(x=>x.id===h.slice(2));if(d)return openFill(d)}
+  show('home');
+}
+const go=h=>{if(location.hash==='#'+h)route();else location.hash=h};
+function show(id){
+  $$('.screen').forEach(s=>s.hidden=s.id!==id);$('#toast').hidden=true;
+  if(id==='home')renderHome();
+  if(id==='settings')renderSettings();
+  if(id!=='fill'){closeSheet();if(Ink.inkOn())Ink.setInk(false)}
+  scrollTo(0,0);
+}
+function leaveFill(){
+  if(!D)return;
+  if(untouched(D))drafts=drafts.filter(x=>x!==D);
+  saveDrafts();D=null;closeSheet();if(Ink.inkOn())Ink.setInk(false);
 }
 
-/* ---------- Rendering ---------- */
-function fldHTML(k,f,v){
-  const need=f.req&&!String(v).trim()?' need':'';
-  if(f.ch) return `<div class="fld sub${need}"><span>${f.l}</span>${f.ch.map(c=>`<button type="button" class="mini" data-key="${k}" data-k="${f.k}" data-val="${c}" aria-pressed="${v===c}">${c}</button>`).join('')}</div>`;
-  const id=`f-${k.replace(/\./g,'-')}-${f.k}`;
-  return `<label class="fld${f.num?'':' txt'}${f.wide?' wide':''}${need}" for="${id}" data-req="${f.req?1:''}"><span>${f.l}</span><input id="${id}" data-key="${k}" data-k="${f.k}" autocomplete="off"${f.num?' inputmode="decimal"':''} placeholder="${esc(f.ph||'')}" value="${esc(v)}">${f.u?`<em>${f.u}</em>`:''}</label>`;
+/* ---------- Home ---------- */
+let editDrafts=false;
+function ringHTML(p,cls=''){return `<div class="ring ${cls}" style="--p:${p}"><span>${p}%</span></div>`}
+function when(t){
+  const d=new Date(t),n=new Date(),y=new Date(n);y.setDate(n.getDate()-1);
+  if(d.toDateString()===n.toDateString())return d.toTimeString().slice(0,5);
+  if(d.toDateString()===y.toDateString())return 'Yesterday';
+  return d.toLocaleDateString(undefined,{day:'numeric',month:'short'});
 }
-function sideHTML(sec,row,sd){
-  const k=key(sec.id,row.id,sd),x=peek(k);
-  let h='<div class="sidebox">'+(sd?`<div class="sidetag">${sd==='R'?'Right':'Left'}</div>`:'');
-  if(naSet(sec,sd).has(row.id)) return h+'<div class="namsg">Not applicable</div></div>';
-  h+='<div class="chips">'+row.o.map(o=>`<button type="button" class="chip" data-key="${k}" data-v="${esc(o.v)}"${o.n?' data-n':''} aria-pressed="${x.s.includes(o.v)}">${esc(o.v)}</button>`).join('')+'</div>';
-  const fl=[],seen=new Set();
-  x.s.forEach(v=>(opt(row,v)?.f||[]).forEach(f=>{if(!seen.has(f.k)){seen.add(f.k);fl.push(f)}}));
-  if(fl.length) h+='<div class="flds">'+fl.map(f=>fldHTML(k,f,x.f[f.k]??'')).join('')+'</div>';
-  return h+'</div>';
+function renderHome(){
+  $('#studies').innerHTML=STUDIES.map(s=>{
+    const soon=!s.organs.length;
+    return `<div class="study${soon?' soon':''}"><div style="flex:1;min-width:0"><div class="sn">${esc(s.n)}</div><div class="sd">${esc(s.d)}</div></div>
+      <div class="so">${soon?'<span class="soonTag">Coming soon</span>':s.opts.map(o=>`<button type="button" data-new="${s.id}" data-var="${esc(o)}">${esc(o)}</button>`).join('')}</div></div>`}).join('');
+  $('#draftsEdit').hidden=!drafts.length;$('#draftsEdit').textContent=editDrafts?'Done':'Edit';
+  $('#drafts').innerHTML=drafts.length?drafts.map(d=>{
+    const c=E.counts(d),st=E.studyName(d)+(d.study==='abd'?' · '+d.sex:'');
+    return `<button type="button" class="draft" data-open="${d.id}">${ringHTML(c.pct)}<div style="min-width:0"><div class="dn">${esc(d.pt.name||'Unnamed patient')}</div><div class="dm">${esc(st)} · ${when(d.updated)}</div></div>`+
+      (editDrafts?`<span class="dx" data-del="${d.id}" role="button">Delete</span>`:`<span class="da">${c.pct===100?'Open':'Resume'} ›</span>`)+'</button>'}).join(''):'<div class="empty">No drafts yet. Drafts appear here as you fill reports.</div>';
 }
-function rowCls(sec,row){
-  const sds=sidesOf(sec);let todo=false,abn=false,na=0;
-  sds.forEach(sd=>{if(naSet(sec,sd).has(row.id)){na++;return}if(!marked(sec,row,sd))todo=true;if(isAbn(row,peek(key(sec.id,row.id,sd))))abn=true});
-  return 'row'+(na===sds.length?' na':'')+(todo?' todo':'')+(abn?' abn':'');
+function newDraft(study,variant){const d=E.blank(study,variant);drafts.unshift(d);go('r/'+d.id)}
+
+/* ---------- Settings ---------- */
+let setEdit={cons:false,adv:false},adding=null;
+function renderSettings(){
+  const theme=load(K.theme,'system')||'system',pos=localStorage.getItem(K.pos)||'filled';
+  const fr=(k,l)=>`<label class="fieldrow"><span>${l}</span><input data-set="${k}" value="${esc(set[k])}" autocomplete="off"></label>`;
+  let h=`<div class="sect">Letterhead</div><div class="group pad">${fr('inst','Institution')}${fr('dept','Department')}${fr('addr','Address')}</div>`;
+  h+=`<div class="sect">Consultant sign-off${set.cons.length?`<button type="button" class="link" data-setedit="cons">${setEdit.cons?'Done':'Edit'}</button>`:''}</div><div class="group">`;
+  h+=set.cons.map((c,i)=>`<button type="button" class="opt" data-cons="${i}"><span class="ot">${esc(c.name)}${c.title?`<small>${esc(c.title)}</small>`:''}</span>`+
+    (setEdit.cons?`<span class="rm" data-rmcons="${i}" role="button">Remove</span>`:`<span class="otag">${i===set.consSel?'Signs reports':''}</span><span class="radio${i===set.consSel?' on':''}"></span>`)+'</button>').join('');
+  h+=adding==='cons'?`<div class="addrow"><input id="addName" placeholder="Name, e.g. Dr A. Rao" autocomplete="off"><input id="addTitle" placeholder="Designation (optional)" autocomplete="off"><button type="button" class="btn dark" data-add="cons">Add</button></div>`
+    :'<button type="button" class="addbtn" data-adding="cons">+ Add consultant</button>';
+  h+='</div>';
+  h+=`<div class="sect">Resident</div><div class="group pad">${fr('resident','Name on report')}</div>`;
+  h+=`<div class="sect">Default advice${set.adv.length?`<button type="button" class="link" data-setedit="adv">${setEdit.adv?'Done':'Edit'}</button>`:''}</div><div class="group">`;
+  h+=set.adv.map((a,i)=>`<button type="button" class="opt serif" data-advd="${i}"><span class="ot">${esc(a)}</span>`+
+    (setEdit.adv?`<span class="rm" data-rmadv="${i}" role="button">Remove</span>`:`<span class="tagd" style="opacity:${i===set.advSel?1:0}">DEFAULT</span>`)+'</button>').join('');
+  h+=adding==='adv'?`<div class="addrow"><input id="addAdv" placeholder="e.g. Follow-up scan advised." autocomplete="off"><button type="button" class="btn dark" data-add="adv">Add</button></div>`
+    :'<button type="button" class="addbtn" data-adding="adv">+ Add phrase</button>';
+  h+='</div>';
+  const seg=(attr,cur,opts)=>`<div class="seg">${opts.map(([v,l])=>`<button type="button" ${attr}="${v}" aria-pressed="${cur===v}">${l}</button>`).join('')}</div>`;
+  h+=`<div class="sect">Appearance</div>${seg('data-theme-set',theme,[['system','System'],['light','Light'],['dark','Dark']])}`;
+  h+=`<div class="sect">Positive findings</div>${seg('data-pos-set',pos,[['filled','Filled'],['tinted','Tinted']])}`;
+  h+=`<div class="sect">Drafts</div><div class="group"><button type="button" class="opt" id="wipe"><span class="ot">Delete all drafts</span><span class="otag">${drafts.length} on this device</span></button></div>`;
+  h+='<p class="footnote">Patient data and drafts are stored only on this device. The app works offline once loaded.</p>';
+  $('#setBody').innerHTML=h;
+  if(adding){const f=$(adding==='cons'?'#addName':'#addAdv');f&&f.focus()}
 }
-const rowHTML=(sec,row)=>`<div class="${rowCls(sec,row)}" id="row-${sec.id}-${row.id}" data-ink="${sec.id}.${row.id}"><div class="rl">${row.l}</div><div class="rc${sec.sides?' sides':''}">${sidesOf(sec).map(sd=>sideHTML(sec,row,sd)).join('')}</div></div>`;
-const secBody=sec=>sec.rows.map(r=>rowHTML(sec,r)).join('');
-function renderSec(sec){const c=$('#sb-'+sec.id);inkRelease(c);c.innerHTML=secBody(sec);mountInk(c)}
-function renderAll(){
-  inkRelease($('#secs'));
-  for(const k in imgCache) delete imgCache[k];
-  undoInk.length=0;updUndo();
-  $('#inkWordBtn').setAttribute('aria-pressed',String(S.inkWord!==false));
-  $('#secs').innerHTML=SECS.map(sec=>`<section class="sec" id="s-${sec.id}" data-sec="${sec.id}"><div class="sec-h"><h2>${sec.t}</h2><span class="badge" id="b-${sec.id}"></span><button type="button" class="btn" data-alln="${sec.id}">All normal</button></div><div id="sb-${sec.id}">${secBody(sec)}</div></section>`).join('');
-  $$('[data-p]').forEach(el=>el.value=S.p[el.dataset.p]||'');
-  $$('[data-t]').forEach(el=>el.value=S[el.dataset.t]||'');
-  renderCon();
-  $$('textarea').forEach(grow);
-  observe();
-  mountInk(document);
+
+/* ---------- Fill: rendering ---------- */
+const rid=k=>'r-'+k.replace(/\./g,'_');
+const reqMark=b=>b?'<b>Required</b>':'';
+function chip(on,pos,attrs,label){return `<button type="button" class="chip${on?' on':''}${on&&pos?' pos':''}" aria-pressed="${!!on}" ${attrs}>${esc(label)}</button>`}
+function detHTML(key,v,dd){
+  const Dd=v.d||{},val=Dd[dd.id],n=E.dCount(dd,Dd),arr=Array.isArray(val)?val:[];
+  const miss=dd.req&&dd.t==='m'&&!Array.from({length:n}).every((_,i)=>arr[i]);
+  let h=`<div class="det${dd.full?' full':''}" data-detbox="${dd.id}"><div class="dl"><span>${esc(dd.l)}</span>${reqMark(miss)}</div><div class="dc">`;
+  if(dd.t==='c')h+=dd.o.map((x,i)=>chip(dd.multi?arr.includes(i):val===i,false,`data-det="${key}" data-id="${dd.id}" data-i="${i}"${dd.multi?' data-multi="1"':''}`,x)).join('');
+  else h+=Array.from({length:n},(_,i)=>`${i?'<span class="x">×</span>':''}<label class="meas${dd.req&&!arr[i]?' need':''}"><input id="${rid(key)}-${dd.id}-${i}" data-detm="${key}" data-id="${dd.id}" data-i="${i}" inputmode="decimal" placeholder="—" value="${esc(arr[i]||'')}" autocomplete="off" aria-label="${esc(dd.l)}${n>1?' '+(i+1):''}">${i===n-1?`<em>${esc(dd.u)}</em>`:''}</label>`).join('');
+  return h+'</div></div>';
 }
-function renderCon(){
-  $('#conChips').innerHTML=DOCS.map(d=>`<button type="button" class="chip" data-n data-con="${esc(d[0])}" aria-pressed="${S.con===d[0]}">${esc(d[0])}</button>`).join('');
+function rowHTML(o,s,r){
+  const key=`${o.id}.${s}.${r.id}`,v=D.sel[key],opt=v&&r.o[v.o];
+  let h=`<div class="row" id="${rid(key)}" data-row="${key}" data-ink="${key}"><div class="rl">${esc(r.l)}</div><div class="rc">`;
+  h+=r.o.map((x,i)=>chip(v&&v.o===i,!x.n,`data-pick="${key}" data-i="${i}"`,x.l)).join('');
+  if(opt&&opt.d)h+=`<div class="dets">${opt.d.filter(dd=>!dd.when||dd.when(v.d||{})).map(dd=>detHTML(key,v,dd)).join('')}</div>`;
+  if(opt&&opt.sub)h+=`<div class="subc"><span>${esc(opt.subL||'')}</span>${opt.sub.map((x,i)=>chip(v.s===i,true,`data-sub="${key}" data-i="${i}"`,x)).join('')}</div>`;
+  if(opt&&opt.u)h+=`<label class="meas${opt.req&&!v.m?' need':''}">${opt.ml?`<span>${esc(opt.ml)}</span>`:''}<input id="${rid(key)}-m" data-meas="${key}" inputmode="decimal" placeholder="—" value="${esc(v.m||'')}" autocomplete="off" aria-label="${esc(r.l)} ${esc(opt.ml||'')}"><em>${esc(opt.u)}</em></label>`;
+  return h+'</div></div>';
 }
-const NAV=[{id:'pt',t:'Patient'},...SECS.map(s=>({id:s.id,t:s.short||s.t})),{id:'sum',t:'Impression'}];
-function navHTML(c){
-  return NAV.filter(n=>{const s=SECS.find(x=>x.id===n.id);return !s||act().includes(s)}).map(n=>{
-    const p=c.per[n.id];let tag='';
-    if(p){tag=(p.a?'<span class="dot" title="Has positive findings"></span>':'')+`<span class="cnt${p.d===p.t?' ok':''}">${p.d===p.t?'✓':p.d+'/'+p.t}</span>`}
-    return `<a href="#s-${n.id}" data-go="${n.id}"${cur===n.id?' class="cur"':''}>${n.t}${tag}</a>`;
-  }).join('');
+function cardBody(o){
+  return `<div class="chead"><span class="dot"></span><h3>${esc(o.name)}</h3><span class="cnt"></span><button type="button" class="btn" data-alln="${o.id}">All normal</button></div><div class="sides">`+
+    SIDES(o).map(s=>{const rows=o.rows.filter(r=>E.vis(o,s,r,D.sel));if(!rows.length)return'';
+      const lab=s==='-'?'':(s==='R'?'Right ':'Left ')+(o.paired==='side'?'':o.paired);
+      return `<div class="sidebox${s==='-'?' full':' pair'}">${lab?`<div class="sl">${lab}</div>`:''}${rows.map(r=>rowHTML(o,s,r)).join('')}</div>`}).join('')+'</div>';
 }
-let cur='pt';
+function renderCard(o){
+  const c=$('#c-'+o.id);if(!c)return;
+  const a=document.activeElement,fid=a&&a.id&&c.contains(a)?a.id:null,sel=fid&&a.selectionStart!=null?[a.selectionStart,a.selectionEnd]:null;
+  Ink.inkRelease(c);c.innerHTML=cardBody(o);Ink.mountInk(c);
+  if(fid){const n=document.getElementById(fid);if(n){n.focus({preventScroll:true});if(sel)try{n.setSelectionRange(...sel)}catch(e){}}}
+}
+const PF=[['date','Date',1,'date'],['cr','CR No',1],['usg','USG No',1],['bill','Bill No',1],['ref','Referred by',2],['clin','Clinical details',2,'ta']];
+function patientHTML(){
+  const p=D.pt,inp=(k,t)=>t==='ta'?`<textarea id="p-${k}" data-pt="${k}" rows="1">${esc(p[k])}</textarea>`:`<input id="p-${k}" data-pt="${k}" value="${esc(p[k])}"${t==='date'?' type="date"':''} autocomplete="off"${k==='cr'||k==='age'?' inputmode="numeric"':''}${k==='name'?' autocapitalize="words" placeholder="Required"':''}>`;
+  return `<section class="card pcard" id="c-pt" data-ink="pt"><div class="chead"><h3>Patient</h3></div><div class="pgrid">
+    <label class="pf s2${p.name.trim()?'':' need'}" id="pfName"><span>Name <i>*</i></span>${inp('name')}</label>
+    <label class="pf"><span>Age</span>${inp('age')}</label>
+    <div class="pf"><span>Sex</span><div class="seg" role="group" aria-label="Sex"><button type="button" data-sex="M" aria-pressed="${D.sex==='M'}">M</button><button type="button" data-sex="F" aria-pressed="${D.sex==='F'}">F</button></div></div>
+    ${PF.map(([k,l,sp,t])=>`<label class="pf${sp===2?' s2':''}"><span>${l}</span>${inp(k,t)}</label>`).join('')}
+  </div></section>`;
+}
+function signHTML(){
+  const ai=D.adv==null?set.advSel:D.adv,ci=D.con==null?set.consSel:D.con;
+  let h=`<section class="card" id="c-sum" data-ink="sum"><div class="chead"><h3>Sign-off</h3></div><div class="sgrid">`;
+  h+=`<div><div class="rl">Other findings</div><textarea id="t-other" data-other rows="1" placeholder="Anything the rows above don't cover. Appears at the end of Findings.">${esc(D.other||'')}</textarea></div>`;
+  if(set.adv.length)h+=`<div><div class="rl">Advice</div><div class="rc" style="margin-top:8px">${set.adv.map((a,i)=>chip(i===ai,false,`data-adv="${i}"`,a)).join('')}</div></div>`;
+  if(set.cons.length)h+=`<div><div class="rl">Consultant</div><div class="rc" style="margin-top:8px">${set.cons.map((c,i)=>chip(i===ci,false,`data-con="${i}"`,c.name)).join('')}</div></div>`;
+  if(Ink.anyInk())h+=`<div><div class="rl">Handwritten notes</div><div class="rc" style="margin-top:8px">${chip(D.inkWord!==false,false,'data-inkword',"Include in report and Word file")}</div></div>`;
+  return h+'</div></section>';
+}
+function renderForm(){
+  Ink.inkRelease($('#form'));Ink.resetInk();
+  $('#form').innerHTML=patientHTML()+E.orgs(D).map(o=>`<section class="card" id="c-${o.id}" data-organ="${o.id}">${cardBody(o)}</section>`).join('')+signHTML();
+  $$('#form textarea').forEach(grow);
+  Ink.mountInk($('#form'));observe();
+}
+function renderSign(){const c=$('#c-sum');if(!c)return;Ink.inkRelease(c);c.outerHTML=signHTML();const n=$('#c-sum');$$('textarea',n).forEach(grow);Ink.mountInk(n)}
+function grow(el){el.style.height='auto';el.style.height=Math.max(44,el.scrollHeight+2)+'px'}
+
+function openFill(d){
+  D=d;impEdit=false;
+  show('fill');renderForm();after();
+  const f=$('#form');if(f)f.scrollTop=0;
+}
+let cur=null;
+function navHTML(c,strip){
+  return E.orgs(D).map(o=>{const p=c.per[o.id],dot=`<span class="dot${p.pos?' pos':p.d===p.t?' done':''}"></span>`;
+    return strip?`<button type="button" data-goorg="${o.id}"${cur===o.id?' class="cur"':''}>${dot}${esc(o.name)}</button>`
+      :`<button type="button" data-goorg="${o.id}"${cur===o.id?' class="cur"':''}>${dot}<span class="on">${esc(o.name)}</span><span class="oc">${p.d}/${p.t}</span></button>`}).join('');
+}
 function updateStatus(){
-  const c=counts();
-  SECS.forEach(s=>{const el=$('#s-'+s.id);if(el)el.hidden=!act().includes(s)});
-  $('#sexT').textContent='· '+SEXW[sex()];
-  $$('[data-sex]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.sex===sex())));
-  act().forEach(sec=>{
-    const p=c.per[sec.id],b=$('#b-'+sec.id);
-    b.textContent=p.d===p.t?'✓ Complete':`${p.d}/${p.t}`;b.classList.toggle('ok',p.d===p.t);
-    const btn=$(`[data-alln="${sec.id}"]`);
-    let hasEmpty=false;
-    sidesOf(sec).forEach(sd=>{const na=naSet(sec,sd);sec.rows.forEach(r=>{if(!na.has(r.id)&&!peek(key(sec.id,r.id,sd)).s.length)hasEmpty=true})});
-    btn.hidden=!hasEmpty;btn.textContent=p.d===0?'All normal':'Rest normal';
-    sec.rows.forEach(r=>{const el=$(`#row-${sec.id}-${r.id}`);if(el)el.className=rowCls(sec,r)});
-  });
-  $('#progTxt').textContent=`${c.done}/${c.tot}`;
-  $('#ring').setAttribute('stroke-dashoffset',String(56.55*(1-(c.tot?c.done/c.tot:0))));
-  $('#sideNav').innerHTML=navHTML(c);$('#strip').innerHTML=navHTML(c);
-  const left=c.tot-c.done;
-  [$('#dockNext'),$('#sideNext')].forEach(b=>{b.textContent=left?`${left} to mark ›`:'All marked ✓';b.disabled=!left});
-  const anyEmpty=act().some(sec=>!$(`[data-alln="${sec.id}"]`).hidden);
-  $('#dockRest').disabled=$('#sideRest').disabled=!anyEmpty;
+  const c=E.counts(D),left=c.total-c.done,p=D.pt;
+  const sub=`${p.name.trim()||'Unnamed'}${p.age?' · '+p.age:''} ${D.sex}`;
+  $('#hTitle').textContent=$('#sTitle').textContent=E.studyName(D);
+  $('#hSub').textContent=sub+(isWide()&&p.usg?' · '+p.usg:'');$('#sSub').textContent=sub;
+  [['#hRing','#hPct'],['#sRing','#sPct']].forEach(([r,t])=>{$(r).style.setProperty('--p',c.pct);$(t).textContent=c.pct+'%'});
+  $('#hProgT').innerHTML=`<b>${c.pct}%</b> · ${left} left`;
+  $('#sProgT').innerHTML=`<b>${c.done} of ${c.total}</b> rows marked<br>${c.pos} positive finding${c.pos===1?'':'s'}`;
+  $('#dNext').textContent=$('#sNext').textContent=`Next · ${left}`;
+  $('#onav').innerHTML=navHTML(c,false);$('#strip').innerHTML=navHTML(c,true);
+  E.orgs(D).forEach(o=>{const el=$('#c-'+o.id);if(!el)return;const q=c.per[o.id];
+    $('.chead .dot',el).className='dot'+(q.pos?' pos':q.d===q.t?' done':'');$('.chead .cnt',el).textContent=`${q.d}/${q.t}`});
+  const pn=$('#pfName');if(pn)pn.classList.toggle('need',!p.name.trim());
   return c;
 }
-function renderDraft(){
-  const a=impression(),c=counts();
-  const list=a.length?a:(c.done?['No significant abnormality detected on ultrasound of the whole abdomen.']:[]);
-  $('#draft').innerHTML=`<div class="draft-h">Suggested from your marks${list.length?'<button type="button" class="btn" id="useDraft">Edit this</button>':''}</div>`+
-    (list.length?'<ul>'+list.map(t=>`<li>${esc(t)}</li>`).join('')+'</ul>':'<div class="ph" style="color:var(--muted)">Mark rows above and positive findings collect here.</div>');
+
+/* ---------- Report ---------- */
+let impEdit=false,pvT=0;
+function reportHTML(){
+  const R=E.report(D,set),p=D.pt,con=E.conOf(D,set);
+  const m=(k,v,s2)=>`<div${s2?' class="s2"':''}><span>${k}:</span> ${esc(v||'')}</div>`;
+  let h=`<div class="lh"><div class="i">${esc(set.inst)}</div>${set.dept?`<div class="d">${esc(set.dept)}</div>`:''}${set.addr?`<div class="a">${esc(set.addr)}</div>`:''}</div>`;
+  h+=`<div class="rt">${esc(E.titleOf(D))}</div>`;
+  h+=`<div class="meta">${m('Name',p.name,1)}${m('Age/Sex',`${p.age?p.age+' / ':''}${D.sex}`)}${m('Date',E.fmtDate(p.date))}${m('CR No',p.cr)}${m('USG No',p.usg)}${m('Bill No',p.bill)}${m('Referred by',p.ref)}${m('Clinical',p.clin,1)}</div>`;
+  h+=Ink.notesHTML('pt');
+  h+='<div class="rh"><span class="k">FINDINGS</span></div>';
+  h+=R.paras.map(x=>`<p>${esc(x.t)}</p>`+Ink.notesHTML(x.g)).join('');
+  const seen=new Set(R.paras.map(x=>x.g));h+=E.orgs(D).filter(o=>!seen.has(o.id)).map(o=>Ink.notesHTML(o.id)).join('');
+  if(R.pending)h+=`<p class="pend">${esc(R.pending)}</p>`;
+  h+=`<div class="rh"><span class="k">IMPRESSION</span><small>${R.impNote}</small><button type="button" data-act="imp">${impEdit?'Done':R.edited?'Reset':'Edit'}</button></div>`;
+  h+=impEdit?`<textarea data-impta rows="5" aria-label="Impression, one point per line">${esc(D.impOv!=null?D.impOv:R.auto.join('\n'))}</textarea>`:`<ul>${R.imp.map(b=>`<li>${esc(b)}</li>`).join('')}</ul>`;
+  if(R.advice)h+=`<p class="adv">${esc(R.advice)}</p>`;
+  h+=Ink.notesHTML('sum');
+  h+=`<div class="sig"><div><b>${esc(set.resident||' ')}</b>Resident</div><div><b>${esc(con?con.name:' ')}</b>${esc(con&&con.title?con.title+' · ':'')}Consultant Radiologist</div></div>`;
+  return h;
 }
-let pvT=0,svT=0;
-function after(){
-  updateStatus();
-  $('#inkWordWrap').hidden=!INK_ORDER.some(hasInk);
-  cancelAnimationFrame(pvT);pvT=requestAnimationFrame(()=>{
-    const h=reportHTML();
-    if(getComputedStyle($('.pane')).display!=='none')$('#rep1').innerHTML=h;
-    if(!$('#sheet').hidden)$('#rep2').innerHTML=h;
-    renderDraft();
+function renderReports(force){
+  if(!D)return;
+  const h=reportHTML(),a=document.activeElement;
+  [['#rep1',isWide()],['#rep2',!$('#sheet').hidden]].forEach(([id,on])=>{
+    const el=$(id);if(!on)return;
+    if(!force&&a&&a.matches('[data-impta]')&&el.contains(a))return;
+    el.innerHTML=h;
   });
-  clearTimeout(svT);svT=setTimeout(()=>{try{localStorage.setItem(KEY,JSON.stringify(S))}catch(e){}},250);
 }
-function grow(el){el.style.height='auto';el.style.height=Math.max(42,el.scrollHeight+2)+'px'}
+function after(){
+  updateStatus();touch();
+  cancelAnimationFrame(pvT);pvT=requestAnimationFrame(()=>renderReports());
+}
+function openSheet(){
+  $('#rep2').innerHTML=reportHTML();$('#sheet').hidden=false;$('#scrim').hidden=!mq('(min-width:700px)');
+  document.documentElement.classList.add('sheet-open');document.documentElement.style.overflow='hidden';$('.sheetbody').scrollTop=0;
+}
+function closeSheet(){
+  if($('#sheet').hidden)return;$('#sheet').hidden=true;$('#scrim').hidden=true;
+  document.documentElement.classList.remove('sheet-open');document.documentElement.style.overflow='';
+  if(impEdit){impEdit=false;renderReports(true)}
+}
+function toggleImp(){
+  if(impEdit)impEdit=false;
+  else if(D.impOv!=null)D.impOv=null;
+  else{impEdit=true;D.impOv=E.report(D,set).auto.join('\n')}
+  after();renderReports(true);
+  if(impEdit)requestAnimationFrame(()=>{const t=$$('[data-impta]').find(x=>x.offsetParent);t&&t.focus()});
+}
 
 /* ---------- Actions ---------- */
-function pick(k,v){
-  const {sec}=IDX[k];
-  const focusK=E.pick(S,k,v);
-  renderSec(sec);after();
-  if(focusK){const inp=$(`#f-${k.replace(/\./g,'-')}-${focusK}`);inp&&inp.focus({preventScroll:true})}
-}
 let undoSnap=null;
-function restNormal(list){
-  undoSnap=JSON.stringify(S);
-  const n=E.restNormal(S,list);
-  list.forEach(sec=>renderSec(sec));
-  const c=updateStatus();after();
-  const left=c.tot-c.done;
-  toast(`Marked ${n} row${n===1?'':'s'} normal${left?` · ${left} need values`:''}`,true);
+const snap=()=>{undoSnap=JSON.stringify(D.sel)};
+function pick(key,i){
+  const o=E.orgById(key.split('.')[0]),before=D.sel[key];
+  E.pick(D,key,i);renderCard(o);after();
+  const v=D.sel[key];if(!v||(before&&before.o===i))return;
+  // Jump straight to a required value (numeric keypad on touch).
+  const x=E.rowBy(key).o[i],inp=x.req&&!v.m&&document.getElementById(rid(key)+'-m');
+  if(inp)inp.focus({preventScroll:true});
 }
+function restNormal(){
+  snap();const n=E.rest(D);
+  if(!n){undoSnap=null;return toast('Every row is already marked')}
+  E.orgs(D).forEach(renderCard);after();toast(`${n} row${n===1?'':'s'} marked normal`,true);
+}
+function organNormal(oid){const o=E.orgById(oid);snap();E.organNormal(D,o);renderCard(o);after();toast(`${o.name} marked normal`,true)}
+function undo(){if(undoSnap==null)return;D.sel=JSON.parse(undoSnap);undoSnap=null;E.orgs(D).forEach(renderCard);after();$('#toast').hidden=true}
+function scrollToEl(el,block='start'){el.scrollIntoView({behavior:reduce()?'auto':'smooth',block})}
+let ftT=0;
 function nextTodo(){
-  for(const sec of act())for(const row of sec.rows)for(const sd of sidesOf(sec)){
-    if(naSet(sec,sd).has(row.id)||marked(sec,row,sd))continue;
-    const el=$(`#row-${sec.id}-${row.id}`);if(!el)continue;
-    closeSheet();
-    el.scrollIntoView({behavior:reduce()?'auto':'smooth',block:'center'});
-    el.classList.remove('flash');void el.offsetWidth;el.classList.add('flash');
-    const need=el.querySelector('.fld.need input');if(need)setTimeout(()=>need.focus({preventScroll:true}),350);
-    return;
-  }
+  const t=E.nextTodo(D);closeSheet();
+  if(t==='name'){const f=$('#form');if(f.scrollTop)f.scrollTo({top:0,behavior:'smooth'});scrollTo({top:0,behavior:'smooth'});$('#p-name').focus({preventScroll:true});return toast('Patient name is required')}
+  if(!t)return toast('All rows marked. Report is ready.');
+  const el=document.getElementById(rid(t));if(!el)return;
+  scrollToEl(el,'center');
+  $$('.row.focus').forEach(r=>r.classList.remove('focus'));el.classList.add('focus');
+  clearTimeout(ftT);ftT=setTimeout(()=>el.classList.remove('focus'),1800);
+  const need=el.querySelector('.meas.need input');if(need)setTimeout(()=>need.focus({preventScroll:true}),reduce()?0:350);
 }
-const reduce=()=>matchMedia('(prefers-reduced-motion: reduce)').matches;
 let toastT=0;
-function toast(msg,undo){
-  $('#toastMsg').textContent=msg;$('#toastAct').hidden=!undo;$('#toast').hidden=false;
-  clearTimeout(toastT);toastT=setTimeout(()=>$('#toast').hidden=true,undo?6000:2200);
+function toast(msg,canUndo){
+  $('#toastMsg').textContent=msg;$('#toastAct').hidden=!canUndo;$('#toast').hidden=false;
+  clearTimeout(toastT);toastT=setTimeout(()=>{$('#toast').hidden=true;if(canUndo)undoSnap=null},canUndo?6000:3000);
 }
-$('#toastAct').onclick=()=>{if(!undoSnap)return;S=Object.assign(blank(),JSON.parse(undoSnap));undoSnap=null;renderAll();after();$('#toast').hidden=true};
+$('#toastAct').onclick=()=>{if(D&&undoSnap!=null)return undo();if(delSnap){drafts=delSnap;delSnap=null;saveDrafts();renderHome();$('#toast').hidden=true}};
 
 function copyReport(){
-  const t=reportText();
+  const b=E.blocker(D);if(b)return toast(b);
+  const t=E.plain(D,set);
   const fallback=()=>{
     const ta=document.createElement('textarea');ta.value=t;ta.setAttribute('readonly','');ta.style.cssText='position:fixed;top:0;left:0;opacity:0';
     document.body.appendChild(ta);ta.select();ta.setSelectionRange(0,t.length);
     let ok=false;try{ok=document.execCommand('copy')}catch(e){}
-    ta.remove();toast(ok?'Report copied':'Copy was blocked. Select the report text and copy it manually.');
+    ta.remove();toast(ok?'Report text copied':'Copy was blocked. Select the report text and copy it manually.');
   };
-  try{navigator.clipboard.writeText(t).then(()=>toast('Report copied'),fallback)}catch(e){fallback()}
+  try{navigator.clipboard.writeText(t).then(()=>toast('Report text copied'),fallback)}catch(e){fallback()}
 }
-function openSheet(){$('#rep2').innerHTML=reportHTML();$('#sheet').hidden=false;document.documentElement.style.overflow='hidden'}
-function closeSheet(){if($('#sheet').hidden)return;$('#sheet').hidden=true;document.documentElement.style.overflow=''}
-
-/* ---------- Handwriting: ink on any row or field ---------- */
-const INKC={ink:'--ink-ink',red:'--ink-red',blue:'--ink-blue',hl:'--ink-hl'};
-const EXPORT_C={ink:'#141413',red:'#C2412D',blue:'#2457B0',hl:'#F2C230'};
-const LABEL={},inkVer={},imgCache={},undoInk=[],touches=new Map(),ptKeys=[],sumKeys=[];
-let inkMode=false,tool='ink',penSeen=false,drawing=null,pan=null,swallowUntil=0,inkRaf=0;
-$$('#s-pt .in, #s-sum .in').forEach(el=>{
-  if(el.id==='inkWordWrap')return;
-  const f=el.querySelector('[id]');if(!f)return;
-  const g=el.closest('#s-pt')?'pt':'sum',k=g+'.'+f.id;
-  el.dataset.ink=k;LABEL[k]=(el.querySelector('label,.lbl')?.textContent||'').trim();
-  (g==='pt'?ptKeys:sumKeys).push(k);
-});
-SECS.forEach(s=>s.rows.forEach(r=>LABEL[s.id+'.'+r.id]=`${s.t} › ${r.l}`));
-const INK_ORDER=[...ptKeys,...SECS.flatMap(s=>s.rows.map(r=>s.id+'.'+r.id)),...sumKeys];
-const hasInk=k=>!!(S.ink&&S.ink[k]&&S.ink[k].s.length);
-const ro=('ResizeObserver' in window)?new ResizeObserver(es=>es.forEach(en=>{const el=en.target;if(!el._inkc)return;if(!drawing||drawing.el!==el)fitH(el);sizeC(el);paint(el)})):null;
-
-function inkRelease(root){if(ro)$$('[data-ink]',root).forEach(el=>{if(el._inkc)ro.unobserve(el)})}
-function ensureC(el){
-  if(!el._inkc){const c=document.createElement('canvas');c.className='inkc';c.setAttribute('aria-hidden','true');el.appendChild(c);el._inkc=c;ro&&ro.observe(el)}
-  sizeC(el);
-}
-function mountEl(el){
-  if(hasInk(el.dataset.ink)||inkMode){fitH(el);ensureC(el);paint(el)}
-  else if(el._inkc){ro&&ro.unobserve(el);el._inkc.remove();el._inkc=null;el.style.minHeight=''}
-}
-function mountInk(root){$$('[data-ink]',root||document).forEach(mountEl)}
-function sizeC(el){
-  const c=el._inkc,w=el.offsetWidth,h=el.offsetHeight,d=Math.min(window.devicePixelRatio||1,2.5),W=Math.round(w*d),H=Math.round(h*d);
-  c._w=w;c._d=d;if(c.width!==W||c.height!==H){c.width=W;c.height=H}
-}
-function palette(){const cs=getComputedStyle(document.documentElement),o={};for(const k in INKC)o[k]=cs.getPropertyValue(INKC[k]).trim()||EXPORT_C[k];return o}
-function drawS(ctx,s,col){
-  const p=s.p;if(!p.length)return;
-  ctx.save();ctx.strokeStyle=ctx.fillStyle=col;ctx.lineWidth=s.w;ctx.lineCap=ctx.lineJoin='round';
-  if(s.c==='hl')ctx.globalAlpha=.4;
-  if(p.length<=4){ctx.beginPath();ctx.arc(p[0],p[1],s.w/2,0,Math.PI*2);ctx.fill()}
-  else{
-    ctx.beginPath();ctx.moveTo(p[0],p[1]);
-    for(let i=2;i<p.length-2;i+=2)ctx.quadraticCurveTo(p[i],p[i+1],(p[i]+p[i+2])/2,(p[i+1]+p[i+3])/2);
-    ctx.lineTo(p[p.length-2],p[p.length-1]);ctx.stroke();
-  }
-  ctx.restore();
-}
-function paint(el,pal){
-  const c=el._inkc;if(!c)return;
-  const ctx=c.getContext('2d'),st=S.ink[el.dataset.ink];
-  ctx.setTransform(1,0,0,1,0,0);ctx.clearRect(0,0,c.width,c.height);
-  if(!st||!st.s.length||!c._w)return;
-  const s=c._d*c._w/st.W;ctx.setTransform(s,0,0,s,0,0);
-  pal=pal||palette();st.s.forEach(x=>drawS(ctx,x,pal[x.c]||pal.ink));
-}
-function repaintAll(){const pal=palette();$$('[data-ink]').forEach(el=>el._inkc&&paint(el,pal))}
-function fitH(el){
-  const st=S.ink[el.dataset.ink];
-  if(!st||!st.s.length||!el.offsetWidth){el.style.minHeight='';return}
-  let my=0;st.s.forEach(s=>{for(let i=1;i<s.p.length;i+=2)my=Math.max(my,s.p[i]+s.w)});
-  el.style.minHeight=Math.ceil(my*el.offsetWidth/st.W+12)+'px';
-}
-function ptr(el,e,st){
-  const r=el.getBoundingClientRect(),k=st.W/r.width;
-  return [Math.min(st.W,Math.max(0,(e.clientX-r.left)*k)),Math.max(0,(e.clientY-r.top)*k),r.width/st.W];
-}
-function schedPaint(){if(inkRaf)return;inkRaf=requestAnimationFrame(()=>{inkRaf=0;drawing&&paint(drawing.el)})}
-function startInk(el,e){
-  const k=el.dataset.ink;
-  if(!S.ink[k])S.ink[k]={W:Math.max(1,Math.round(el.offsetWidth)),s:[]};
-  const st=S.ink[k];
-  undoInk.push({k,prev:JSON.stringify(st)});if(undoInk.length>80)undoInk.shift();
-  try{el.setPointerCapture(e.pointerId)}catch(_){}
-  ensureC(el);
-  const sc=el.offsetWidth/st.W;
-  drawing={el,k,st,pid:e.pointerId,type:e.pointerType,erase:tool==='erase',t0:performance.now(),cx:e.clientX,cy:e.clientY};
-  if(drawing.erase)eraseAt(e);
-  else{drawing.s={c:tool,w:+((tool==='hl'?16:e.pointerType==='pen'?2.2:2.6)/sc).toFixed(2),p:[]};st.s.push(drawing.s);addPts(e)}
-  updUndo();
-}
-function addPts(e){
-  const d=drawing,ce=e.getCoalescedEvents?e.getCoalescedEvents():[],list=ce.length?ce:[e];
-  let sc=1,y=0;
-  for(const ev of list){
-    const [x,yy,s]=ptr(d.el,ev,d.st);sc=s;y=yy;
-    const p=d.s.p,n=p.length;
-    if(n&&Math.hypot(x-p[n-2],yy-p[n-1])<1/sc)continue;
-    p.push(Math.round(x*10)/10,Math.round(yy*10)/10);
-  }
-  const yc=y*sc;
-  if(yc>d.el.offsetHeight-24){d.el.style.minHeight=Math.ceil(yc+48)+'px';sizeC(d.el)}
-  schedPaint();
-}
-function eraseAt(e){
-  const d=drawing,[x,y,sc]=ptr(d.el,e,d.st),r=12/sc,n=d.st.s.length;
-  d.st.s=d.st.s.filter(s=>{const rr=r+s.w/2;for(let i=0;i<s.p.length;i+=2)if(Math.hypot(s.p[i]-x,s.p[i+1]-y)<rr)return false;return true});
-  if(d.st.s.length!==n)schedPaint();
-}
-function endInk(){
-  const d=drawing;if(!d)return;drawing=null;
-  if(d.s&&!inkMode&&d.type==='pen'&&performance.now()-d.t0<300){
-    const sc=d.el.offsetWidth/d.st.W,p=d.s.p;let len=0;
-    for(let i=2;i<p.length;i+=2)len+=Math.hypot(p[i]-p[i-2],p[i+1]-p[i-1]);
-    if(len*sc<6){
-      d.st.s.pop();const u=undoInk.pop();if(u&&!d.st.s.length)delete S.ink[d.k];
-      mountEl(d.el);updUndo();
-      const tg=document.elementFromPoint(d.cx,d.cy),b=tg&&tg.closest('button,a,input,textarea');
-      if(b){if(b.matches('input,textarea'))b.focus();else b.click()}
-      swallowUntil=performance.now()+450;
-      return;
-    }
-  }
-  if(d.s&&!d.s.p.length)d.st.s.pop();
-  const last=undoInk[undoInk.length-1];
-  if(last&&last.k===d.k&&last.prev===JSON.stringify(d.st))undoInk.pop();
-  if(!d.st.s.length)delete S.ink[d.k];
-  inkVer[d.k]=(inkVer[d.k]||0)+1;
-  if(d.type==='pen'&&!inkMode)swallowUntil=performance.now()+450;
-  mountEl(d.el);updUndo();after();
-}
-function abortInk(){
-  const d=drawing;if(!d)return;drawing=null;
-  const u=undoInk.pop();if(u&&u.prev)S.ink[u.k]=JSON.parse(u.prev);
-  if(S.ink[d.k]&&!S.ink[d.k].s.length)delete S.ink[d.k];
-  mountEl(d.el);updUndo();
-}
-function undoInkStep(){
-  const u=undoInk.pop();if(!u)return;
-  const st=u.prev?JSON.parse(u.prev):null;
-  if(st&&st.s.length)S.ink[u.k]=st;else delete S.ink[u.k];
-  inkVer[u.k]=(inkVer[u.k]||0)+1;
-  const el=$(`[data-ink="${u.k}"]`);el&&mountEl(el);
-  updUndo();after();
-}
-function updUndo(){const b=$('#inkUndo');if(b)b.disabled=!undoInk.length}
-function setTool(t){tool=t;$$('#inkbar [data-tool]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.tool===t)))}
-function setInk(on){
-  inkMode=on;document.documentElement.classList.toggle('inking',on);
-  $('#inkBtn').setAttribute('aria-pressed',String(on));$('#inkbar').hidden=!on;$('#dock').hidden=on;
-  if(on){closeSheet();document.activeElement&&document.activeElement.blur&&document.activeElement.blur()}
-  mountInk(document);
-  if(on)toast(penSeen?'Write with Apple Pencil. Fingers scroll.':matchMedia('(pointer:coarse)').matches?'Write with your finger. Scroll with two fingers.':'Draw on any field. Press Done to fill the form again.');
-}
-const midY=()=>{let s=0;touches.forEach(v=>s+=v);return s/touches.size};
-
-/* Notes as images for the report and Word file */
-function notes(g){return S.inkWord===false?[]:INK_ORDER.filter(k=>k.slice(0,k.indexOf('.'))===g&&hasInk(k))}
-function noteImg(k){
-  const v=inkVer[k]||0,c=imgCache[k];if(c&&c.v===v)return c;
-  const st=S.ink[k];let x0=1e9,y0=1e9,x1=-1e9,y1=-1e9;
-  st.s.forEach(s=>{const r=s.w/2+2;for(let i=0;i<s.p.length;i+=2){x0=Math.min(x0,s.p[i]-r);x1=Math.max(x1,s.p[i]+r);y0=Math.min(y0,s.p[i+1]-r);y1=Math.max(y1,s.p[i+1]+r)}});
-  x0=Math.max(0,x0-6);y0=Math.max(0,y0-6);x1+=6;y1+=6;
-  const w=Math.max(4,x1-x0),h=Math.max(4,y1-y0),SC=2,cv=document.createElement('canvas');
-  cv.width=Math.ceil(w*SC);cv.height=Math.ceil(h*SC);
-  const ctx=cv.getContext('2d');ctx.setTransform(SC,0,0,SC,-x0*SC,-y0*SC);
-  st.s.forEach(s=>drawS(ctx,s,EXPORT_C[s.c]||EXPORT_C.ink));
-  return imgCache[k]={v,url:cv.toDataURL('image/png'),w,h,W:st.W};
-}
-function notesHTML(g){
-  return notes(g).map(k=>{const im=noteImg(k),f=Math.min(1,560/im.W);
-    return `<figure class="note"><figcaption>Handwritten · ${esc(LABEL[k])}</figcaption><img alt="Handwritten note on ${esc(LABEL[k])}" src="${im.url}" style="width:${Math.round(im.w*f)}px"></figure>`}).join('');
-}
-function dataBytes(url){const s=atob(url.slice(url.indexOf(',')+1)),u=new Uint8Array(s.length);for(let i=0;i<s.length;i++)u[i]=s.charCodeAt(i);return u}
-
-/* Ink input: Apple Pencil always writes; pen mode lets finger and mouse write too */
-document.addEventListener('pointerdown',e=>{
-  if(e.pointerType==='pen'&&!penSeen){penSeen=true;document.documentElement.classList.add('pen-seen');if(!inkMode)toast('Apple Pencil writes on any field. Fingers still tap.')}
-  if(inkMode&&e.pointerType==='touch'&&!penSeen){
-    touches.set(e.pointerId,e.clientY);
-    if(touches.size>1){abortInk();pan={y:midY()};e.preventDefault();return}
-  }
-  if(drawing||e.button>0)return;
-  const el=e.target.closest?e.target.closest('[data-ink]'):null;
-  if(!el||!el.offsetParent)return;
-  if(inkMode){if(e.pointerType==='touch'&&penSeen)return}
-  else if(e.pointerType!=='pen'||e.target.closest('input,textarea,select'))return;
-  e.preventDefault();startInk(el,e);
-});
-document.addEventListener('pointermove',e=>{
-  if(pan&&touches.has(e.pointerId)){touches.set(e.pointerId,e.clientY);const m=midY();window.scrollBy(0,pan.y-m);pan.y=m;return}
-  if(drawing&&e.pointerId===drawing.pid){e.preventDefault();drawing.erase?eraseAt(e):addPts(e)}
-});
-const inkUp=e=>{touches.delete(e.pointerId);if(touches.size<2)pan=null;if(drawing&&e.pointerId===drawing.pid)endInk()};
-document.addEventListener('pointerup',inkUp);
-document.addEventListener('pointercancel',inkUp);
-document.addEventListener('touchstart',e=>{
-  for(const t of e.changedTouches){
-    if(t.touchType!=='stylus')continue;
-    const tg=t.target&&t.target.closest?t.target:null,el=tg&&tg.closest('[data-ink]');
-    if(el&&(inkMode||!tg.closest('input,textarea,select'))){e.preventDefault();return}
-  }
-},{passive:false});
-document.addEventListener('touchmove',e=>{if(drawing&&drawing.type==='pen')e.preventDefault()},{passive:false});
-document.addEventListener('click',e=>{if(performance.now()<swallowUntil){e.stopPropagation();e.preventDefault();swallowUntil=0}},true);
-try{matchMedia('(prefers-color-scheme: dark)').addEventListener('change',()=>requestAnimationFrame(repaintAll))}catch(_){}
-
-/* ---------- Word (.docx): download on Mac, share sheet on iPad ---------- */
 const DOCX_MIME='application/vnd.openxmlformats-officedocument.wordprocessingml.document';
 const isIOS=()=>/iPad|iPhone|iPod/.test(navigator.userAgent)||(navigator.platform==='MacIntel'&&navigator.maxTouchPoints>1);
-const wordNotes=g=>notes(g).map(k=>{const im=noteImg(k);return {label:LABEL[k],png:dataBytes(im.url),w:im.w,h:im.h,W:im.W}});
-const docName=()=>docNameOf(S);
-function download(file,note){
-  const url=URL.createObjectURL(file);
-  const a=document.createElement('a');a.href=url;a.download=file.name;document.body.appendChild(a);a.click();a.remove();
-  setTimeout(()=>URL.revokeObjectURL(url),5000);toast('Word report downloaded'+note);
-}
 let saving=false;
 async function saveWord(){
-  if(saving) return; saving=true;
+  const b=E.blocker(D);if(b)return toast(b);
+  if(saving)return;saving=true;
   try{
-    const bytes=buildDocx(S,wordNotes),name=docName(),c=counts(),left=c.tot-c.done;
-    const note=left?` (${left} row${left>1?'s':''} unmarked)`:'';
-    const file=new File([bytes],name,{type:DOCX_MIME});
+    const name=E.docName(D),file=new File([buildDocx(D,set,Ink.wordNotes)],name,{type:DOCX_MIME});
     if(isIOS()&&navigator.canShare&&navigator.canShare({files:[file]})){
-      try{await navigator.share({files:[file]});toast('Word report ready'+note)}
-      catch(e){if(e&&e.name==='AbortError')return;download(file,note)}
+      try{await navigator.share({files:[file]});toast('Saved '+name)}
+      catch(e){if(e&&e.name==='AbortError')return;download(file)}
       return;
     }
-    download(file,note);
-  }catch(e){console.error(e);toast('The Word file could not be made. Use Copy instead.')}
+    download(file);
+  }catch(e){console.error(e);toast('The Word file could not be made. Use Copy text instead.')}
   finally{saving=false}
 }
+function download(file){
+  const url=URL.createObjectURL(file),a=document.createElement('a');a.href=url;a.download=file.name;document.body.appendChild(a);a.click();a.remove();
+  setTimeout(()=>URL.revokeObjectURL(url),5000);toast(`Saved ${file.name} with letterhead`);
+}
+function print(){$('#repPrint').innerHTML=`<div class="paper">${reportHTML()}</div>`;window.print()}
 
 /* ---------- Events ---------- */
+let delSnap=null,wipeArm=0;
 document.addEventListener('click',e=>{
-  const t=e.target.closest('button,a');if(!t)return;
-  if(t.dataset.tool) return setTool(t.dataset.tool);
-  if(t.id==='inkUndo') return undoInkStep();
-  if(t.id==='inkBtn') return setInk(!inkMode);
-  if(t.id==='inkDone') return setInk(false);
-  if(t.id==='inkWordBtn'){S.inkWord=S.inkWord===false;t.setAttribute('aria-pressed',String(S.inkWord));return after()}
-  if(t.matches('.chip[data-key]')) return pick(t.dataset.key,t.dataset.v);
-  if(t.dataset.sex){S.p.sex=t.dataset.sex;return after()}
-  if(t.matches('.mini')){const x=st(t.dataset.key);x.f[t.dataset.k]=x.f[t.dataset.k]===t.dataset.val?'':t.dataset.val;renderSec(IDX[t.dataset.key].sec);return after()}
-  if(t.dataset.alln) return restNormal([SECS.find(s=>s.id===t.dataset.alln)]);
-  if(t.dataset.con!==undefined){S.con=S.con===t.dataset.con?'':t.dataset.con;renderCon();return after()}
-  if(t.dataset.adv){const ta=$('#t-adv');S.adv=(S.adv.trim()?S.adv.trim()+' ':'')+t.dataset.adv;ta.value=S.adv;grow(ta);return after()}
-  if(t.id==='useDraft'){const ta=$('#t-imp');S.imp=report().imp.join('\n');ta.value=S.imp;grow(ta);ta.focus();return after()}
-  if(t.dataset.go){e.preventDefault();closeSheet();$('#s-'+t.dataset.go).scrollIntoView({behavior:reduce()?'auto':'smooth',block:'start'});return}
-  if(t.matches('.copyBtn')) return copyReport();
-  if(t.matches('.wordBtn')) return saveWord();
-  if(t.matches('.printBtn')){$('#repPrint').innerHTML=reportHTML();return window.print()}
+  const t=e.target.closest('button,[role="button"],a');if(!t)return;
+  const ds=t.dataset;
+  if(ds.go)return go(ds.go);
+  // Home
+  if(ds.new)return newDraft(ds.new,ds.var);
+  if(ds.del){e.stopPropagation();delSnap=drafts.slice();drafts=drafts.filter(d=>d.id!==ds.del);saveDrafts();if(!drafts.length)editDrafts=false;renderHome();return toast('Draft deleted',true)}
+  if(ds.open)return go('r/'+ds.open);
+  if(t.id==='draftsEdit'){editDrafts=!editDrafts;return renderHome()}
+  // Settings
+  if(ds.setedit){setEdit[ds.setedit]=!setEdit[ds.setedit];adding=null;return renderSettings()}
+  if(ds.rmcons!=null){e.stopPropagation();const i=+ds.rmcons;set.cons.splice(i,1);if(set.consSel>=set.cons.length||set.consSel===i)set.consSel=0;else if(set.consSel>i)set.consSel--;if(!set.cons.length)setEdit.cons=false;saveSet();return renderSettings()}
+  if(ds.rmadv!=null){e.stopPropagation();const i=+ds.rmadv;set.adv.splice(i,1);if(set.advSel>=set.adv.length||set.advSel===i)set.advSel=0;else if(set.advSel>i)set.advSel--;if(!set.adv.length)setEdit.adv=false;saveSet();return renderSettings()}
+  if(ds.cons!=null&&!setEdit.cons){set.consSel=+ds.cons;saveSet();return renderSettings()}
+  if(ds.advd!=null&&!setEdit.adv){set.advSel=+ds.advd;saveSet();return renderSettings()}
+  if(ds.adding){adding=ds.adding;return renderSettings()}
+  if(ds.add==='cons'){const n=$('#addName').value.trim();if(n){set.cons.push({name:n,title:$('#addTitle').value.trim()});saveSet()}adding=null;return renderSettings()}
+  if(ds.add==='adv'){const n=$('#addAdv').value.trim();if(n){set.adv.push(/[.!?]$/.test(n)?n:n+'.');saveSet()}adding=null;return renderSettings()}
+  if(ds.themeSet){store(K.theme,ds.themeSet);applyTheme();return renderSettings()}
+  if(ds.posSet){store(K.pos,ds.posSet);applyPos();return renderSettings()}
+  if(t.id==='wipe'){
+    if(!drafts.length)return;
+    if(!wipeArm){wipeArm=setTimeout(()=>{wipeArm=0;const w=$('#wipe .ot');if(w)w.textContent='Delete all drafts'},3000);$('#wipe .ot').textContent='Tap again to delete all drafts';return}
+    clearTimeout(wipeArm);wipeArm=0;delSnap=drafts.slice();drafts=[];saveDrafts();renderSettings();return toast('All drafts deleted',true);
+  }
+  if(!D)return;
+  // Fill
+  if(ds.pick)return pick(ds.pick,+ds.i);
+  if(ds.sub){E.sub(D,ds.sub,+ds.i);renderCard(E.orgById(ds.sub.split('.')[0]));return after()}
+  if(ds.det){E.det(D,ds.det,ds.id,+ds.i,!!ds.multi);renderCard(E.orgById(ds.det.split('.')[0]));return after()}
+  if(ds.alln)return organNormal(ds.alln);
+  if(ds.sex){if(D.sex===ds.sex)return;D.sex=ds.sex;renderForm();return after()}
+  if(ds.adv!=null){const i=+ds.adv,cur=D.adv==null?set.advSel:D.adv;D.adv=cur===i?-1:i;renderSign();return after()}
+  if(ds.con!=null){D.con=+ds.con;renderSign();return after()}
+  if(ds.inkword!=null){D.inkWord=D.inkWord===false;renderSign();return after()}
+  if(ds.goorg){const el=$('#c-'+ds.goorg);if(el){scrollToEl(el);cur=ds.goorg;markCur()}return}
+  if(t.classList.contains('inkBtn'))return Ink.setInk(!Ink.inkOn());
+  switch(ds.act){
+    case 'next':return nextTodo();
+    case 'rest':return restNormal();
+    case 'report':return openSheet();
+    case 'close':return closeSheet();
+    case 'copy':return copyReport();
+    case 'word':return saveWord();
+    case 'print':return print();
+    case 'imp':return toggleImp();
+  }
 });
+$('#scrim').addEventListener('click',closeSheet);
 document.addEventListener('input',e=>{
-  const el=e.target;
-  if(el.dataset.k&&el.dataset.key){
-    const x=st(el.dataset.key);x.f[el.dataset.k]=el.value;
-    const lab=el.closest('.fld');if(lab&&lab.dataset.req)lab.classList.toggle('need',!el.value.trim());
+  const el=e.target,ds=el.dataset;
+  if(ds.set){set[ds.set]=el.value;return saveSet()}
+  if(!D)return;
+  if(ds.pt){D.pt[ds.pt]=el.value;if(el.tagName==='TEXTAREA')grow(el);return after()}
+  if(ds.other!=null){D.other=el.value;grow(el);return after()}
+  if(ds.impta!=null){D.impOv=el.value;return after()}
+  if(ds.meas){
+    const key=ds.meas,ch=E.meas(D,key,el.value);if(el.value!==D.sel[key].m)el.value=D.sel[key].m;
+    if(ch)renderCard(E.orgById(key.split('.')[0]));
+    else{const x=E.rowBy(key).o[D.sel[key].o];el.closest('.meas').classList.toggle('need',!!x.req&&!D.sel[key].m)}
     return after();
   }
-  if(el.dataset.p){S.p[el.dataset.p]=el.value;if(el.tagName==='TEXTAREA')grow(el);return after()}
-  if(el.dataset.t){S[el.dataset.t]=el.value;if(el.tagName==='TEXTAREA')grow(el);return after()}
+  if(ds.detm){
+    const key=ds.detm,v=D.sel[key],x=E.rowBy(key).o[v.o],dd=x.d.find(q=>q.id===ds.id),n0=E.dCount(dd,v.d);
+    E.detM(D,key,ds.id,+ds.i,el.value);const nv=D.sel[key];if(el.value!==nv.d[ds.id][+ds.i])el.value=nv.d[ds.id][+ds.i];
+    if(E.dCount(dd,nv.d)!==n0)renderCard(E.orgById(key.split('.')[0]));
+    else{
+      const arr=nv.d[ds.id]||[],n=E.dCount(dd,nv.d),box=el.closest('.det');
+      el.closest('.meas').classList.toggle('need',!!dd.req&&!arr[+ds.i]);
+      $('.dl',box).innerHTML=`<span>${esc(dd.l)}</span>${reqMark(dd.req&&!Array.from({length:n}).every((_,i)=>arr[i]))}`;
+    }
+    return after();
+  }
 });
-$('#dockNext').onclick=$('#sideNext').onclick=nextTodo;
-$('#dockRest').onclick=$('#sideRest').onclick=()=>restNormal(act());
-$('#dockRep').onclick=()=>{openSheet();saveWord()};
-$('#sheetClose').onclick=closeSheet;
 document.addEventListener('keydown',e=>{
-  if(e.key==='Escape'){if(inkMode)setInk(false);else closeSheet()}
-  if(inkMode&&(e.metaKey||e.ctrlKey)&&e.key.toLowerCase()==='z'){e.preventDefault();undoInkStep()}
+  if(e.key==='Escape'){if(Ink.inkOn())Ink.setInk(false);else closeSheet()}
+  if(Ink.inkOn()&&(e.metaKey||e.ctrlKey)&&e.key.toLowerCase()==='z'){e.preventDefault();Ink.undoInkStep()}
+  if(e.key==='Enter'&&e.target.matches('.addrow input')){e.preventDefault();e.target.closest('.addrow').querySelector('[data-add]').click()}
 });
 
-let newArm=0;
-$('#newBtn').onclick=e=>{
-  const b=e.currentTarget;
-  if(!newArm){newArm=setTimeout(()=>{newArm=0;b.textContent='New';b.classList.remove('warn')},3000);b.textContent='Clear form?';b.classList.add('warn');return}
-  clearTimeout(newArm);newArm=0;b.textContent='New';b.classList.remove('warn');
-  undoSnap=JSON.stringify(S);S=blank();renderAll();after();scrollTo({top:0});toast('Started a new report',true);
-};
-
-/* Theme: system → light → dark */
-const ICONS={
- system:'<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="8.5"/><path d="M12 3.5v17A8.5 8.5 0 0 0 12 3.5z" fill="currentColor"/></svg>',
- light:'<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2M12 19.5v2M2.5 12h2M19.5 12h2M5.3 5.3l1.4 1.4M17.3 17.3l1.4 1.4M5.3 18.7l1.4-1.4M17.3 6.7l1.4-1.4"/></svg>',
- dark:'<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg>'};
-let theme='system';try{theme=localStorage.getItem(TKEY)||'system'}catch(e){}
-function applyTheme(){
-  const r=document.documentElement;
-  if(theme==='system')r.removeAttribute('data-theme');else r.setAttribute('data-theme',theme);
-  const b=$('#themeBtn');b.innerHTML=ICONS[theme];b.setAttribute('aria-label','Theme: '+theme);b.title='Theme: '+theme;
-  requestAnimationFrame(repaintAll);
-}
-$('#themeBtn').onclick=()=>{theme={system:'light',light:'dark',dark:'system'}[theme];try{localStorage.setItem(TKEY,theme)}catch(e){}applyTheme()};
-
-/* Current-section tracking */
+/* Current organ while scrolling */
 let io;
+function markCur(){
+  $$('[data-goorg]').forEach(a=>a.classList.toggle('cur',a.dataset.goorg===cur));
+  const a=$(`#strip [data-goorg="${cur}"]`);if(a){const s=$('#strip');s.scrollTo({left:a.offsetLeft-s.clientWidth/2+a.offsetWidth/2,behavior:reduce()?'auto':'smooth'})}
+}
 function observe(){
   if(!('IntersectionObserver' in window))return;
   io&&io.disconnect();
-  io=new IntersectionObserver(es=>{es.forEach(en=>{if(en.isIntersecting){cur=en.target.dataset.sec;
-    $$('[data-go]').forEach(a=>a.classList.toggle('cur',a.dataset.go===cur));
-    const a=$(`#strip [data-go="${cur}"]`);if(a){const s=$('#strip');s.scrollTo({left:a.offsetLeft-s.clientWidth/2+a.offsetWidth/2,behavior:reduce()?'auto':'smooth'})}}})},{rootMargin:'-35% 0px -60% 0px'});
-  $$('.sec').forEach(s=>io.observe(s));
+  io=new IntersectionObserver(es=>es.forEach(en=>{if(en.isIntersecting&&en.target.dataset.organ){cur=en.target.dataset.organ;markCur()}}),{rootMargin:'-35% 0px -60% 0px'});
+  $$('#form [data-organ]').forEach(s=>io.observe(s));
 }
-addEventListener('resize',()=>{if(getComputedStyle($('.pane')).display!=='none')$('#rep1').innerHTML=reportHTML()});
+let rzT=0;
+addEventListener('resize',()=>{clearTimeout(rzT);rzT=setTimeout(()=>{if(D){updateStatus();renderReports(true)}},120)});
+
+/* Theme and chip style */
+function applyTheme(){
+  const t=load(K.theme,'system')||'system',r=document.documentElement;
+  if(t==='system')r.removeAttribute('data-theme');else r.setAttribute('data-theme',t);
+  requestAnimationFrame(Ink.repaintAll);
+}
+function applyPos(){document.documentElement.classList.toggle('tinted',localStorage.getItem(K.pos)==='tinted')}
+
+/* Handwriting */
+function inkLabel(k){
+  if(k==='pt')return'Patient';if(k==='sum')return'Sign-off';
+  const[oid,s,r]=k.split('.'),o=E.orgById(oid);if(!o)return k;const row=o.rows.find(x=>x.id===r);
+  const side=s==='-'?'':(s==='R'?'Right ':'Left ')+(o.paired==='side'?'':o.paired);
+  return `${side?side.trim()+' › ':o.name+' › '}${row?row.l:''}`;
+}
+const ORDER=['pt',...ORG.flatMap(o=>SIDES(o).flatMap(s=>o.rows.map(r=>`${o.id}.${s}.${r.id}`))),'sum'];
+Ink.initInk({getD:()=>D,changed:()=>{const had=!!$('#c-sum [data-inkword]');if(had!==Ink.anyInk())renderSign();after()},toast,label:inkLabel,order:k=>ORDER.indexOf(k),onMode:()=>{}});
 
 /* Boot */
-$('#advChips').innerHTML=ADV.map(a=>`<button type="button" class="chip" data-n data-adv="${esc(a)}">${esc(a.replace(/\.$/,''))}</button>`).join('');
-let top=false;try{top=window.self===window.top}catch(e){}
-if(top)$$('.printBtn').forEach(b=>b.hidden=false);
-applyTheme();renderAll();after();
+let top_=false;try{top_=window.self===window.top}catch(e){}
+if(top_)$$('.printBtn').forEach(b=>b.hidden=false);
+applyTheme();applyPos();
+addEventListener('hashchange',route);
+addEventListener('pagehide',()=>{if(D)saveDrafts()});
+document.addEventListener('visibilitychange',()=>{if(document.hidden&&D)saveDrafts()});
+route();
 
 /* Offline + install: cache the app on this device */
 if('serviceWorker' in navigator&&location.protocol!=='file:'){addEventListener('load',()=>navigator.serviceWorker.register('sw.js').catch(()=>{}))}

@@ -2,10 +2,11 @@
    Serves from the on-device cache instantly, then refreshes the cache in the background,
    so a new version appears the next time the app is opened.
    If you add a new file to the app, add it to FILES and bump VERSION. */
-const VERSION='usg-v1';
+const VERSION='sonoform-v2';
 const FILES=[
   './','index.html','manifest.webmanifest','css/app.css',
-  'js/app.js','js/engine.js','js/schema.js','js/docx.js','js/util.js',
+  'js/app.js','js/engine.js','js/schema.js','js/docx.js','js/util.js','js/ink.js',
+  'fonts/instrument-sans.woff2','fonts/source-serif-4.woff2','fonts/source-serif-4-italic.woff2',
   'icons/favicon.svg','icons/icon-32.png','icons/icon-192.png','icons/icon-512.png','icons/maskable-512.png','icons/apple-touch-icon.png'
 ];
 

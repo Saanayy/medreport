@@ -3,108 +3,95 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>USG Whole Abdomen</title>
-<meta name="description" content="Structured ultrasound whole-abdomen reporting: mark findings, get the report and a Word file.">
+<title>Sonoform</title>
+<meta name="description" content="Tap-to-fill ultrasound reports: mark findings, get the report, copy it or save it as Word.">
 <link rel="manifest" href="manifest.webmanifest">
-<meta name="theme-color" content="#FAF9F5" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#F4F2EC" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#262624" media="(prefers-color-scheme: dark)">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-title" content="USG Report">
+<meta name="apple-mobile-web-app-title" content="Sonoform">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
 <link rel="icon" href="icons/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="icons/icon-32.png" sizes="32x32" type="image/png">
+<link rel="preload" href="fonts/instrument-sans.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/source-serif-4.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="css/app.css">
 <script type="module" src="js/app.js"></script>
 </head>
 <body>
-<header class="top">
-  <div class="bar gut">
-    <div class="brand">
-      <div class="t1">USG Whole Abdomen <span id="sexT">· Male</span></div>
-      <div class="t2">AIIMS Guwahati · Radiology</div>
-    </div>
-    <div class="acts">
-      <span class="prog" id="prog" title="Rows marked">
-        <svg width="22" height="22" viewBox="0 0 22 22" aria-hidden="true"><circle cx="11" cy="11" r="9" fill="none" stroke="var(--line)" stroke-width="2.5"/><circle id="ring" cx="11" cy="11" r="9" fill="none" stroke="var(--accent-fill)" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="56.55" stroke-dashoffset="56.55"/></svg>
-        <span id="progTxt">0/0</span>
-      </span>
-      <button type="button" class="icon" id="inkBtn" aria-pressed="false" aria-label="Handwriting" title="Handwriting"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"><path d="M4 20l1.2-4.6L15.6 5a2.1 2.1 0 0 1 3 0l.4.4a2.1 2.1 0 0 1 0 3L8.6 18.8z"/><path d="M13.5 7.1l3.4 3.4"/></svg></button>
-      <button type="button" class="icon" id="themeBtn" aria-label="Theme: system"></button>
-      <button type="button" class="btn" id="newBtn">New</button>
-    </div>
+
+<!-- Home: study picker and recent drafts -->
+<section class="screen" id="home" hidden>
+  <div class="page">
+    <div class="topline"><span class="brandname">Sonoform</span><button type="button" class="pill" data-go="settings">Settings</button></div>
+    <h1>New report</h1>
+    <p class="lede">Choose a study to start filling.</p>
+    <div class="studies" id="studies"></div>
+    <div class="h2row"><h2>Recent drafts</h2><span class="hint">Stored on this device</span><button type="button" class="link" id="draftsEdit" hidden>Edit</button></div>
+    <div class="list" id="drafts"></div>
   </div>
-  <nav class="strip gut" id="strip" aria-label="Sections"></nav>
-</header>
+</section>
 
-<div class="app gut">
-  <aside class="side" aria-label="Sections">
-    <nav id="sideNav"></nav>
-    <div class="tools">
-      <button type="button" class="btn" id="sideNext">Next unmarked</button>
-      <button type="button" class="btn" id="sideRest">Mark the rest normal</button>
+<!-- Settings -->
+<section class="screen" id="settings" hidden>
+  <div class="navbar"><button type="button" class="navback" data-go="home">‹ Home</button><span>Settings</span><span class="navpad"></span></div>
+  <div class="page narrow" id="setBody"></div>
+</section>
+
+<!-- Fill: patient strip and organ cards; organ sidebar on iPad, plus live report on Mac -->
+<section class="screen" id="fill" hidden>
+  <header class="fhead" id="fhead">
+    <div class="fbar">
+      <button type="button" class="back c-only" data-go="home" aria-label="Back to studies">‹</button>
+      <span class="brandname w-only">Sonoform</span><span class="vsep w-only"></span>
+      <div class="ftitle"><div class="t1" id="hTitle"></div><div class="t2" id="hSub"></div></div>
+      <span class="spacer"></span>
+      <button type="button" class="icon inkBtn" aria-pressed="false" aria-label="Handwriting" title="Handwriting"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"><path d="M4 20l1.2-4.6L15.6 5a2.1 2.1 0 0 1 3 0l.4.4a2.1 2.1 0 0 1 0 3L8.6 18.8z"/><path d="M13.5 7.1l3.4 3.4"/></svg></button>
+      <div class="hprog"><div class="ring" id="hRing"><span id="hPct"></span></div><span class="w-only hprogt" id="hProgT"></span></div>
+      <button type="button" class="btn w-only" data-act="next">Next unmarked</button>
+      <button type="button" class="btn w-only" data-act="rest">Mark the rest normal</button>
     </div>
-    <p class="note">Drafts save on this device only.</p>
-  </aside>
-
-  <main id="main">
-    <section class="sec" id="s-pt" data-sec="pt">
-      <div class="sec-h"><h2>Patient</h2></div>
-      <div class="pgrid">
-        <div class="in full"><label for="p-name">Name</label><input id="p-name" data-p="name" autocomplete="off" autocapitalize="words"></div>
-        <div class="in"><label for="p-age">Age / Sex</label><div class="age"><input id="p-age" data-p="age" inputmode="numeric" autocomplete="off" placeholder="Years"><div class="sexsw" role="group" aria-label="Sex"><button type="button" class="mini" data-sex="M" aria-pressed="true">M</button><button type="button" class="mini" data-sex="F" aria-pressed="false">F</button></div></div></div>
-        <div class="in"><label for="p-date">Date</label><input id="p-date" data-p="date" type="date"></div>
-        <div class="in"><label for="p-cr">CR No</label><input id="p-cr" data-p="cr" autocomplete="off" inputmode="numeric"></div>
-        <div class="in"><label for="p-usg">USG No</label><input id="p-usg" data-p="usg" autocomplete="off"></div>
-        <div class="in"><label for="p-bill">Bill No</label><input id="p-bill" data-p="bill" autocomplete="off"></div>
-        <div class="in"><label for="p-ref">Referred by</label><input id="p-ref" data-p="ref" autocomplete="off"></div>
-        <div class="in full"><label for="p-clin">Clinical details / remark</label><textarea id="p-clin" data-p="clin" rows="1"></textarea></div>
+    <nav class="strip c-only" id="strip" aria-label="Organs"></nav>
+  </header>
+  <div class="fbody">
+    <aside class="side" aria-label="Organs">
+      <div class="m-only sidetop">
+        <div class="sidenav"><button type="button" class="navback" data-go="home">‹ Studies</button><button type="button" class="icon inkBtn" aria-pressed="false" aria-label="Handwriting" title="Handwriting"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"><path d="M4 20l1.2-4.6L15.6 5a2.1 2.1 0 0 1 3 0l.4.4a2.1 2.1 0 0 1 0 3L8.6 18.8z"/><path d="M13.5 7.1l3.4 3.4"/></svg></button></div>
+        <div class="stitle"><div class="t1" id="sTitle"></div><div class="t2" id="sSub"></div></div>
+        <div class="progcard"><div class="ring" id="sRing"><span id="sPct"></span></div><div id="sProgT"></div></div>
       </div>
-    </section>
-
-    <div id="secs" style="display:contents"></div>
-
-    <section class="sec" id="s-sum" data-sec="sum">
-      <div class="sec-h"><h2>Impression &amp; sign-off</h2></div>
-      <div class="sumb">
-        <div class="in"><label for="t-add">Additional findings</label><textarea id="t-add" data-t="add" rows="1"></textarea></div>
-        <div class="in">
-          <label for="t-imp">Impression</label>
-          <div class="draft" id="draft"></div>
-          <textarea id="t-imp" data-t="imp" rows="2" placeholder="Leave empty to use the suggestion above, or write your own (one point per line)"></textarea>
-        </div>
-        <div class="in">
-          <label for="t-adv">Advice</label>
-          <div class="qchips" id="advChips"></div>
-          <textarea id="t-adv" data-t="adv" rows="1"></textarea>
-        </div>
-        <div class="in">
-          <span class="lbl">Reporting consultant</span>
-          <div class="chips" id="conChips"></div>
-        </div>
-        <div class="in"><label for="t-res">Resident doctor</label><input id="t-res" data-t="res" autocomplete="off"></div>
-        <div class="in" id="inkWordWrap" hidden>
-          <span class="lbl">Handwritten notes</span>
-          <div class="chips"><button type="button" class="chip" data-n id="inkWordBtn" aria-pressed="true">Include in report and Word file</button></div>
-        </div>
+      <div class="w-only sidelabel">Organs</div>
+      <nav class="onav" id="onav"></nav>
+      <div class="m-only sidebtns">
+        <div class="two"><button type="button" class="btn" data-act="next" id="sNext">Next</button><button type="button" class="btn" data-act="rest">Rest normal</button></div>
+        <button type="button" class="btn dark" data-act="report">View report</button>
       </div>
-    </section>
-  </main>
+    </aside>
+    <main class="form" id="form"></main>
+    <aside class="pane w-only" aria-label="Report">
+      <div class="panehead"><span class="ph-t">Report <small>Live preview</small></span><button type="button" class="btn sm printBtn" data-act="print" hidden>Print</button><button type="button" class="btn sm" data-act="copy">Copy text</button><button type="button" class="btn sm dark" data-act="word">Save as Word (.docx)</button></div>
+      <div class="panebody"><div class="paper" id="rep1"></div></div>
+    </aside>
+  </div>
+  <div class="dock c-only" id="dock">
+    <button type="button" class="btn" data-act="next" id="dNext">Next</button>
+    <button type="button" class="btn" data-act="rest">Rest normal</button>
+    <button type="button" class="btn dark" data-act="report">Report</button>
+  </div>
+</section>
 
-  <aside class="pane" aria-label="Report preview">
-    <div class="rep-h"><b>Report</b><button type="button" class="btn printBtn" hidden>Print</button><button type="button" class="btn copyBtn">Copy text</button><button type="button" class="btn primary wordBtn">Word</button></div>
-    <div class="rep" id="rep1"></div>
-  </aside>
+<!-- Report sheet: full screen on iPhone, side sheet on iPad -->
+<div class="scrim" id="scrim" hidden data-act="close"></div>
+<div class="sheet" id="sheet" hidden role="dialog" aria-modal="true" aria-label="Report preview">
+  <div class="grab"></div>
+  <div class="sheethead"><span>Report preview</span><button type="button" class="btn sm ghost printBtn" data-act="print" hidden>Print</button><button type="button" class="btn ghost" data-act="close">Done</button></div>
+  <div class="sheetbody"><div class="paper flat" id="rep2"></div></div>
+  <div class="sheetfoot"><button type="button" class="btn" data-act="copy">Copy text</button><button type="button" class="btn dark" data-act="word">Save as Word</button></div>
 </div>
 
-<div class="dock gut" id="dock">
-  <button type="button" class="btn" id="dockNext">Next</button>
-  <button type="button" class="btn" id="dockRest">Rest normal</button>
-  <button type="button" class="btn primary" id="dockRep">Report</button>
-</div>
-
-<div class="inkbar gut" id="inkbar" hidden role="toolbar" aria-label="Handwriting tools">
+<div class="inkbar" id="inkbar" hidden role="toolbar" aria-label="Handwriting tools">
   <button type="button" class="tool" data-tool="ink" aria-pressed="true" aria-label="Pen"><span class="sw" style="--c:var(--ink-ink)"></span></button>
   <button type="button" class="tool" data-tool="red" aria-pressed="false" aria-label="Red pen"><span class="sw" style="--c:var(--ink-red)"></span></button>
   <button type="button" class="tool" data-tool="blue" aria-pressed="false" aria-label="Blue pen"><span class="sw" style="--c:var(--ink-blue)"></span></button>
@@ -112,12 +99,7 @@
   <button type="button" class="tool" data-tool="erase" aria-pressed="false" aria-label="Eraser"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"><path d="M9 20h11"/><path d="M4.4 14.2l8.2-8.2a2 2 0 0 1 2.8 0l3.6 3.6a2 2 0 0 1 0 2.8L11 20H8.6z"/><path d="M8.8 9.8l6.4 6.4"/></svg></button>
   <span class="sep"></span>
   <button type="button" class="tool" id="inkUndo" aria-label="Undo" disabled><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 14L4 9l5-5"/><path d="M4 9h10.5a5.5 5.5 0 0 1 0 11H11"/></svg></button>
-  <button type="button" class="btn primary done" id="inkDone">Done</button>
-</div>
-
-<div class="sheet" id="sheet" hidden role="dialog" aria-label="Report">
-  <div class="rep-h gut"><button type="button" class="btn" id="sheetClose">Done</button><b style="text-align:center">Report</b><button type="button" class="btn printBtn" hidden>Print</button><button type="button" class="btn copyBtn">Copy</button><button type="button" class="btn primary wordBtn">Word</button></div>
-  <div class="rep gut" id="rep2"></div>
+  <button type="button" class="btn dark done" id="inkDone">Done</button>
 </div>
 
 <div class="print-only" id="repPrint"></div>

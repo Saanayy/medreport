@@ -1,66 +1,81 @@
-# USG Whole Abdomen — report generator
+# Sonoform: tap-to-fill USG reports
 
-An installable, offline web app for Mac and iPad. Mark findings, and the report writes itself: findings in full sentences, a suggested impression, plain-text copy, printing, and a Word file in the department's report-form layout. Handwriting with Apple Pencil works on the iPad.
+An installable, offline web app for iPhone, iPad and Mac. Pick a study, tap chips for each organ, and the report writes itself. Findings come out as full-sentence paragraphs and the impression as short bullets suggested from the positive findings, which you can edit. You can copy the report as plain text, print it, or save it as a Word file on your letterhead. Handwriting with Apple Pencil works on any row.
 
-It is built from the "USG Whole Abdomen" design, and its report text and Word output are tested to be identical to that design.
+It is built from the Sonoform design (`reference/sonoform.dc.html`), including all of Sanay's clinical review changes. Its report text is tested to be identical to the design's.
 
 **Live app:** https://saanayy.github.io/medreport/
 
+## Screens
+
+- **Home:** choose a study and see recent drafts with their progress. Tap a draft to resume it; **Edit** lets you delete drafts.
+  - **Available:** Whole Abdomen (Male or Female), KUB, and Pelvis (TAS or TVS).
+  - **Listed as "Coming soon":** Thyroid & Neck, Scrotum and Obstetric. The design doesn't define their forms yet.
+- **Fill:** patient details (the name is required), one card per organ and a Sign-off card for other findings, advice and consultant.
+  - Normal picks fill grey; positive findings fill terracotta.
+  - A measurement field appears only when the chosen option needs one. A required field that is empty has a terracotta border and a "Required" label.
+  - **All normal** works per organ. **Rest normal** marks every untouched row normal, with Undo.
+  - **Next** jumps to the next row that is unmarked or missing a required value.
+- **Report:** a live preview. It opens as a full-screen sheet on iPhone, as a side sheet on iPad, and sits in the right-hand column on Mac.
+  - **Edit** lets you change the impression; **Reset** goes back to the suggestion.
+  - **Copy text** and **Save as Word** stay blocked until the patient name and every required value are filled.
+- **Settings:** letterhead (institution, department, address), consultants (one signs by default), resident name, advice phrases (one is the default), appearance, and filled or tinted positive chips.
+
+## Layouts
+
+- **Below 1024 px (iPhone, iPad portrait):** one column, a sticky header with a progress ring, a scrolling organ strip, and a bottom dock with Next, Rest normal and Report.
+- **1024–1279 px (iPad landscape):** an organ sidebar with progress and the Next, Rest normal and View report buttons.
+- **1280 px and wider (MacBook):** a top bar, the organ sidebar, the form, and the live report.
+- **Touch screens** get 44 px controls; a mouse or trackpad gets the Mac's denser 36 px controls.
+- **Paired organs** (kidneys, ovaries, pleural spaces) sit side by side when there is room.
+
 ## Patient data
 
-Nothing leaves the device. There is no server and no account: drafts are kept in the browser's storage on the Mac or iPad where they were typed. The Mac and the iPad therefore keep separate drafts. **New** clears the form (with Undo).
+Nothing leaves the device. There is no server and no account. Drafts and settings live in the browser's storage on each device, so a phone and a Mac keep separate drafts. A draft left completely empty is discarded. **Settings → Delete all drafts** clears everything, with Undo.
 
-## Hosting
+## Hosting and installing
 
-The app is a folder of static files. It needs to be served over HTTPS for offline use and installing to work. Any static host will do; GitHub Pages is free:
+The app is a folder of static files and needs HTTPS for offline use. On GitHub Pages: **Settings → Pages → Deploy from a branch**, branch `main`, folder `/ (root)`.
 
-1. Create a repository and push this folder to it.
-2. In the repository: **Settings → Pages → Build and deployment → Deploy from a branch**, branch `main`, folder `/ (root)`.
-3. The app is then at `https://<your-username>.github.io/<repository>/`.
+- **iPhone or iPad:** open the link in Safari, then **Share → Add to Home Screen**.
+- **Mac:** open the link in Safari, then **File → Add to Dock**.
 
-The hosted files contain the form and the consultants' names only, never patient data.
-
-## Installing
-
-- **Mac** (macOS Sonoma or later): open the link in Safari → **File → Add to Dock**. It then opens in its own window from the Dock and Launchpad.
-- **iPad**: open the link in Safari → **Share → Add to Home Screen**.
-
-After the first visit it works without internet. When you publish a change, it reaches each device the next time the app is opened twice (the first launch fetches the update in the background).
-
-## Using it
-
-- **Mark the rest normal** fills every untouched row with its normal option; **N to mark ›** jumps to the next row that still needs a choice or a value (e.g. kidney sizes).
-- Rows with a dashed field need a value before they count as marked.
-- **Word** downloads the .docx on the Mac; on the iPad it opens the share sheet (Word, Files, Mail, AirDrop).
-- **Copy text** puts the plain-text report on the clipboard for the HIS.
-- The pen button turns on handwriting; with Apple Pencil you can write on any row at any time. Notes appear in the report and the Word file (toggle under Impression & sign-off).
+After the first visit the app works offline. A published change reaches each device the second time the app is opened.
 
 ## Changing the form
 
-All wording lives in `js/schema.js`: sections, rows, options, the findings sentence (`s`) and impression phrase (`i`) for each option, consultants (`DOCS`) and advice chips (`ADV`). Templates use `{field}` for a value and `[ ... ]` for a part that is dropped when its value is empty.
+The form and all report wording are in `js/schema.js`:
 
-The Word layout is in `js/docx.js`; the on-screen report in `reportHTML` in `js/app.js`.
+- `ORG` lists the organs, rows, options, measurement fields and detail panels.
+- `W` holds one writer per organ that turns marks into findings sentences and impression lines.
+- `STUDIES` sets which organs each study uses.
+- `DEFAULT_SETTINGS` holds the starting letterhead, consultants and advice phrases.
+
+The comment at the top of `schema.js` explains each key.
 
 ## Development
 
 ```
 npm run serve     # http://localhost:8080
-npm test          # report text, impression and Word XML vs. the original design
+npm test          # report text, progress and export rules vs. the Sonoform design
+npm run fixtures  # regenerate tests/fixtures.json by running the design's own code
 ```
 
-`tests/fixtures.json` holds the original design's output for the cases in `tests/cases.mjs`, generated by `npm run fixtures` from `reference/design.html`. When you change wording on purpose, the affected cases will fail; check the new text is what you want, then update their expected output in `tests/fixtures.json`.
+`tools/make-fixtures.mjs` runs the logic inside `reference/sonoform.dc.html` on the cases in `tests/cases.mjs`. The tests then check that the app gives the same findings, impression, progress counts and export blockers. If you change wording on purpose, change it in `js/schema.js` and update the expected output in `tests/fixtures.json`.
 
 If you add a file to the app, list it in `FILES` in `sw.js` and bump `VERSION`.
 
 ## Layout
 
 ```
-index.html              markup
-css/app.css             styles (light/dark, phone/iPad/Mac layouts)
-js/schema.js            the form and all wording
-js/engine.js            marks → findings, impression, report text (no DOM)
+index.html              markup for the screens
+css/app.css             styles (design tokens, light/dark, phone/iPad/Mac layouts)
+fonts/                  Instrument Sans and Source Serif 4 (self-hosted for offline use)
+js/schema.js            the form, report wording, studies, default settings
+js/engine.js            marks → findings, impression, progress, plain text (no DOM)
+js/app.js               screens, input, drafts, settings, copy/print/Word
+js/ink.js               Apple Pencil handwriting
 js/docx.js              Word export (no libraries)
-js/app.js               UI, handwriting, autosave, copy/print/Word
 sw.js, manifest.webmanifest, icons/   offline + install
-tests/, tools/, reference/            tests against the original design
+tests/, tools/, reference/            tests against the Sonoform design
 ```
